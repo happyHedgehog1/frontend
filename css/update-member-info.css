@@ -1,0 +1,30 @@
+caption {
+    display: table-caption;
+    text-align: start;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+tr {
+    border-bottom: 1px solid black;
+    
+}
+td{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+th{
+    text-align: left;
+    width:150px;
+}
+br{
+    display:block;
+    margin-bottom:10px;
+    content: "\0020";
+}
+tr:last-child {
+    border-bottom: 0px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/update-member-info.css" </head>
+
+<body>
+
+    <header>
+        <div class="gnb">
+            <!-- <img src="" alt="hamburger_button"> -->
+            <div class="hamburger_button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+
+            <h1 class="logo"><a href="#none"><img src="./image/logo.png" alt="logo"></a></h1>
+            <ul class="login_list">
+                <li><a href="#"><img src="./image/login.png">로그인</a></li>
+                <li><a href="#"><img src="./image/join.png">회원가입</a></li>
+                <li><a href="$"><img src="./image/mypage.png">마이페이지</a></li>
+                <li><a href="#"><img src="./image/cart.png">장바구니</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="gnb_list">
+                <li><a href="#">침실</a></li>
+                <li><a href="#">옷장</a></li>
+                <li><a href="#">서재</a></li>
+                <li><a href="#">주방</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger_menu">
+            <div class="hamburger_logo"><a href="#none"><img src="./image/logo.png"></a></div>
+            <ul class="hamburger_list">
+                <li><a href="#">베스트 상품</a></li>
+                <li><a href="#">침실</a></li>
+                <li><a href="#">거실</a></li>
+                <li><a href="#">서재</a></li>
+                <li><a href="#">주방</a></li>
+                <li><a href="#">게시판</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div id="contents">
+            <form action="" class="update-member-info-form">
+                <table>
+                    <caption>회원정보변경</caption>
+                    <tbody>
+                        <tr>
+                            <th>성명</th>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>생년월일</th>
+                            <td>
+                                <input type="date">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>성별</th>
+                            <td>
+                                <input type="radio"><label for="">남</label>
+                                <input type="radio"><label for="">여</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>아이디</th>
+                            <td><input type="text">공백없는 5~12자리의 영문/숫자 조합</td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호</th>
+                            <td><input type="password">공백없는 5~12자리의 영문/숫자 조합</td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호확인</th>
+                            <td><input type="password"></td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td><input type="email"><input type="button" value="인증메일보내기">
+                                <br>
+                                인증메일<input type="text"><input type="button" value="인증하기"><span>05:00</span><img
+                                    src="image/reload.png" alt="">
+                                <br>
+                                Email서비스를 받으시겠습니까? <input type="radio"><label for="">예</label>
+                                <input type="radio"><label for="">아니오</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>전화번호</th>
+                            <td>
+                                <input type="phone">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>휴대전화</th>
+                            <td>
+                                <input type="phone">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>주소</th>
+                            <td><input type="text"><input type="button" value="우편번호">
+                                <br>
+                                <input type="text">
+                                <br>
+                                <input type="text">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <input type="button" value="회원탈퇴">
+                    <input type="button" value="취소">
+                    <input type="button" value="회원정보수정">
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="js/header.js"></script>
+</body>
+
+</html>
