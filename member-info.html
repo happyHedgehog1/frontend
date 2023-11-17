@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/update-member-info.css">
+    <link rel="stylesheet" href="css/member-info.css">
 
 <body>
-
     <header>
         <div class="gnb">
             <!-- <img src="" alt="hamburger_button"> -->
@@ -52,7 +51,7 @@
         <div id="contents">
             <form action="" class="update-member-info-form">
                 <table id="info-table">
-                    <caption>회원정보변경</caption>
+                    <caption>회원정보</caption>
                     <tbody>
                         <tr>
                             <th id="name-header">성명</th>
@@ -64,44 +63,49 @@
                         <tr>
                             <th id="birth-header">생년월일</th>
                             <td id="birth-data">
-                                <label id="birth-input-label" for="birth-input">생년월일</label>
-                                <input type="date" id="birth-input" name="birth">
+                                <span>1900년 00월 00일</span>
+                                <!-- <label id="birth-input-label" for="birth-input">생년월일</label> -->
+                                <!-- <input type="date" id="birth-input" name="birth"> -->
                             </td>
                         </tr>
                         <tr>
                             <th id="gender-header">성별</th>
                             <td id="gender-data">
-                                <input type="radio" id="gender-input-male" name="gender"><label
+                                여자
+                                <!-- <input type="radio" id="gender-input-male" name="gender"><label
                                     for="gender-input-male">남</label>
                                 <input type="radio" id="gender-input-female" name="gender"><label
-                                    for="gender-input-female">여</label>
+                                    for="gender-input-female">여</label> -->
                             </td>
                         </tr>
                         <tr>
                             <th id="id-header">아이디</th>
-                            <td id="id-data"><label for="id-input" id="id-input-label">아이디</label><input type="text"
-                                    name="id" id="id-input"><span>공백없는 5~12자리의 영문/숫자 조합</span></td>
+                            <td id="id-data">
+                                <label for="id-input" id="id-input-label">아이디</label>
+                                <input type="text" name="id" id="id-input">
+                                <span style="color:#00000000;user-select:none">공백없는 5~12자리의 영문/숫자 조합</span>
+                            </td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <th id="password-header">비밀번호</th>
                             <td id="password-data"><label for="password-input"
                                     id="password-input-label">비밀번호</label><input type="password" name="password"
                                     id="password-input"><span>공백없는 5~12자리의 영문/숫자 조합</span></td>
-                        </tr>
-                        <tr>
+                        </tr> -->
+                        <!-- <tr>
                             <th id="password2-header">비밀번호확인</th>
                             <td id="password2-data">
                                 <label for="password2-input" id="password2-input-label">비밀번호</label>
                                 <input type="password" name="password2" id="password2-input">
                             </td>
-                        </tr>
+                        </tr> -->
                         <tr>
                             <th id="email-header">이메일</th>
                             <td id="email-data">
                                 <label for="email-input" id="email-input-label">이메일</label>
                                 <input type="email" name="email" id="email-input">
-                                <input type="button" value="인증메일보내기">
-                                <br>
+                                <!-- <input type="button" value="인증메일보내기"> -->
+                                <!-- <br>
                                 <label for="email-authentication-input"
                                     id="email-authentication-input-label">인증번호</label>
                                 <input type="text" name="authentication" id="email-authentication-input">
@@ -113,7 +117,7 @@
                                 <input type="radio" id="email-service-true" name="email-service">
                                 <label for="email-service-true">예</label>
                                 <input type="radio" id="email-service-false" name="email-service">
-                                <label for="email-service-false">아니오</label>
+                                <label for="email-service-false">아니오</label> -->
                             </td>
                         </tr>
                         <tr>
@@ -135,7 +139,7 @@
                             <td id="home-data">
                                 <label for="home-input1" id="home-input1-label">우편번호1</label>
                                 <input type="text" name="home1" id="home-input1" readonly>
-                                <input type="button" value="우편번호">
+                                <!-- <input type="button" value="우편번호"> -->
                                 <br>
                                 <label for="home-input2" id="home-input2-label">우편번호2</label>
                                 <input type="text" name="home2" id="home-input2" readonly>
@@ -147,9 +151,9 @@
                     </tbody>
                 </table>
                 <div>
-                    <input type="button" value="회원탈퇴">
-                    <input type="button" value="취소">
-                    <input type="button" value="회원정보수정">
+                    <!-- <input type="button" value="회원탈퇴">
+                    <input type="button" value="취소"> -->
+                    <input type="button" value="뒤로가기">
                 </div>
             </form>
         </div>

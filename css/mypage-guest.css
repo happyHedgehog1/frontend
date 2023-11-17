@@ -54,7 +54,6 @@ input#authenticationCodeButton {
     border: 0px;
 }
 input#authenticationCodeButton {
-    border-radius: 10px;
     border: 1px solid #a7727d;
     color: black;
     background-color: #ECECEC;
