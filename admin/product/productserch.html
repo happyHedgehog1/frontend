@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품등록</title>
+    <link rel="stylesheet" href="productserch.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logobackground">
+                <h1 class="logoimg"><img src="/image/logo_prod.png" alt="logo"></h1>
+                <h2>관리자 페이지</h2>
+            </div>
+        </header>
+    
+        <div class="contents">
+            <ul class="left_nav">
+                <li class="prodList">
+                    <a href="#상품조회" class="control">상품관리</a>
+                    <ul class="sub_ProdList">
+                        <li><a href="/admin/product/productserch.html">상품조회</a></li>
+                        <li><a href="/admin/product/productAdd.html">상품등록</a></li>
+                        <li><a href="#">상품분류등록</a></li>
+                    </ul>
+                </li>
+                <li class="prodList"><a href="#">회원관리</a></li>
+                <li class="prodList"><a href="#">주문관리</a></li>
+                <li class="prodList service" > <a href="#게시판관리">지원서비스</a>
+                    <ul class="sub_ProdList">
+                        <li><a href="#">게시판관리</a></li>
+                        <li><a href="#">메일관리</a></li>
+                    </ul>
+                </li>
+                <li class="prodList"><a href="#">관리자관리</a></li>
+                <li class="prodList"><a href="#">통계</a></li>
+                <li class="prodList"><a href="$">이벤트관리</a></li>
+            </ul>
+            <section>
+                <div class="page-body">
+                    <div class="main-hd">
+                        <div class="top-title">
+                        <h4>상품 조회</h4>
+                        <br>
+                        </div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="sect-top-top">
+                        <div class="sect-top">
+                            <table class="tbl_top">
+                                <colgroup>
+                                    <col class="w140">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>        
+                                        <th>상태</th>    
+                                            <td>
+                                                <ul class="arr-align">
+                                                    <li class="w250">
+                                                        <select name="prd_condition" id="prd_condition" >
+                                                            <option value="0" selected>판매상태 전체</option>
+                                                            <option value="1">판매중</option>
+                                                            <option value="2">판매종료</option>
+                                                        </select>
+                                                    </li>
+                                                </ul>    
+                                            </td>   
+                                    </tr>    
+                                    <tr>        
+                                        <th>키워드</th>    
+                                            <td>
+                                                <ul class="arr-align">
+                                                    <li class="w250">
+                                                        <select name="prd_keyword" id="prd_keyword" >
+                                                            <option value="0" selected>상품명</option>
+                                                            <option value="1">상품번호</option>
+                                                        </select>
+                                                    </li>
+                                                    <li class="w25">
+                                                        &nbsp;
+                                                    </li>                                                    
+                                                    <li>
+                                                        <input type="text" name="pro_search" id="pro_search">
+                                                    </li>
+                                                </ul>    
+                                            </td>   
+                                    </tr>    
+                                    <tr>        
+                                        <th>판매가</th>    
+                                            <td>
+                                                <ul class="arr-align">
+                                                    <li class="w250">
+                                                        <input type="text" name="prd_seart_price" id="prd_seart_price">
+                                                    </li>
+                                                    <li class="w25">
+                                                        &nbsp;
+                                                    </li>                                                    
+                                                    <li class="w250">
+                                                        <input type="text" name="prd_seart_price" id="prd_seart_price">
+                                                    </li>
+                                                </ul>    
+                                            </td>   
+                                    </tr>   
+                                    <tr>        
+                                        <th>카테고리</th>    
+                                            <td>
+                                                <ul class="arr-align">
+                                                    <li class="w250">
+                                                        <select name="prd_condition" id="prd_condition" >
+                                                            <option value="0" selected>상위 분류 선택</option>
+                                                            <option value="1">의자</option>
+                                                            <option value="2">테이블</option>
+                                                        </select>
+                                                    </li>
+                                                    <li class="w25">
+                                                        &nbsp;
+                                                    </li>  
+                                                    <li class="w250">
+                                                        <select name="prd_condition" id="prd_condition" >
+                                                            <option value="0" selected>하위 분류 선택</option>
+                                                            <option value="1">침실</option>
+                                                            <option value="2">거실</option>
+                                                        </select>
+                                                    </li>
+                                                </ul>    
+                                            </td>   
+                                    </tr> 
+                                    <tr>        
+                                        <th>등록일</th>    
+                                            <td>
+                                                <ul class="arr-align">
+                                                    <li class="w250">
+                                                        <input type="date" name="pro_search_startDay" id="pro_search_startDay">
+                                                    </li>
+                                                    <li class="w25">
+                                                        &nbsp;
+                                                    </li>  
+                                                    <li class="w250">
+                                                        <input type="date" name="pro_search_endDay" id="pro_search_endDay">
+                                                    </li>
+                                                </ul>    
+                                            </td>   
+                                    </tr> 
+                                </tbody>    
+                            </table>
+                            <div>
+                                <button id="btn-prd-search"> 검색 </button>
+                            </div>
+                            <div><br><br></div>
+                        </div>    
+                    </div>
+                    <div><br><br></div>
+                    <div class="sect-bottom">
+                        <table class="tbl_bottom">
+                            <colgroup>
+                                <col class="w140">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th><h3>상품 검색 결과</h3></th>
+                                        <td colspan="4">
+                                            <span>(총 : </span>
+                                            <span class="colorRed"> 3 </span>
+                                            <span> / 판매중 : </span>
+                                            <span class="colorRed"> 2 </span>
+                                            <span> / 품절 : </span>
+                                            <span class="colorRed"> 1 </span>
+                                            <span> ) </span>
+                                        </td>
+                                </tr>
+                                        <tr class="pro_search_result">        
+                                            <th>네모</th>    
+                                            <th>상품번호</th>
+                                            <th>상품명</th>
+                                            <th>판매가</th>
+                                            <th>판매상태</th>
+                                            <th>판매량</th>
+                                            <th>재고</th>
+                                            <th>등록일(수정일)</th>                                                    
+                                </tr> 
+                                <tr class="pro_search_bottom_tr">
+                                    <td class="pro_search_bottom_check">
+                                        <li>
+                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                        </li>
+                                    </td>
+                                    <td>
+                                        <li>c-2023-01</li>
+                                    </td>
+                                    <td>
+                                        <li>COOKY 패브릭 소파 1인</li>
+                                    </td>
+                                    <td>
+                                        <li>299,000원</li>
+                                    </td>
+                                    <td>
+                                        <li>판매중</li>
+                                    </td>
+                                    <td>
+                                        <li>344</li>
+                                    </td>
+                                    <td>
+                                        <li>30</li>
+                                    </td>
+                                    <td>
+                                        <li>2023-10-10</li>
+                                    </td>
+                                </tr>   
+                                <tr class="pro_search_bottom_tr">
+                                    <td class="pro_search_bottom_check">
+                                        <li>
+                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                        </li>
+                                    </td>
+                                    <td>
+                                        <li>c-2023-01</li>
+                                    </td>
+                                    <td>
+                                        <li>COOKY 패브릭 소파 1인</li>
+                                    </td>
+                                    <td>
+                                        <li>299,000원</li>
+                                    </td>
+                                    <td>
+                                        <li>판매중</li>
+                                    </td>
+                                    <td>
+                                        <li>344</li>
+                                    </td>
+                                    <td>
+                                        <li>30</li>
+                                    </td>
+                                    <td>
+                                        <li>2023-10-10</li>
+                                    </td>
+                                </tr>   
+                                <tr class="pro_search_bottom_tr">
+                                    <td class="pro_search_bottom_check">
+                                        <li>
+                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                        </li>
+                                    </td>
+                                    <td>
+                                        <li>c-2023-01</li>
+                                    </td>
+                                    <td>
+                                        <li>COOKY 패브릭 소파 1인</li>
+                                    </td>
+                                    <td>
+                                        <li>299,000원</li>
+                                    </td>
+                                    <td>
+                                        <li>판매중</li>
+                                    </td>
+                                    <td>
+                                        <li>344</li>
+                                    </td>
+                                    <td>
+                                        <li>30</li>
+                                    </td>
+                                    <td>
+                                        <li>2023-10-10</li>
+                                    </td>
+                                </tr>   
+                                <tr class="pro_search_bottom_tr">
+                                    <td class="pro_search_bottom_check">
+                                        <li>
+                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                        </li>
+                                    </td>
+                                    <td>
+                                        <li>c-2023-01</li>
+                                    </td>
+                                    <td>
+                                        <li>COOKY 패브릭 소파 1인</li>
+                                    </td>
+                                    <td>
+                                        <li>299,000원</li>
+                                    </td>
+                                    <td>
+                                        <li>판매중</li>
+                                    </td>
+                                    <td>
+                                        <li>344</li>
+                                    </td>
+                                    <td>
+                                        <li>30</li>
+                                    </td>
+                                    <td>
+                                        <li>2023-10-10</li>
+                                    </td>
+                                </tr>   
+                                <tr class="pro_search_bottom_tr">
+                                    <td class="pro_search_bottom_check">
+                                        <li>
+                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                        </li>
+                                    </td>
+                                    <td>
+                                        <li>c-2023-01</li>
+                                    </td>
+                                    <td>
+                                        <li>COOKY 패브릭 소파 1인</li>
+                                    </td>
+                                    <td>
+                                        <li>299,000원</li>
+                                    </td>
+                                    <td>
+                                        <li>판매중</li>
+                                    </td>
+                                    <td>
+                                        <li>344</li>
+                                    </td>
+                                    <td>
+                                        <li>30</li>
+                                    </td>
+                                    <td>
+                                        <li>2023-10-10</li>
+                                    </td>
+                                </tr>   
+                            </tbody>
+                        </table>
+            </section>
+        </nav>
+</body>
+</html>
