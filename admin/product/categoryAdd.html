@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품분류관리</title>
+    <link rel="stylesheet" href="/css/categoryAdd.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logobackground">
+                <h1 class="logoimg"><img src="/image/logo_prod.png" alt="logo"></h1>
+                <a href="/admin/main/admin-main.html"><h2>관리자 페이지</h2></a>
+            </div>
+        </header>
+    
+        <div class="contents">
+            <ul class="left_nav">
+                <li class="prodList">
+                    <a href="#상품조회" class="control">상품관리</a>
+                    <ul class="sub_ProdList">
+                        <li><a href="/admin/product/productserch.html">상품조회</a></li>
+                        <li><a href="/admin/product/productAdd.html">상품등록</a></li>
+                        <li><a href="/admin/product/categoryAdd.html">상품분류등록</a></li>
+                    </ul>
+                </li>
+                <li class="prodList"><a href="#">회원관리</a></li>
+                <li class="prodList"><a href="#">주문관리</a></li>
+                <li class="prodList service" > <a href="#게시판관리">지원서비스</a>
+                    <ul class="sub_ProdList">
+                        <li><a href="#">게시판관리</a></li>
+                        <li><a href="#">메일관리</a></li>
+                    </ul>
+                </li>
+                <li class="prodList"><a href="#">관리자관리</a></li>
+                <li class="prodList"><a href="#">통계</a></li>
+                <li class="prodList"><a href="$">이벤트관리</a></li>
+            </ul>
+            <section>
+                <div class="page-body">
+                    <div class="main-hd">
+                        <div class="top-title">
+                        <h4>상품분류관리</h4>
+                        <br>
+                        </div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="sect-top-top">
+                        <div class="sect-top">
+                            <table class="tbl_all">
+                                <colgroup>
+                                    <col class="w400">
+                                    <col class="w20">
+                                    <col>
+                                </colgroup>
+                                <tr>
+                                    <td>
+                                        <table class="tbl_left">
+                                            <colgroup>
+                                                <col class="w50">
+                                                <col class="w400">
+                                                <col class="w20">
+                                            </colgroup>
+                                            <tr class="w400">
+                                                <th style="border-bottom: 1px solid #bdc5cd;" colspan="4">
+                                                    <h3>상품 분류 목록</h3>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4">
+                                                    <button id="btn-category-add">카테고리 추가</button>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th><img src="/image/category1.png" height="20px"> </th>
+                                                    <td>
+                                                        카테고리(대분류)
+                                                    </td>
+                                                    <td>
+                                                        <a href="#"><img src="/image/add2.png" height="13px" name="img-add2"></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#"><img src="/image/allow_down.png" height="10px" name="img-allow_down"></a>
+                                                    </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <table class="tbl_right">
+                                            <colgroup>
+                                                <col class="w200">
+                                                <col>
+                                            </colgroup>
+                                            <tr>
+                                                <th colspan="3">상품 분류 정보</th>
+                                            </tr>
+                                            <tr>
+                                                <th>분류 명</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            <input type="text" name="categoryName" id="categoryName">
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>노출 상태</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>상품 정렬 순서</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>상품 현황</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2">
+                                                <table class="tbl-category-result">
+                                                    <tr>
+                                                        <th>전체</th>
+                                                        <th>판매중</th>
+                                                        <th>판매대기</th>
+                                                        <th>품절</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                </table>
+                                                </th>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+</body>
+</html>
