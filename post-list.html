@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mypage-guest</title>
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/mypage-guest.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/post-list.css">
   <script src="./js/header.js" defer></script>
 </head>
 
@@ -86,30 +86,74 @@
       </div>
     </nav>
   </header>
+
   <section>
     <div id="contents">
-      <h1 id="contents-title" class="">비회원 주문/배송 조회</h1>
-      <form action="" name="guestMypageForm" id="authenticationForm">
-        <label for="username">이름</label>
-        <input type="text" name="username" id="username">
-        <label for="phone">휴대폰번호</label>
-        <input type="text" name="phone" id="phone" placeholder="주문 시 입력한 휴대폰번호 (-없이 입력)">
-        <input type="button" value="휴대폰 인증" id="phoneAuthenticationButton">
-        <!-- 숨겨야 되는 부분 시작1 -->
-        <label for="authenticationCode">인증번호</label>
-        <input type="text" name="authenticationCode" id="authenticationCode">
-        <input type="button" value="인증하기" id="authenticationCodeButton">
-        <span id="authenticationTimer">05:00</span>
-        <img src="image/reload.png" alt="" id="authenticationTimerButton">
-        <!-- 숨겨야 되는 부분 끝1 -->
-        <!-- 숨겨야 되는 부분 시작2 -->
-        <span id="authenticationSuccess">인증이 완료되었습니다.</span>
-        <!-- 숨겨야 되는 부분 끝 -->
-        <input type="submit" value="조회" id="searchButton">
-      </form>
+      <h1 id="contents-title">문의 내역</h1>
+      <hr>
+      <label for="" id="" class="">분류선택</label>
+      <select name="" id="" class="">
+        <option value="" id="" class="">선택</option>
+      </select>
+      <table id="" class="">
+        <thead id="" class="">
+          <tr id="" class="">
+            <th id="" class="">번호</th>
+            <th id="" class="">분류</th>
+            <th id="" class="">제목</th>
+            <th id="" class="">작성일</th>
+          </tr>
+        </thead>
+        <tbody id="" class="">
+          <tr id="" class="">
+            <td id="" class="">00054</td>
+            <td id="" class="">[반품문의]</td>
+            <td id="" class="">제목</td>
+            <td id="" class="">작성일</td>
+          </tr>
+          <tr id="" class="">
+            <td id="" class="">00054</td>
+            <td id="" class="">[반품문의]</td>
+            <td id="" class="">제목</td>
+            <td id="" class="">작성일</td>
+          </tr>
+          <tr id="" class="">
+            <td id="" class="">00054</td>
+            <td id="" class="">[반품문의]</td>
+            <td id="" class="">제목</td>
+            <td id="" class="">작성일</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="" class="">
+        <form action="" id="" class="">
+          <select name="" id="" class="">
+            <option value="" id="" class="">선택</option>
+          </select>
+          <input type="text" id="" class="">
+          <span id="" class="">
+            <img src="" alt="검색그림" id="" class="">
+            <input type="button" id="" class="" value="검색">
+          </span>
+          <input type="button" id="" class="" value="글쓰기">
+        </form>
+      </div>
+      <div id="" class="">
+        <a href="" type="button" id="" class="">&lt&lt</a>
+        <a href="" type="button" id="" class="">&lt</a>
+        <a href="" type="button" id="" class="">1</a>
+        <a href="" type="button" id="" class="">2</a>
+        <a href="" type="button" id="" class="">3</a>
+        <a href="" type="button" id="" class="">4</a>
+        <a href="" type="button" id="" class="">5</a>
+        <a href="" type="button" id="" class="">6</a>
+        <a href="" type="button" id="" class="">7</a>
+        <a href="" type="button" id="" class="">8</a>
+        <a href="" type="button" id="" class="">&gt</a>
+        <a href="" type="button" id="" class="">&gt&gt</a>
+      </div>
     </div>
   </section>
-  <script src="js/mypage-guest.js"></script>
 </body>
 
 </html>

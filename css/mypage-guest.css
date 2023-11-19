@@ -2,6 +2,10 @@ div#contents {
     border: 0;
 }
 
+#contents-title {
+    text-align: center;
+}
+
 #authenticationForm {
     display: grid;
     grid-template-columns: 80px 160px 80px 40px 40px 80px;
@@ -53,11 +57,12 @@ input#authenticationCodeButton {
     color: white;
     border: 0px;
 }
+
 input#authenticationCodeButton {
     border: 1px solid #a7727d;
     color: black;
     background-color: #ECECEC;
-    border-radius:5px
+    border-radius: 5px
 }
 
 img#authenticationTimerButton {

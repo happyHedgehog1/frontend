@@ -118,13 +118,13 @@
                         <tr>
                             <th id="id-header">아이디</th>
                             <td id="id-data"><label for="id-input" id="id-input-label">아이디</label><input type="text"
-                                    name="id" id="id-input"><span>공백없는 5~12자리의 영문/숫자 조합</span></td>
+                                    name="id" id="id-input"><div>공백없는 5~12자리의 영문/숫자 조합</ㅇ></td>
                         </tr>
                         <tr>
                             <th id="password-header">비밀번호</th>
                             <td id="password-data"><label for="password-input"
                                     id="password-input-label">비밀번호</label><input type="password" name="password"
-                                    id="password-input"><span>공백없는 5~12자리의 영문/숫자 조합</span></td>
+                                    id="password-input"><div>공백없는 5~12자리의 영문/숫자 조합</div></td>
                         </tr>
                         <tr>
                             <th id="password2-header">비밀번호확인</th>
@@ -184,10 +184,14 @@
                         </tr>
                     </tbody>
                 </table>
-                <div>
-                    <input type="button" value="회원탈퇴">
-                    <input type="button" value="취소">
-                    <input type="button" value="회원정보수정">
+                <div id="footer-button">
+                    <span>
+                        <input type="button" value="회원탈퇴">
+                    </span>
+                    <span>
+                        <input type="button" value="취소">
+                        <input type="button" value="회원정보수정">
+                    </span>
                 </div>
             </form>
         </div>

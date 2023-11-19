@@ -29,6 +29,9 @@ header {
   width: 100%;
   position: fixed;
   font-size: 20px;
+
+  /* 이준경 */
+  z-index: 3;
 }
 
 
@@ -42,7 +45,7 @@ header {
   height: 60px;
   position: relative;
   background-color: white;
-  z-index: 9999;
+  z-index: 9900; /* 이준경 */
 }
 
 
@@ -219,7 +222,7 @@ nav>div {
 hr {
   height: 1px;
   width: 100%;
-  /* z-index: 9999; */
+  /* z-index: 9900; */
 }
 
 /* ======== 서브카테고리 */
@@ -322,6 +325,7 @@ section {
   align-items: center;
   width: 100%;
   position:relative;
+  /* 이준경 수정사항 */
   top:150px;
 }
 

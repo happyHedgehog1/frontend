@@ -99,14 +99,15 @@
         <form action="" id="">
           <fieldset>
             <legend>검색</legend>
-            <select name="" id="">
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
-              <option value="">6</option>
-              <option value="">7</option>
+            <select name="orderStatusSelect" id="order-status-select">
+              <option value="defaultValue">전체 주문 처리 상태</option>
+              <option value="notDeposited">입금전</option>
+              <option value="preparing">배송준비중</option>
+              <option value="inTransit">배송중</option>
+              <option value="delivered">배송완료</option>
+              <option value="cancelled">취소</option>
+              <option value="returned">반품</option>
+              <option value="exchanged">교환</option>
             </select>
             <span id="">|</span>
             <span id="">
@@ -116,7 +117,7 @@
               <input type="button" value="3개월" id="">
               <input type="button" value="6개월" id="">
             </span>
-            <span id="">
+            <span id="button">
               <input type="date" id="">
               <span>~</span>
               <input type="date" id="">
@@ -131,7 +132,7 @@
             <li>설명3</li>
           </ul>
         </form>
-        <table id="">
+        <table id="payment-table">
           <thead id="" class="">
             <tr id="" class="">
               <th id="" class="">주문일자<br>[주문번호]</th>

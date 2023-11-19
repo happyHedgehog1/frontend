@@ -1,28 +1,25 @@
 function toggleHamburger() {
-    var $hambtn = document.querySelector('.hamburger_button');
-    var $sideMenu = document.querySelector('.side_nenu');
-    $hambtn.classList.toggle('active');
-    $sideMenu.classList.toggle('active');
-  }
-  
-  
-  
-  function applyHoverEffect(isHover) {
-    var targetElement = document.querySelector('.gnb_sub_box');
-  
+    var $hambtn = document.querySelector(".hamburger_button");
+    var $sideMenu = document.querySelector(".side_nenu");
+    $hambtn.classList.toggle("active");
+    $sideMenu.classList.toggle("active");
+}
+
+function applyHoverEffect(isHover) {
+    var targetElement = document.querySelector(".gnb_sub_box");
     if (isHover) {
-      targetElement.style.transform = 'translateY(0)'; 
+      
+        targetElement.style.transform = "translateY(0)";
     } else {
-      targetElement.style.transform = 'translateY(-250px)'; 
+        targetElement.style.transform = "translateY(-250px)";
     }
-  }
-  // function applyHoverEffect(isHover) {
-  //   var targetElement = document.querySelector('hr');
-  
-  //   if (isHover) {
-  //     targetElement.style.zIndex = '-1'; 
-  //   } else {
-  //     targetElement.style.zIndex = '0'; 
-  //   }
-  // }
-  
+}
+// function applyHoverEffect(isHover) {
+//   var targetElement = document.querySelector('hr');
+
+//   if (isHover) {
+//     targetElement.style.zIndex = '-1';
+//   } else {
+//     targetElement.style.zIndex = '0';
+//   }
+// }

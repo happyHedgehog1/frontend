@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/review-view.css">
+  <script src="./js/header.js" defer></script>
+  <script src="./js/review-view.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="gnb">
+      <div class="hamburger_button" onclick="toggleHamburger()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- 사이드메뉴 -->
+      <div class="side_nenu" onclick="toggleHamburger()">
+        <ul class="side_nenu_List">
+          <li><a href="#">베스트 상품</a></li>
+          <li><a href="#">침실</a></li>
+          <li><a href="#">거실</a></li>
+          <li><a href="#">서재</a></li>
+          <li><a href="#">주방</a></li>
+          <li><a href="#">게시판</a></li>
+        </ul>
+      </div>
+      <h1 class="logo"><a href="#none"><img src="./image/logo.png" alt="logo"></a></h1>
+      <ul class="login_list">
+        <li><a href="#"><img src="./image/login.png">로그인</a></li>
+        <li><a href="#"><img src="./image/join.png">회원가입</a></li>
+        <li><a href="$"><img src="./image/mypage.png">마이페이지</a></li>
+        <li><a href="#"><img src="./image/cart.png">장바구니</a></li>
+      </ul>
+    </div>
+
+
+    <nav>
+      <div>
+        <hr>
+        <ul class="gnb_list" onmouseover="applyHoverEffect(true)" onmouseout="applyHoverEffect(false)">
+          <li><a href="#">침실</a></li>
+          <li><a href="#">옷장</a></li>
+          <li><a href="#">서재</a></li>
+          <li><a href="#">주방</a></li>
+        </ul>
+        <hr>
+        <!-- <div class="line"></div> -->
+        <div class="gnb_sub_box" onmouseover="applyHoverEffect(true)" onmouseout="applyHoverEffect(false)">
+          <div class="gnb_sub_list">
+            <ul class="detail_list">
+              <li><a href="#">침대</a></li>
+              <span></span>
+              <li><a href="#">옷장</a></li>
+              <span></span>
+              <li><a href="#">화장대</a></li>
+            </ul>
+            <ul class="detail_list">
+              <li><a href="#">소파</a></li>
+              <span></span>
+              <li><a href="#">테이블</a></li>
+              <span></span>
+              <li><a href="#">수납장</a></li>
+            </ul>
+            <ul class="detail_list">
+              <li><a href="#">책상</a></li>
+              <span></span>
+              <li><a href="#">책장</a></li>
+              <span></span>
+              <li><a href="#">의자</a></li>
+            </ul>
+            <ul class="detail_list">
+              <li><a href="#">식탁</a></li>
+              <span></span>
+              <li><a href="#">의자</a></li>
+              <span></span>
+              <li><a href="#">테이블</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div id="contents">
+      <div id="review-01" class="review" onclick="showReviewContent(this)">리뷰예시01<br>리뷰에시01</div>
+      <div id="review-02" class="review" onclick="showReviewContent(this)">리뷰예시02<br>리뷰에시02</div>
+      <div id="review-03" class="review" onclick="showReviewContent(this)">리뷰예시03<br>리뷰에시03</div>
+      <div id="review-04" class="review" onclick="showReviewContent(this)">리뷰예시04<br>리뷰에시04</div>
+      <div id="review-05" class="review" onclick="showReviewContent(this)">리뷰예시05<br>리뷰에시05</div>
+      <div id="review-06" class="review" onclick="showReviewContent(this)">리뷰예시06<br>리뷰에시06</div>
+      <div id="review-07" class="review" onclick="showReviewContent(this)">리뷰예시07<br>리뷰에시07</div>
+      <div id="review-08" class="review" onclick="showReviewContent(this)">리뷰예시08<br>리뷰에시08</div>
+      <div id="review-09" class="review" onclick="showReviewContent(this)">리뷰예시09<br>리뷰에시09</div>
+      <div id="review-10" class="review" onclick="showReviewContent(this)">리뷰예시10<br>리뷰에시10</div>
+      <div id="review-11" class="review" onclick="showReviewContent(this)">리뷰예시11<br>리뷰에시11</div>
+      <div id="review-12" class="review" onclick="showReviewContent(this)">리뷰예시12<br>리뷰에시12</div>
+      <div id="review-13" class="review" onclick="showReviewContent(this)">리뷰예시13<br>리뷰에시13</div>
+      <div id="review-14" class="review" onclick="showReviewContent(this)">리뷰예시14<br>리뷰에시14</div>
+      <div id="review-15" class="review" onclick="showReviewContent(this)">리뷰예시15<br>리뷰에시15</div>
+      <div id="review-16" class="review" onclick="showReviewContent(this)">리뷰예시16<br>리뷰에시16</div>
+      <div id="review-17" class="review" onclick="showReviewContent(this)">리뷰예시17<br>리뷰에시17</div>
+      <div id="review-18" class="review" onclick="showReviewContent(this)">리뷰예시18<br>리뷰에시18</div>
+      <div id="review-19" class="review" onclick="showReviewContent(this)">리뷰예시19<br>리뷰에시19</div>
+      <div id="review-20" class="review" onclick="showReviewContent(this)">리뷰예시20<br>리뷰에시20</div>
+      <div id="review-21" class="review" onclick="showReviewContent(this)">리뷰예시21<br>리뷰에시21</div>
+      <div id="review-22" class="review" onclick="showReviewContent(this)">리뷰예시22<br>리뷰에시22</div>
+      <div id="review-23" class="review" onclick="showReviewContent(this)">리뷰예시23<br>리뷰에시23</div>
+      <div id="review-24" class="review" onclick="showReviewContent(this)">리뷰예시24<br>리뷰에시24</div>
+      <div id="review-25" class="review" onclick="showReviewContent(this)">리뷰예시25<br>리뷰에시25</div>
+      <div id="review-26" class="review" onclick="showReviewContent(this)">리뷰예시26<br>리뷰에시26</div>
+      <div id="review-27" class="review" onclick="showReviewContent(this)">리뷰예시27<br>리뷰에시27</div>
+      <div id="review-28" class="review" onclick="showReviewContent(this)">리뷰예시28<br>리뷰에시28</div>
+      <div id="review-29" class="review" onclick="showReviewContent(this)">리뷰예시29<br>리뷰에시29</div>
+      <div id="review-30" class="review" onclick="showReviewContent(this)">리뷰예시30<br>리뷰에시30</div>
+    </div>
+  </section>
+  <div class="overlay" id="overlay" onclick="hideReviewContent()">
+    <div class="review-content" id="reviewContent">
+      <!-- 리뷰 상세 내용 -->
+      <span onclick="hideReviewContent()" class="close-btn">X</span>
+      <p>리뷰 내용이 여기에 들어갑니다.</p>
+    </div>
+  </div>
+</body>
+
+</html>
