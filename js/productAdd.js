@@ -1,4 +1,3 @@
-
 // 모달 메뉴 열기
 document.getElementById("btn-submit-add").addEventListener("click", function() {
     document.getElementById("myModal").style.display = "flex";
@@ -50,6 +49,7 @@ $("body").on("click", "li.w140 a", function(event) {
     }
 });
 
+//상품 등록 재고 무제한 선택시 수량입력 제한
     $('input[name="prd_stock"]').change(function() {
     if($('input[name=prd_stock]:checked').val() === 'N'){
         $("#prd_stock_num").prop("disabled", true);

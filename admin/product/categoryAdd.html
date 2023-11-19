@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>상품분류관리</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="/css/categoryAdd.css">
 </head>
 <body>
@@ -14,7 +15,6 @@
                 <a href="/admin/main/admin-main.html"><h2>관리자 페이지</h2></a>
             </div>
         </header>
-    
         <div class="contents">
             <ul class="left_nav">
                 <li class="prodList">
@@ -33,9 +33,9 @@
                         <li><a href="#">메일관리</a></li>
                     </ul>
                 </li>
-                <li class="prodList"><a href="#">관리자관리</a></li>
-                <li class="prodList"><a href="#">통계</a></li>
-                <li class="prodList"><a href="$">이벤트관리</a></li>
+                <li class="prodList"><a href="/admin/adimin-management/adimin-management.html">관리자관리</a></li>
+                <li class="prodList"><a href="/admin/Statistics/Statistics.html">통계</a></li>
+                <li class="prodList"><a href="/admin/event/event.html">이벤트관리</a></li>
             </ul>
             <section>
                 <div class="page-body">
@@ -44,121 +44,160 @@
                         <h4>상품분류관리</h4>
                         <br>
                         </div>
-                        <div class="box"></div>
                     </div>
-                    <div class="sect-top-top">
-                        <div class="sect-top">
-                            <table class="tbl_all">
+                    <div class="sect-all">
+                        <div class="sect-left">
+                            <div class="left-title"><h3>상품 분류 목록</h3></div>
+                            <div class="left-btn">
+                                <button id="btn-category-add">카테고리 추가</button>
+                                <button id="btn-category-delite">카테고리 삭제</button>
+                            </div>
+                            <div class="left-body">
+                                <table style="width: 100%;" class="category-row">
+                                    <colgroup>
+                                    <col style="width: 85%;">
+                                    <col style="width: 5%;">
+                                    <col style="width: 5%;">
+                                    <col style="width: 5%;">                                    
+                                    </colgroup>
+                                    <tr class="category">
+                                        <td><img src="/image/category1.png" height="20px"> 카테고리(대분류)</td>
+                                        <td><a href="#"><img src="/image/add2.png" height="13px" name="img-add2" style="padding-left: 5px;"></a></td>
+                                        <td><a href="#"><img src="/image/open.png" height="12px" name="img-open"></a></td>
+                                        <td><a href="#"><img src="/image/allow_down.png" height="10px" name="img-allow_down"></a></td>
+                                    </tr>
+                                    <tr class="category1">
+                                        <td style="padding-left: 5px;"><img src="/image/L.png" height="20px"><img src="/image/category2.png" height="20px"> 카테고리(소분류)</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="#"><img src="/image/open.png" height="12px" name="open"></a></td>
+                                    </tr>
+                                </table>
+                                <table style="width: 100%;" class="category-row">
+                                    <colgroup>
+                                    <col style="width: 85%;">
+                                    <col style="width: 5%;">
+                                    <col style="width: 5%;">
+                                    <col style="width: 5%;">                                    
+                                    </colgroup>
+                                    <tr class="category">
+                                        <td><img src="/image/category1.png" height="20px"> 카테고리(대분류)</td>
+                                        <td><a href="#"><img src="/image/add2.png" height="13px" name="img-add2" style="padding-left: 5px;"></a></td>
+                                        <td><a href="#"><img src="/image/close.png" height="12px" name="img-close"></a></td>
+                                        <td><a href="#"><img src="/image/allow_down.png" height="10px" name="img-allow_down"></a></td>
+                                        
+                                    </tr>
+                                    <tr class="category1">
+                                        <td style="padding-left: 5px;"><img src="/image/L.png" height="20px"><img src="/image/category2.png" height="20px"> 카테고리(소분류)</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="#"><img src="/image/open.png" height="12px" name="img-open"></a></td>
+                                    </tr>
+                                </table>
+                                <table style="width: 100%;" class="category-row">
+                                    <colgroup>
+                                    <col style="width: 85%;">
+                                    <col style="width: 5%;">
+                                    <col style="width: 5%;">
+                                    <col style="width: 5%;">                                    
+                                    </colgroup>
+                                    <tr class="category">
+                                        <td><img src="/image/category1.png" height="20px"> 카테고리(대분류)</td>
+                                        <td><a href="#"><img src="/image/add2.png" height="13px" name="img-add2" style="padding-left: 5px;"></a></td>
+                                        <td><a href="#"><img src="/image/open.png" height="12px" name="img-open"></a></td>
+                                        <td><a href="#"><img src="/image/allow_up.png" height="10px" name="img-allow_up"></a></td>
+                                    </tr>
+                                    <tr class="category1">
+                                        <td style="padding-left: 5px;"><img src="/image/L.png" height="20px"><img src="/image/category2.png" height="20px"> 카테고리(소분류)</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="#"><img src="/image/open.png" height="12px" name="img-open"></a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="sect-right">
+                            <table class="tbl_right">
                                 <colgroup>
-                                    <col class="w400">
-                                    <col class="w20">
+                                    <col class="w200">
                                     <col>
                                 </colgroup>
                                 <tr>
-                                    <td>
-                                        <table class="tbl_left">
-                                            <colgroup>
-                                                <col class="w50">
-                                                <col class="w400">
-                                                <col class="w20">
-                                            </colgroup>
-                                            <tr class="w400">
-                                                <th style="border-bottom: 1px solid #bdc5cd;" colspan="4">
-                                                    <h3>상품 분류 목록</h3>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th colspan="4">
-                                                    <button id="btn-category-add">카테고리 추가</button>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th><img src="/image/category1.png" height="20px"> </th>
-                                                    <td>
-                                                        카테고리(대분류)
-                                                    </td>
-                                                    <td>
-                                                        <a href="#"><img src="/image/add2.png" height="13px" name="img-add2"></a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#"><img src="/image/allow_down.png" height="10px" name="img-allow_down"></a>
-                                                    </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    <td>&nbsp;</td>
-                                    <td>
-                                        <table class="tbl_right">
-                                            <colgroup>
-                                                <col class="w200">
-                                                <col>
-                                            </colgroup>
-                                            <tr>
-                                                <th colspan="3">상품 분류 정보</th>
-                                            </tr>
-                                            <tr>
-                                                <th>분류 명</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>
-                                                            <input type="text" name="categoryName" id="categoryName">
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>노출 상태</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>
-                                                            
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>상품 정렬 순서</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>
-                                                            
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>상품 현황</th>
-                                            </tr>
-                                            <tr>
-                                                <th colspan="2">
-                                                <table class="tbl-category-result">
-                                                    <tr>
-                                                        <th>전체</th>
-                                                        <th>판매중</th>
-                                                        <th>판매대기</th>
-                                                        <th>품절</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>0</td>
-                                                        <td>0</td>
-                                                        <td>0</td>
-                                                    </tr>
-                                                </table>
-                                                </th>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    
+                                    <th colspan="3" style="border-bottom: 1px solid #bdc5cd;"><h3>상품 분류 정보</h3></th>
                                 </tr>
+                                <tr>
+                                    <th>분류 명</th>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                <input type="text" name="categoryName" id="categoryName" placeholder="카테고리">
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>노출 상태</th>
+                                    <td>
+                                        <label for="category_display_Y">
+                                        <input type="radio" name="category_display" value="Y" checked><span> 노출</span>
+                                        </label>
+                                        <label for="category_display_N">
+                                        <input type="radio" name="category_display" value="N"><span> 숨김</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상품 정렬 순서</th>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                <select name="prd_cate2" id="prd_cate2" >
+                                                    <option value="0" selected>최신순</option>
+                                                    <option value="1">판매량순</option>
+                                                    <option value="2">후기순</option>
+                                                    <option value="3">조회순</option>
+                                                </select>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th style="border: 0px;">상품 현황</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" style="border: 0px;" >
+                                    <table class="tbl-category-result">
+                                        <colgroup>
+                                        <col class="w200">
+                                        <col class="w200">
+                                        <col class="w200">
+                                        <col class="w200">
+                                        </colgroup>
+                                        <tr style="background-color: #ebebeb;">
+                                            <th>전체</th>
+                                            <th>판매중</th>
+                                            <th>판매대기</th>
+                                            <th>품절</th>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </table>
+                                    </th>
+                                </tr>
+                                <th style="border: 0px;">
+                                    <tr>&nbsp;</tr>
+                                </th>
                             </table>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-
     </div>
-
+    <script src="/js/categoryAdd.js"></script>
 </body>
 </html>

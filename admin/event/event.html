@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 관리</title>
+    <link rel="stylesheet" href="/css/event.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logobackground">
+                <h1 class="logoimg"><img src="/image/logo_prod.png" alt="logo"></h1>
+                <a href="/admin/main/admin-main.html"><h2>관리자 페이지</h2></a>
+            </div>
+        </header>
+    
+        <div class="contents">
+            <ul class="left_nav">
+                <li class="prodList">
+                    <a href="#상품조회" class="control">상품관리</a>
+                    <ul class="sub_ProdList">
+                        <li><a href="/admin/product/productserch.html">상품조회</a></li>
+                        <li><a href="/admin/product/productAdd.html">상품등록</a></li>
+                        <li><a href="/admin/product/categoryAdd.html">상품분류등록</a></li>
+                    </ul>
+                </li>
+                <li class="prodList"><a href="#">회원관리</a></li>
+                <li class="prodList"><a href="#">주문관리</a></li>
+                <li class="prodList service" > <a href="#게시판관리">지원서비스</a>
+                    <ul class="sub_ProdList">
+                        <li><a href="#">게시판관리</a></li>
+                        <li><a href="#">메일관리</a></li>
+                    </ul>
+                </li>
+                <li class="prodList"><a href="/admin/adimin-management/adimin-management.html">관리자관리</a></li>
+                <li class="prodList"><a href="/admin/Statistics/Statistics.html">통계</a></li>
+                <li class="prodList"><a href="/admin/event/event.html">이벤트관리</a></li>
+            </ul>
+            <section>
+                <div class="page-body">
+                    <div class="main-hd">
+                        <div class="top-title">
+                        <h4>상품 조회</h4>
+                        <br>
+                        </div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="sect-top-top">
+                        <div class="sect-top">
+                            <table class="tbl_top">
+                                <colgroup>
+                                    <col class="w200">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>        
+                                        <th>진행여부</th>    
+                                            <td>
+                                                <ul class="arr-align">
+                                                    <li class="w200">
+                                                        <label for="event-onoff">
+                                                            <input type="radio" name="event-onoff" value="Y" checked><span> 진행함</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="w25">
+                                                        &nbsp;
+                                                    </li>
+                                                    <li>
+                                                        <label for="event-onoff">
+                                                            <input type="radio" name="event-onoff" value="N"><span> 진행안함</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>  
+                                            </td>   
+                                    </tr>    
+                                    <tr>        
+                                        <th>기간설정</th>    
+                                        <td>
+                                            <ul class="arr-align">
+                                                <li class="w200">
+                                                    <input type="datetime-local" name="event-start" id="event-start">
+                                                </li>
+                                                <li class="w25">
+                                                    &nbsp;~
+                                                </li>
+                                                <li>
+                                                    <input type="datetime-local" name="event-end" id="event-end">
+                                                </li>
+                                            </ul>  
+                                        </td>    
+                                    </tr>    
+                                    <tr>        
+                                        <th>상품범위 설정</th>    
+                                        <td>
+                                            <ul class="arr-align">
+                                                <li class="w200">
+                                                    <label for="event-start">
+                                                        <input type="radio" name="event-state" value="Y" checked><span> 전체상품</span>
+                                                    </label>
+                                                </li>
+                                                <li class="w25">
+                                                    &nbsp;
+                                                </li>
+                                                <li>
+                                                    <label for="event-state">
+                                                        <input type="radio" name="event-state" value="N"><span> 특정상품</span>
+                                                    </label>
+                                                </li>
+                                            </ul>  
+                                        </td>  
+                                    </tr>   
+                                    <tr>        
+                                        <th>혜택설정</th>    
+                                        <td>
+                                            <ul class="arr-align">
+                                                <li class="w200">
+                                                    <label for="salenum">
+                                                        <input type="text" name="salenum" id="salenum">
+                                                    </label>
+                                                </li>
+                                                <li class="w25">
+                                                    &nbsp;
+                                                </li>
+                                                <li >
+                                                    <label for="salenum">
+                                                        <select name="prd_cate1" id="prd_cate1" >
+                                                            <option value="0" selected>%</option>
+                                                            <option value="1">원</option>                                                    
+                                                        </select>
+                                                        <span>할인</span>
+                                                    </label>
+                                                </li>
+                                            </ul>  
+                                        </td>      
+                                    </tr> 
+                                    <tr>        
+                                        <th>상품선택</th>    
+                                    </tr> 
+                                    <tr>        
+                                        <th colspan="2">
+                                            <table class="result">
+                                                <colgroup>
+                                                    <col style="width: 10%;">
+                                                    <col style="width: 20%;">
+                                                    <col style="width: 20%;">
+                                                    <col style="width: 20%;">
+                                                    <col style="width: 20%;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th><input type="checkbox" name="" id=""></input></th>
+                                                        <th>상품번호</th>
+                                                        <th>상품명</th>
+                                                        <th>판매가</th>
+                                                        <th>할인 적용가</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox" name="" id=""></td>
+                                                        <td>c-2023-01</td>
+                                                        <td>COOKY 패브릭 소파 1인</td>
+                                                        <td>299,000원</td>
+                                                        <td>269,100원</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </th>    
+                                    </tr> 
+                                </tbody>    
+                            </table>
+                            <div class="bottom-btn">
+                                <button id="btn-prd-search"> 선택삭제 </button>
+                                <button id="btn-prd-search"> 상품추가 </button>
+                            </div>
+                        </div>    
+                    </div>
+                    
+            </section>
+        </nav>
+</body>
+</html>
