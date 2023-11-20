@@ -59,12 +59,12 @@ function toggleImageState(clickedImage) {
         case 'img-allow_down':
             clickedImage.attr('src', '/image/allow_up.png');
             clickedImage.attr('name', 'img-allow_up');
-            hiderow.next('.category1').show();
+            hiderow.nextAll('.category1').show();
             break;
         case 'img-allow_up':
             clickedImage.attr('src', '/image/allow_down.png');
             clickedImage.attr('name', 'img-allow_down');
-            hiderow.next('.category1').hide();
+            hiderow.nextAll('.category1').hide();
             break;        
         case 'img-close':
             clickedImage.attr('src', '/image/open.png');

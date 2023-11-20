@@ -258,12 +258,23 @@
                                     <ul class="arr-align">
                                         <li class="img-file">
                                             <label for="file">대표이미지 지정</label> 
-                                            <input type="file" id="thumbnail" accept="image/*">
+                                            <input type="file" id="thumbnail" accept="image/*" onchange="setThumbnail(event);">
                                         </li>
                                         <li class="img-file">
                                             <label for="file">제품 상세이미지</label> 
                                             <input type="file" id="pro_img">
                                         </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <ul class="arr-align">
+                                        <li>
+                                            <div id="preview">미리보기</div>
+                                        </li>
+                                        <li></li>
                                     </ul>
                                 </td>
                             </tr>

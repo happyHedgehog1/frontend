@@ -73,3 +73,4 @@ $("#file").on("change", function(e){
         reader.readAsBinaryString(f);
     }
 });
+
