@@ -1,0 +1,54 @@
+#contents {
+    width: 80%;
+}
+
+
+
+#title-wrap {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+label[for=title] {
+    margin-left: 20px;
+}
+
+input#title {
+    margin-right: 20px;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 40em;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+}
+
+table#write-area-additional-table {
+    margin-left: 20px;
+}
+
+td {
+    padding: 5px;
+}
+
+tr>td:nth-child(2) {
+    padding-left: 50px;
+}
+#footer-button{
+    display:flex;
+    justify-content: space-between;
+}
+#footer-button>input:first-child{
+    margin-left:20px;
+}
+#footer-button>input:last-child{
+    margin-right:20px;
+}
