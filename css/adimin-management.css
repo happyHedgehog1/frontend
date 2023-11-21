@@ -106,7 +106,7 @@ h2 {
 }
 
 
-.page-body{
+.pageBody{
     position: relative;
     padding-left: 70px;
     padding-top: 50px;
@@ -124,15 +124,15 @@ h2 {
 
 }
 
-.top-title{
+.topTitle{
     font-size: 25px;
 }
 
-.main-hd{
+.mainHd{
     position: relative;
 }
 
-.sect-top{
+.sectTop{
     position: relative;
     padding: 20px 20px 00px 20px;
     border: 3px solid #bdc5cd;
@@ -156,7 +156,7 @@ h2 {
     width: 140px !important;
 }
 
-#btn-admi-add{
+#btnAdminAdd{
     width: 160px;
     height: 50px;
     color: white;
@@ -167,7 +167,7 @@ h2 {
 }
 
 
-button#btn-admi-add:active {
+button#btnAdminAdd:active {
     background-color: #3F464F;
     border: 0;
     font-size: 20px;
@@ -205,7 +205,7 @@ td{
     border-right: #bdc5cd 1px solid;
 }
 
-#btn-chang-pass{
+#btnChangePass{
     width: 120px;
     height: 40px;
     color: white;
@@ -215,7 +215,7 @@ td{
 }
 
 
-button#btn-chang-pass:active {
+button#btnChangePass:active {
     background-color: #3F464F;
     border: 0;
     font-size: 20px;
@@ -224,7 +224,7 @@ button#btn-chang-pass:active {
     color: white;
   }
 
-  #btn-delete-admin{
+  #btnDeleteAdmin{
     width: 120px;
     height: 40px;
     color: white;
@@ -234,7 +234,7 @@ button#btn-chang-pass:active {
 }
 
 
-button#btn-delete-admin:active {
+button#btnDeleteAdmin:active {
     background-color: #3F464F;
     border: 0;
     font-size: 20px;
@@ -256,7 +256,7 @@ button#btn-delete-admin:active {
     align-items: center;
 }
 
-.modal-content {
+.modalContent {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -266,7 +266,7 @@ button#btn-delete-admin:active {
 
 }
 
-#close-admin-Modal {
+#closeAdminModal {
     cursor: pointer;
     position: absolute;
     top: 0px;
@@ -274,7 +274,7 @@ button#btn-delete-admin:active {
     font-size: 50px;
     
 }
-.modal-input{
+.modalInput{
     text-align: center;
     
 }
@@ -284,21 +284,21 @@ button#btn-delete-admin:active {
     font-size: 20px;
     height: 100px;
 }
-.modal-input>div{
+.modalInput>div{
     padding-top: 60px;
     height: 40px;
     vertical-align: middle;
     
     
 }
-.modal-input input{
+.modalInput input{
     height: 40px;
     width: 200px;
     padding-left: 10px;
     text-align: center;
 }
 
-#btn-modal-admin-add{
+#btnModalAdminAdd{
     width: 200px;
     height: 40px;
     color: white;
@@ -308,7 +308,7 @@ button#btn-delete-admin:active {
 }
 
 
-button#btn-modal-admin-add:active {
+button#btnModalAdminAdd:active {
     background-color: #3F464F;
     border: 0;
     font-size: 20px;
@@ -317,7 +317,7 @@ button#btn-modal-admin-add:active {
     color: white;
   }
 
-  .pass-change-modal {
+  .passChangeModal {
     display: none;
     position: fixed;
     top: 0;
@@ -329,7 +329,7 @@ button#btn-modal-admin-add:active {
     align-items: center;
 }
 
-#close-pass-Modal {
+#closePassModal {
     cursor: pointer;
     position: absolute;
     top: 0px;
