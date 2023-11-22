@@ -111,31 +111,133 @@ nav {
 
 }
 
+ #contents {
+  width: 80%;
+   
+} 
 
-.gnb_list {
-  display: flex;
-  justify-content: space-around;
-  width: 1200px;
-
-}
-
-section {
-  display: grid;
+.main_section{
   justify-content: center;
-  padding-top: 110px;
-  height: 100;
-
+  align-items: center;
 }
 
-#contents {
-  width: 1400px;
-  padding-top: 30px;
-  border: 1px solid lightgray;
-  display: flex;
-  justify-content: center;
-}
 
 
 .hamburger_menu {
   display: none;
+}
+
+
+
+.home_logo {
+  position: relative;
+  
+
+}
+.cart_text{
+  font-size: 15px;
+}
+
+.main_board{
+  font-size: 30px;
+}
+
+
+.board {
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.start_board{
+  justify-content: center;
+  align-items: center;
+  padding-left: 200px;
+}
+
+.board_title {
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+.board_title3{
+  margin-left: 100px ;
+}
+
+.board_write{
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+.board_write3{
+   margin-left: 85px ;
+}
+
+.board_date{
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+ .board_date3{
+  margin-left: 100px ;
+ }
+
+ .board_click {
+  display: flex;
+  height: 30px;
+  align-items: center;
+ }
+
+ .board_click3{
+  margin-left: 85px ;
+ }
+
+ .event_img{
+  justify-content: center;
+  text-align: center;
+  background-color: aliceblue;
+ }
+
+ .writing{
+  background-color: aliceblue;
+  height: 1500px;
+ }
+
+ .reading{
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  padding-left: 80px;
+ }
+
+ .password_input{
+  display: flex;
+ }
+
+ #password_input2{
+  margin-left: 40px ;
+
+ }
+
+ .board_btn{
+  text-align: right;
+ }
+
+ #delete_btn{
+  border: 2px solid #c59e9e;
+  border-radius: 20px;
+  height: 30px;
+  width: 100px;
+  margin-left: 20px ;
+ }
+
+ #back_btn{
+  border: 2px solid #c59e9e;
+  border-radius: 20px;
+  height: 30px;
+  width: 100px;
+ }
+
+#password {
+  width: 200px;
 }

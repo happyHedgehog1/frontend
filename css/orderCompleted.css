@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  font-family: 'Gugi', sans-serif;
+  font-size: 20px;
+}
+
+
+
+
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+
+}
+
+
+.login_list {
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_list li {
+  padding: 10px 5px;
+  margin: 0 5px;
+}
+
+.login_list li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.login_list li a img {
+  width: 18px;
+  transform: translate(0, -5px);
+
+}
+
+.login_list li:nth-child(1) {
+  transform: translate(0px, 2px);
+}
+
+.login_list li:nth-child(1) img {
+  transform: translate(-3px, -6px);
+  width: 20px;
+}
+
+
+.logo img {
+  width: 50px;
+  transform: translateY(8px);
+}
+
+.hamburger_button {
+  width: 34px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger_button span {
+  border-bottom: 3px solid black;
+  width: 100%;
+  border-radius: 20px;
+
+}
+
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 10px;
+
+}
+
+
+.gnb_list {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+
+}
+
+
+section {
+  display: grid;
+  justify-content: center;
+  padding-top: 20px;
+  height: 100;
+
+}
+
+#contents {
+  width: 1400px;
+  padding-top: 10px;
+ 
+  display: flex;
+}
+/* justify-content: left; */
+
+
+.hamburger_menu {
+  display: none;
+}
+
+
+.home_logo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 80px;
+  margin-top: 10px;
+  padding-left: 70px;
+  height: 40px;
+ 
+} 
+.cart_text {
+  
+  margin-top: 15px;
+  
+}
+
+
+
+
+
+
+ .order_complete{
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border: 1px  #ad7474;
+  border-radius: 20px;
+  background-color: #ad7474;
+  height: 80px;
+  width: 300px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+ }
+.order_txtbox{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.complete_comment{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.complete_comment2 {
+  display: flex;
+  border: 1px solid #ad7474;
+  border-radius: 5px;
+  width: 80%;
+  height: 100px;
+  background-color: #d8d0d2;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* <div class="oreder_number">
+<div class="order_number2">고객님이 주문하신 제품의 주문번호 :  </div>
+<div class="oreder_number3">324234234</div>
+<div class="order_number4">입나다.</div>
+</div> */
+
+.oreder_number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.order_number5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hr{
+  width: 80%;
+  margin: 0 auto; 
+}
+
+
+
+.order_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.sum_box{
+  display: grid;
+  border: 1px solid #e1dbdb;
+  background-color: #d8d0d2;
+  border-radius: 30px; 
+  grid-template-columns: auto auto auto ;
+  box-sizing: border-box;
+  width: 80%;
+  height: 100px;
+  color: #000000;
+  
+  }
+
+  .sum_text{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  }
+  .sum_text2{
+  display: grid;
+  align-items: center;
+  }
+  .sum_text3{
+  display: grid;
+  align-items: center;
+  
+  }
+  .sum_text_contain{
+  
+  display: grid;
+  justify-content: flex-end;
+  }
+
+  .main_btn {
+    display: grid;
+    justify-content: center;
+      
+  }
+
+  .main_btn2 {
+    display: inline-block;
+    border: 2px solid #ad7474;
+    border-radius: 30px; 
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+  }
