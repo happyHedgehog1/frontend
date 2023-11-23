@@ -117,8 +117,10 @@ nav {
 } 
 
 .main_section{
+  display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 
@@ -150,9 +152,8 @@ nav {
 }
 
 .start_board{
+  display: flex;
   justify-content: center;
-  align-items: center;
-  padding-left: 200px;
 }
 
 .board_title {
@@ -198,9 +199,21 @@ nav {
   background-color: aliceblue;
  }
 
+ /* dddddddddddddddddddd */
  .writing{
   background-color: aliceblue;
-  height: 1500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .reading{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 300px;
+  width: 730px;
  }
 
  .password_input{
@@ -214,22 +227,33 @@ nav {
 
  .board_btn{
   text-align: right;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 80px;
  }
 
- #delete_btn{
+ .delete_btn{
   border: 2px solid #c59e9e;
   border-radius: 20px;
   height: 30px;
   width: 100px;
   margin-left: 20px ;
+  
  }
 
- #back_btn{
+ .back_btn{
   border: 2px solid #c59e9e;
   border-radius: 20px;
   height: 30px;
   width: 100px;
  }
+
+ .back_btn:hover {
+  background-color: rgb(186, 183, 178);
+ }
+.delete_btn:hover {
+  background-color: rgb(186, 183, 178);
+}
 
 #password {
   width: 200px;
