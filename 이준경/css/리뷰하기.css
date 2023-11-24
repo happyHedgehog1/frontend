@@ -26,7 +26,6 @@ section {
     padding-bottom: 0.3em;
 }
 
-
 #input_title {
     width: calc(100% - 5px);
     border: 1px solid gray;
@@ -47,6 +46,7 @@ section {
 
 #review_body_title {
     display: flex;
+    min-width:6em;
 }
 
 #review_body_title:first-child {
@@ -117,4 +117,8 @@ section {
 }
 #contents_table{
     padding-top:7em;
+}
+#photo,
+#review_body_title{
+    padding-left:3.2px
 }

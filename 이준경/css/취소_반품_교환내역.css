@@ -40,7 +40,7 @@ section {
 #search {
     display: flex;
     gap: 30px;
-    justify-items: space-between;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid #848484;
     padding: 8px 15px 8px 15px;
@@ -182,4 +182,25 @@ tbody td:nth-child(2){
     display:flex;
     padding-top:0.3em;
     padding-bottom:0.3em;
+}
+#product_table th:nth-child(1) {
+    min-width: 6em;
+}
+#product_table th:nth-child(2) {
+    min-width: 4em;
+}
+#product_table th:nth-child(3) {
+    min-width: 14em;
+}
+#product_table th:nth-child(4){
+    min-width:7em;
+}
+#product_table th:nth-child(5){
+    min-width:4em;
+}
+#product_table th:nth-child(6){
+    min-width:6em;
+}
+#product_table th:nth-child(7){
+    min-width:6em;
 }

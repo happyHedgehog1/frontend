@@ -11,8 +11,8 @@
   <script src="js/header.js" defer></script>
 
 
-  <script src="js/회원정보변경.js" defer></script>
-  <link rel="stylesheet" href="css/회원정보변경.css">
+  <script src="js/회원가입.js" defer></script>
+  <link rel="stylesheet" href="css/회원가입.css">
   <link rel="stylesheet" href="css/route.css">
 </head>
 
@@ -98,14 +98,21 @@
       <ul class="route_list">
         <li><img src="image/icon/home.png" alt=""></li>
         <li>&gt;</li>
-        <li>MY페이지</li>
-        <li>&gt;</li>
-        <li>회원정보변경</li>
+        <li>회원가입</li>
       </ul>
       <div id="contents">
         <form action="">
+          <h1 id="regist_header">회원가입</h1>
+          <div colspan="2" id="agree_list">
+            <div>쇼핑몰 이용약관 동의</div>
+            <div>보기</div>
+            <div><img src="./check_false.png" alt="체크표시"></div>
+            <hr>
+            <div>개인정보 수집/이용에 관한 사항</div>
+            <div>보기</div>
+            <div><img src="./check_false.png" alt="체크표시"></div>
+          </div>
           <table id="contents_table">
-            <caption>회원정보변경</caption>
             <tr>
               <th>성명</th>
               <td colspan="2"><input type="text"></td>
@@ -171,11 +178,7 @@
             </tr>
           </table>
           <div id="bottom_buttons">
-            <button id="remove_button">회원탈퇴</button>
-            <div>
-              <button id="goback_button">취소</button>
-              <button id="modify_button">회원정보수정</button>
-            </div>
+            <button id="regist_button">회원가입</button>
           </div>
         </form>
       </div>

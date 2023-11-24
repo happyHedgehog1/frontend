@@ -11,8 +11,16 @@
   <script src="js/header.js" defer></script>
 
 
-  <script src="js/회원정보변경.js" defer></script>
-  <link rel="stylesheet" href="css/회원정보변경.css">
+  <!-- Summernote -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+  <!-- Summernote -->
+
+  <script src="js/회원탈퇴사유.js" defer></script>
+  <link rel="stylesheet" href="css/회원탈퇴사유.css">
   <link rel="stylesheet" href="css/route.css">
 </head>
 
@@ -98,90 +106,54 @@
       <ul class="route_list">
         <li><img src="image/icon/home.png" alt=""></li>
         <li>&gt;</li>
-        <li>MY페이지</li>
+        <li>회원탈퇴</li>
         <li>&gt;</li>
-        <li>회원정보변경</li>
+        <li>탈퇴신청하기</li>
       </ul>
       <div id="contents">
         <form action="">
-          <table id="contents_table">
-            <caption>회원정보변경</caption>
-            <tr>
-              <th>성명</th>
-              <td colspan="2"><input type="text"></td>
-            </tr>
-            <tr>
-              <th>생일</th>
-              <td colspan="2"><input type="date"></td>
-            </tr>
-            <tr>
-              <th>성별</th>
-              <td colspan="2"><input type="radio"><label for="">남</label>
-                <input type="radio"><label for="">여</label>
-              </td>
-            </tr>
-            <tr>
-              <th>아이디</th>
-              <td><input type="text"></td>
-              <td>공백없는 5~12자리의 영문/숫자 조합</td>
-            </tr>
-            <tr>
-              <th>비밀번호</th>
-              <td><input type="text"></td>
-              <td>공백없는 5~12자리의 영문/숫자<br>
-                <span id="warning">특수문자 사용가능, 단 \, ', " 제외</span>
-              </td>
-            </tr>
-            <tr>
-              <th>비밀번호확인</th>
-              <td colspan="2"><input type="text"></td>
-            </tr>
-            <tr id="email_row">
-              <th>이메일</th>
-              <td colspan="2">
-                <div><input type="text"><button id="email_button">인증하기</button></div>
-                <div id="email_authentication">
-                  <div>인증번호</div><input type="text">&nbsp;<span id="reload_timer">05:00</span>&nbsp;<img
-                    src="./tabler_reload.png" alt="시간연장" id="reload">
-                </div>
-                <div>
-                  email 서비스를 받으시겠습니까?&nbsp;
-                  <input type="radio" name="email_service"><label for="email_service">&nbsp;예</label>
-                  <input type="radio" name="email_service"><label for="email_service">&nbsp아니오</label>
-                </div>
-                <div>
-                  주문 및 배송 관련 정보는 수신 동의와 상관없이 자동 발송됩니다.
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th>전화번호</th>
-              <td colspan="2"><input type="text"></td>
-            </tr>
-            <tr>
-              <th>휴대전화</th>
-              <td colspan="2"><input type="text"></td>
-            </tr>
-            <tr id="address_row">
-              <th>주소</th>
-              <td colspan="2"><input type="text" id="address_col_1"><button id="address_button">우편번호</button><br>
-                <input type="text" id="address_col_2"><br>
-                <input type="text" id="address_col_3">
-              </td>
-            </tr>
-          </table>
+          <ul id="remove_info">
+            <li>탈퇴 신청한 시점부터 1주일 뒤 아이디를 제외한 모든 개인 정보는 삭제됩니다.</li>
+            <li>그 이전에 접속하시면 탈퇴를 취소할 수 있습니다.</li>
+            <li>탈퇴 신청은 현재 비밀번호가 필요합니다.</li>
+          </ul>
+
+          <h1 id="question">무엇이 불편하셨나요?</h1>
+          <!-- Summernote -->
+          <div id="summernote"></div>
+          <script>
+            $('#summernote').summernote({
+              placeholder: 'Hello stand alone ui',
+              tabsize: 2,
+              height: 300,
+              width: 650,
+              toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+              ],
+            });
+          </script>
+          <!-- Summernote -->
+          
+          <div id="password_wrap">
+            <label>비밀번호</label>
+            <input type="password" placeholder="현재 비밀번호를 입력해주세요." id="password_input">
+          </div>
+
           <div id="bottom_buttons">
-            <button id="remove_button">회원탈퇴</button>
-            <div>
-              <button id="goback_button">취소</button>
-              <button id="modify_button">회원정보수정</button>
-            </div>
+            <button>뒤로가기</button>
+            <button>탈퇴신청하기</button>
           </div>
         </form>
       </div>
     </div>
-
-  </section><!-- 여기까지 -->
+  </section>
+  <!-- 여기까지 -->
   <footer>
     <div id="footer_wrap">
       <ul class="footer_text1">

@@ -108,3 +108,6 @@ input[type=radio] {
 #contents_table {
     padding-top: 7em;
 }
+#write_body_title{
+    min-width: 5em;
+}
