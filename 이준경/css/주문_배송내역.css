@@ -174,3 +174,12 @@ tr>td:nth-child(3) {
 #product_table>thead tr {
     background-color: rgba(237, 218, 196, 0.3);
 }
+
+tbody img{
+    width:4em;
+}
+tbody td:nth-child(2){
+    display:flex;
+    padding-top:0.3em;
+    padding-bottom:0.3em;
+}
