@@ -41,6 +41,11 @@ header {
 
 }
 
+.logout a{
+  color: black;
+}
+
+
 
 .login_list {
   display: flex;

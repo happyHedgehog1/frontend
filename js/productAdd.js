@@ -75,7 +75,7 @@ $("#file").on("change", function(e){
 });
 
 $('#summernote').summernote({
-    placeholder: 'Hello stand alone ui',
+    placeholder: '내용을 입력해주세요',
     tabsize: 2,
     height: 120,
     toolbar: [

@@ -11,8 +11,12 @@
         <header>
             <div class="logobackground">
                 <h1 class="logoimg"><img src="/image/logo_prod.png" alt="logo"></h1>
-                <a href="/admin/main/admin-main.html"><h2>관리자 페이지</h2></a>
-            </div>  
+                <h2><a href="/admin/main/admin-main.html">관리자 페이지</a></h2>
+                <div class="logout"><a href="#">
+                    <h1 style="padding-right: 10px;"><img src="/image/logout.png" alt="logout"></h1>
+                    <h4>로그아웃</h4></a>
+                </div>
+            </div>
         </header>
     
         <div class="contents">
@@ -25,7 +29,8 @@
                         <li><a href="/admin/product/categoryAdd.html">상품분류등록</a></li>
                     </ul>
                 </li>
-                <li class="prodList"><a href="#">회원관리</a></li>
+                <li class="prodList"><a href="/admin/member/member.html">회원관리</a></li>
+                <li class="prodList"><a href="/admin/point/pointA.html">적립금관리</a></li>
                 <li class="prodList"><a href="/admin/order/order.html">주문관리</a></li>
                 <li class="prodList service" > <a href="#게시판관리">지원서비스</a>
                     <ul class="sub_ProdList">
@@ -35,11 +40,17 @@
                 </li>
                 <li class="prodList"><a href="/admin/adimin-management/adimin-management.html">관리자관리</a></li>
                 <li class="prodList"><a href="/admin/Statistics/Statistics.html">통계</a></li>
-                <li class="prodList"><a href="/admin/event/event.html">이벤트관리</a></li>
+                <li class="prodList"><a href="#이벤트목록">이벤트관리</a>
+                    <ul class="sub_ProdList">
+                        <li><a href="/admin/event/eventList.html">이벤트목록</a></li>
+                        <li><a href="/admin/event/eventProdAdd.html">이벤트등록</a></li>
+                    </ul>
+                </li>
             </ul>
             <section>
 
             <div class="page-body">
+                <div class="totalWrapper">
                 <div id="topWrapper">
                     <div class="todayhd">
                     <b>오늘현황</b>
@@ -90,7 +101,7 @@
                 <div class="bottom">
                     <table class="=bottomTable">
                         <tr>
-                            <td colspan="4"><a href="#">상품 문의</a></td>
+                            <td colspan="4" style="border-right: #d8d8d8 1px solid;"><a href="#">상품 문의</a></td>
                             <td colspan="4"><a href="#">상품 후기</a></td>
                         </tr>
                         <tr>
@@ -144,6 +155,7 @@
                             <td class="tableDate"></td>
                         </tr>   
                     </table>
+            </div>
             </div>
             </div>
         </section>

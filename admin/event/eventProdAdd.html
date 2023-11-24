@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이벤트 관리</title>
-    <link rel="stylesheet" href="/css/event.css">
+    <title>이벤트 상품 등록</title>
+    <link rel="stylesheet" href="/css/eventProdAdd.css">
 </head>
 <body>
     <div id="wrap">
         <header>
             <div class="logobackground">
                 <h1 class="logoimg"><img src="/image/logo_prod.png" alt="logo"></h1>
-                <a href="/admin/main/admin-main.html"><h2>관리자 페이지</h2></a>
+                <h2><a href="/admin/main/admin-main.html">관리자 페이지</a></h2>
+                <div class="logout"><a href="#">
+                    <h1 style="padding-right: 10px;"><img src="/image/logout.png" alt="logout"></h1>
+                    <h4>로그아웃</h4></a>
+                </div>
             </div>
         </header>
     
@@ -25,7 +29,8 @@
                         <li><a href="/admin/product/categoryAdd.html">상품분류등록</a></li>
                     </ul>
                 </li>
-                <li class="prodList"><a href="#">회원관리</a></li>
+                <li class="prodList"><a href="/admin/member/member.html">회원관리</a></li>
+                <li class="prodList"><a href="/admin/point/pointA.html">적립금관리</a></li>
                 <li class="prodList"><a href="/admin/order/order.html">주문관리</a></li>
                 <li class="prodList service" > <a href="#게시판관리">지원서비스</a>
                     <ul class="sub_ProdList">
@@ -35,13 +40,18 @@
                 </li>
                 <li class="prodList"><a href="/admin/adimin-management/adimin-management.html">관리자관리</a></li>
                 <li class="prodList"><a href="/admin/Statistics/Statistics.html">통계</a></li>
-                <li class="prodList"><a href="/admin/event/event.html">이벤트관리</a></li>
+                <li class="prodList"><a href="#이벤트목록">이벤트관리</a>
+                    <ul class="sub_ProdList">
+                        <li><a href="/admin/event/eventList.html">이벤트목록</a></li>
+                        <li><a href="/admin/event/eventProdAdd.html">이벤트등록</a></li>
+                    </ul>
+                </li>
             </ul>
             <section>
                 <div class="pageBody">
                     <div class="mainHd">
                         <div class="topTitle">
-                        <h4>상품 조회</h4>
+                        <h4>이벤트 상품 등록</h4>
                         <br>
                         </div>
                         <div class="box"></div>
@@ -82,7 +92,7 @@
                                                     <input type="datetimeLocal" name="eventStart" id="eventStart">
                                                 </li>
                                                 <li class="w25">
-                                                    &nbsp;~
+                                                    ~
                                                 </li>
                                                 <li>
                                                     <input type="datetimeLocal" name="eventEnd" id="eventEnd">
@@ -139,6 +149,7 @@
                                     </tr> 
                                     <tr>        
                                         <th colspan="2">
+                                            <div class="eventProdList">
                                             <table class="result">
                                                 <colgroup>
                                                     <col style="width: 10%;">
@@ -162,18 +173,53 @@
                                                         <td>299,000원</td>
                                                         <td>269,100원</td>
                                                     </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox" name="" id=""></td>
+                                                        <td>c-2023-01</td>
+                                                        <td>COOKY 패브릭 소파 1인</td>
+                                                        <td>299,000원</td>
+                                                        <td>269,100원</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox" name="" id=""></td>
+                                                        <td>c-2023-01</td>
+                                                        <td>COOKY 패브릭 소파 1인</td>
+                                                        <td>299,000원</td>
+                                                        <td>269,100원</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox" name="" id=""></td>
+                                                        <td>c-2023-01</td>
+                                                        <td>COOKY 패브릭 소파 1인</td>
+                                                        <td>299,000원</td>
+                                                        <td>269,100원</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox" name="" id=""></td>
+                                                        <td>c-2023-01</td>
+                                                        <td>COOKY 패브릭 소파 1인</td>
+                                                        <td>299,000원</td>
+                                                        <td>269,100원</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox" name="" id=""></td>
+                                                        <td>c-2023-01</td>
+                                                        <td>COOKY 패브릭 소파 1인</td>
+                                                        <td>299,000원</td>
+                                                        <td>269,100원</td>
+                                                    </tr>
                                                 </tbody>
                                             </table>
-                                            <div class="bottombtn">
-                                            <div><button id="btnEventDelete"> 선택삭제 </button></div>
-                                            <div><button id="btnEventAdd"> 상품추가 </button></div>
                                             </div>
                                         </th>    
                                     </tr> 
                                 </tbody>    
                             </table>
+                            <div class="bottombtn">
+                                <div><button id="btnEventDelete"> 선택삭제 </button></div>
+                                <div><button id="btnEventAdd"> 상품추가 </button></div>
+                                </div>
                         </div>  
-                        <div>&nbsp;</div>  
                     </div>
                 </div>    
                     <div class="modal" id="myModal">
@@ -254,8 +300,9 @@
                                     <button id="btnPrdSearch"> 검색 </button>
                                 </div>
                                 <div>
-                                    <b>상품 검색 결과</b> (총 : 3 / 판매중 : 2 / 품절 : 1 )
+                                    <b>상품 검색 결과</b> (총 : <span class="colorRed">3</span> / 판매중 : <span class="colorRed">2</span> / 품절 : <span class="colorRed">1</span> )
                                 </div>
+                                <div class="modalResultTable">
                                     <table class="modalTable2">
                                         <colgroup>
                                             <col class="w140">
@@ -309,8 +356,20 @@
                                                 <td>299,000원</td>
                                                 <td>2023-10-10</td>
                                             </tr> 
+                                            <tr>
+                                                <td class="proSearchBottomCheck">
+                                                        <input type="checkbox" name="resultCheckbox" id="resultCheckbox"></td>
+                                                <td>c-2023-01</td>
+                                                <td>COOKY 패브릭 소파 1인</td>
+                                                <td>299,000원</td>
+                                                <td>2023-10-10</td>
+                                            </tr> 
                                         </tbody>
                                     </table>
+                                </div>
+                                <div>
+                                    <button id="btnModalProdAdd">선택한 상품 추가</button>
+                                </div>
                             </div>
                         </div>
                     </div>

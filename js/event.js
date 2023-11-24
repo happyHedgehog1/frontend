@@ -7,3 +7,4 @@ document.getElementById("btnEventAdd").addEventListener("click", function() {
 document.getElementById("closeModal").addEventListener("click", function() {
     document.getElementById("myModal").style.display = "none";
 });
+

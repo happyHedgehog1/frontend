@@ -11,8 +11,11 @@
         <header>
             <div class="logobackground">
                 <h1 class="logoimg"><img src="/image/logo_prod.png" alt="logo"></h1>
-                <a href="/admin/main/admin-main.html"><h2>관리자 페이지</h2></a>
-            </div>
+                <h2><a href="/admin/main/admin-main.html">관리자 페이지</a></h2>
+                <div class="logout"><a href="#">
+                    <h1 style="padding-right: 10px;"><img src="/image/logout.png" alt="logout"></h1>
+                    <h4>로그아웃</h4></a></div>
+                </div>
         </header>
     
         <div class="contents">
@@ -25,7 +28,8 @@
                         <li><a href="/admin/product/categoryAdd.html">상품분류등록</a></li>
                     </ul>
                 </li>
-                <li class="prodList"><a href="#">회원관리</a></li>
+                <li class="prodList"><a href="/admin/member/member.html">회원관리</a></li>
+                <li class="prodList"><a href="/admin/point/pointA.html">적립금관리</a></li>
                 <li class="prodList"><a href="/admin/order/order.html">주문관리</a></li>
                 <li class="prodList service" > <a href="#게시판관리">지원서비스</a>
                     <ul class="sub_ProdList">
@@ -35,7 +39,12 @@
                 </li>
                 <li class="prodList"><a href="/admin/adimin-management/adimin-management.html">관리자관리</a></li>
                 <li class="prodList"><a href="/admin/Statistics/Statistics.html">통계</a></li>
-                <li class="prodList"><a href="/admin/event/event.html">이벤트관리</a></li>
+                <li class="prodList"><a href="#이벤트목록">이벤트관리</a>
+                    <ul class="sub_ProdList">
+                        <li><a href="/admin/event/eventList.html">이벤트목록</a></li>
+                        <li><a href="/admin/event/eventProdAdd.html">이벤트등록</a></li>
+                    </ul>
+                </li>
             </ul>
             <section>
                 <div class="page-body">
@@ -141,28 +150,26 @@
                     </div>
                     <div><br><br></div>
                     <div class="sect-bottom">
+                        <div class="bottomResult">
+                            <div class="bottomResultTitle"><h3>상품 검색 결과</h3></div>
+                            <div class="bottomResult1"><span>(총 : </span>
+                                <span class="colorRed"> 3 </span>
+                                <span> / 판매중 : </span>
+                                <span class="colorRed"> 2 </span>
+                                <span> / 품절 : </span>
+                                <span class="colorRed"> 1 </span>
+                                <span> ) </span></div>
+                        </div>
+                        <div class="tbl_wrapper">
                         <table class="tbl_bottom">
                             <colgroup>
-                                <col class="w50">
-                                <col class="w200">
-                                <col class="">
-                                <col class="">
-                                <col class="w400">
                                 <col class="w140">
+                                <col>
+                                <col>
+                                <col>
+                                <col class="w400">
                             </colgroup>
                             <tbody>
-                                <tr>
-                                    <th colspan="2" style="text-align: left; padding-left: 40px;"><h3>상품 검색 결과</h3></th>
-                                        <td colspan="4">
-                                            <span>(총 : </span>
-                                            <span class="colorRed"> 3 </span>
-                                            <span> / 판매중 : </span>
-                                            <span class="colorRed"> 2 </span>
-                                            <span> / 품절 : </span>
-                                            <span class="colorRed"> 1 </span>
-                                            <span> ) </span>
-                                        </td>
-                                </tr>
                                         <tr class="pro_search_result">        
                                             <th><li><input type="checkbox" name="result_checkbox" id="result_checkbox"></li></th>    
                                             <th>주문일시</th>
@@ -329,8 +336,41 @@
                                         <li>800,000원</li>
                                     </td>
                                 </tr>   
+                                <tr class="pro_search_bottom_tr">
+                                    <td class="pro_search_bottom_check">
+                                        <li>
+                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                        </li>
+                                    </td>
+                                    <td>
+                                        <li>2023-11-22 09:18 </li>
+                                    </td>
+                                    <td>
+                                        <li>C1234567</li>
+                                    </td>
+                                    <td>
+                                        <li>c-2023-01</li>
+                                    </td>
+                                    <td>
+                                        <li>COOKY 패브릭 소파 1인</li>
+                                    </td>
+                                    <td>
+                                        <li>3</li>
+                                    </td>
+                                    <td>
+                                        <li>홍길동</li>
+                                    </td>
+                                    <td>
+                                        <li>배송중</li>
+                                    </td>
+                                    <td>
+                                        <li>800,000원</li>
+                                    </td>
+                                </tr>   
                             </tbody>
                         </table>
+                        </div>
+
                         <div class="bottom">
                             <select name="prd_keyword" id="prd_keyword" >
                                 <option value="0" selected>일괄 처리</option>

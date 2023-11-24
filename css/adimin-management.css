@@ -20,6 +20,7 @@ a:link, a:visited {
     width: 100%;
     height: 100%;
     overflow-y: auto;
+
 }
 
 
@@ -32,6 +33,21 @@ header {
     display: flex;
     padding: 20px;
     text-align: center;
+    align-items: center;
+}
+
+.logoimg img{
+    width: 130px;
+    margin-left: 40px;
+}
+
+.logout{
+margin-left: auto;
+
+}
+
+.logout a{
+    color: black;
 }
 
 .logoimg img{
@@ -113,8 +129,8 @@ h2 {
     padding-right: 70px;
     padding-bottom: 50px;
     background-color: #F5F5F5;
-    height: 100vh;
-
+    overflow-y: auto;
+    height: 877px;
 }
 
 .tbl_top{
@@ -137,7 +153,7 @@ h2 {
     padding: 20px 20px 00px 20px;
     border: 3px solid #bdc5cd;
     background-color: white;
-    height: 90%;
+    height: 700px;
 }
 .w250 {
     width: 200px !important;
@@ -329,6 +345,7 @@ button#btnModalAdminAdd:active {
     align-items: center;
 }
 
+
 #closePassModal {
     cursor: pointer;
     position: absolute;
@@ -336,4 +353,30 @@ button#btnModalAdminAdd:active {
     right: 20px;
     font-size: 50px;
     
+}
+
+.passChangeModal .modalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 600px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.passChangModalTitle{
+    margin: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#adminUpdatePass{
+    margin-top: 50px;
+}
+
+#btnModalAdminAdd{
+    margin-top: 40px;
 }

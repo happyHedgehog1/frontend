@@ -252,6 +252,11 @@ input{
     font-weight: bold;
 }
 
+.colorBlue{
+    color: #26A9F3;
+    font-weight: bold;
+}
+
 
 
 .sect-bottom{
@@ -299,6 +304,7 @@ input{
 }
 
 .bottomResult{
+    display: flex;
     width: 100%;
 }
 .bottomResult1, .bottomResultTitle{
@@ -310,8 +316,39 @@ float: none;
 display: inline-block; 
 }
 
+.script{
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: 13px;
+}
+
 .tbl_wrapper{
     height: 360px;
     overflow-y: auto;
 }
 
+#btnSelectDel{
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: white;
+    background-color: #A7727D;
+    border: 0;
+    font-size: 15px;
+}
+
+
+
+button#btnSelectDel:active {
+    background-color: #3F464F;
+    border: 0;
+    font-size: 15px;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: white;
+  }

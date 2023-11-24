@@ -30,6 +30,7 @@ header {
     display: flex;
     padding: 20px;
     text-align: center;
+    align-items: center;
 }
 
 .logoimg img{
@@ -37,6 +38,14 @@ header {
     margin-left: 40px;
 }
 
+.logout{
+margin-left: auto;
+
+}
+
+.logout a{
+    color: black;
+}
 
 
 h2 {
@@ -104,6 +113,8 @@ h2 {
 }
 
 
+
+
 .page-body{
     position: relative;
     padding-left: 70px;
@@ -114,6 +125,8 @@ h2 {
     height: 100%;
 
 }
+
+
 
 
 

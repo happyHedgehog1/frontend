@@ -20,6 +20,7 @@ a:link, a:visited {
     width: 100%;
     height: 100%;
     overflow-y: auto;
+
 }
 
 
@@ -32,11 +33,21 @@ header {
     display: flex;
     padding: 20px;
     text-align: center;
+    align-items: center;
 }
 
 .logoimg img{
     width: 130px;
     margin-left: 40px;
+}
+
+.logout{
+margin-left: auto;
+
+}
+
+.logout a{
+    color: black;
 }
 
 
@@ -105,6 +116,12 @@ h2 {
     height: 100%;
 }
 
+.colorRed{
+    color: #CD4747;
+    font-weight: bold;
+}
+
+
 
 .pageBody{
     position: relative;
@@ -113,15 +130,22 @@ h2 {
     padding-right: 70px;
     padding-bottom: 50px;
     background-color: #F5F5F5;
-    height: 100%;
+    height: 877px;
 
 }
 
 .tblTop{
     table-layout: fixed;
-    width: 100%;
     border-collapse: collapse;
 
+}
+.tblTop th{
+    border-bottom: 1px solid #ebebeb;
+    
+}
+
+.tblTop td{
+    border-bottom: 1px solid #ebebeb;
 }
 
 .topTitle{
@@ -134,11 +158,11 @@ h2 {
 
 .sectTop{
     position: relative;
-
+    height: 650px;
 }
 .sectTopTop{
     position: relative;
-    padding: 20px 20px 00px 20px;
+    padding: 45px 70px 45px 70px;
     border: 1.5px solid #bdc5cd;
     background-color: white;
 }
@@ -180,15 +204,14 @@ tr{
 }
 
 tr{
-    height: 60px;
+    height: 50px;
 }
 
 
 
 .result{
     border: 1px solid #bdc5cd;
-    margin-left: 50px;
-    width: 70%;
+    width: 1350px;
     border-spacing: 0;
 }
 
@@ -221,7 +244,7 @@ button:active {
 button {
     width: 100px;
     height: 40px;
-    margin-top: 30px;
+    margin-top: 20px;
     color: white;
     background-color: #A7727D;
     border: 0;
@@ -234,23 +257,24 @@ button:active {
 
 .bottombtn{
     display: flex;
-    width: 73.3%;
+    width: 1340px;
     justify-content: space-between;
-    padding-left: 50px;
-    
 }
 
 #btnEventAdd{
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 .result th{
     background: #CFCFCF;
     border-right: 1px solid #bdc5cd;
+
 }
 
 .result td{
     border-right: 1px solid #bdc5cd;
+    border-bottom: 1px solid #bdc5cd;
+
 
 }
 
@@ -305,9 +329,11 @@ button:active {
     line-height: 36px;
     border-bottom: 1px solid #ebebeb;
     border-right: 1px solid #ebebeb;
-    height: 40px;
+    height: 60px;
     background-color: #CFCFCF;
-
+    position: sticky;
+    top: 0;
+    line-height: 60px;
     
 }
 
@@ -361,3 +387,48 @@ button:active {
     font-size: 25px;
     padding-bottom: 20px;
 }
+
+.eventProdList{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 362px;
+}
+
+.result th{
+    position: sticky;
+    top: 0;
+    line-height: 60px;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #CFCFCF;
+}
+
+.modalResultTable{
+    overflow-y: auto;
+    height: 300px;
+    margin: 0;
+}
+
+#btnModalProdAdd{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    color: white;
+    background-color: #A7727D;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    
+}
+
+
+button#btnModalProdAdd:active {
+    background-color: #3F464F;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    color: white;
+    border: 0;
+    font-size: 15px;
+  }
