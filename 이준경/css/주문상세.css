@@ -1,0 +1,59 @@
+section {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 이준경 */
+    justify-content: flex-start;
+    min-height: 80.2vh;
+}
+#contents{
+    align-self:center;
+    /* min-width는 선택 */
+    /* max-width는 선택 */
+}
+#contents {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#form_wrap {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#date_setting {
+    display: flex;
+    gap: 5px;
+}
+
+#quick_date_buttons {
+    display: flex;
+}
+
+#bottom_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#separated{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+/* 삭제 or 수정 예정 */
+table,
+td,
+th {
+    border: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+#payment-info td{
+    width:25%;
+}

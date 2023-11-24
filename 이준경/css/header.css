@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
 
+html{
+  scroll-behavior: smooth;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -190,10 +194,10 @@ header{
 
 
 nav{
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  grid-template-rows: 150px repeat(2, 1fr);
-
+  grid-template-rows: 150px repeat(2, 1fr); */
+  background-color: white;
 }
 
 nav > div{
@@ -202,6 +206,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+position: relative;
 }
 
 .gnb_list{
@@ -257,6 +262,9 @@ align-items: center;
   transform: translateY(-250px);
   transition-duration: 500ms;
   transition-timing-function: ease-out;
+  position: absolute;
+  top: 50px;
+
 }
 
 .gnb_sub_list{
@@ -334,6 +342,28 @@ align-items: center;
   
 }
 
+
+/* 스크롤 버튼 */
+
+
+.top{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+.top a{
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url('../image/btn.png');
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.top a:hover{
+  background-image: url('../image/btn2.png');
+  height: 70px;
+}
 
 
 

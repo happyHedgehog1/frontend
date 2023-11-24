@@ -1,0 +1,40 @@
+section {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 이준경 */
+    justify-content: flex-start;
+    min-height: 80.2vh;
+}
+#contents{
+    align-self:center;
+    /* min-width는 선택 */
+    /* max-width는 선택 */
+}
+table#contents_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    text-align: left;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+span{
+    color:red;
+}
+#bottom_buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;;
+}
+#bottom_buttons>div{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+}
