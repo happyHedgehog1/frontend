@@ -121,7 +121,7 @@ h2 {
 }
 
 
-.main-hd{
+.mainHd{
     font-weight: bold;
 }
 
@@ -148,7 +148,7 @@ h2 {
     width: 20px !important;
 }
 
-.page-body{
+.pageBody{
     padding: 70px;
     padding-top: 50px;
     padding-right: 70px;
@@ -156,25 +156,23 @@ h2 {
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column; /* 세로 방향으로 정렬 */
-    height:877px;
-    overflow-y: auto;
 }
 
 
 
-.top-title{
+.topTitle{
     position: relative;
     font-size: 25px;
 }
 
-.sect-all{
+.sectWrapper{
     display: flex;
     padding-bottom: 20px;
     justify-content: space-between;
     height: 100%; 
 
 }
-.sect-all .sect-left{
+.sectWrapper .sectLeft{
     width: 40%;
     border: #bdc5cd 3px solid;
     background-color: white;
@@ -184,12 +182,13 @@ h2 {
     height: 690px;
 }
 
-.left-body{
+.leftBody{
     overflow-y: auto;
+    overflow-x: hidden;
     height: 100%;
 }
 
-.left-title{
+.leftTitle{
     border-bottom: #bdc5cd 1px solid;
     padding-top: 15px;
     height: 60px;
@@ -225,7 +224,7 @@ td{
 }
 
 
-.sect-all .sect-right{
+.sectWrapper .sectRight{
     width: 59%;
     border: #bdc5cd 3px solid;
     background-color: white;
@@ -238,7 +237,7 @@ td{
     margin-left: 20px;
 }
 
-.tbl-category-result{
+.tblCategoryResult{
     border: #bdc5cd 1px solid;
     border-spacing: 0;
     background-color: white;
@@ -248,16 +247,16 @@ td{
     
 }
 
-.tbl-category-result th{
+.tblCategoryResult th{
     border: #bdc5cd 1px solid;
 
 }
-.tbl-category-result td{
+.tblCategoryResult td{
     border: #bdc5cd 1px solid;
 
 }
 
-.tbl_right{
+.tblRight{
     border-spacing: 0;
     width: 100%;
     text-align: left;
@@ -271,14 +270,14 @@ td{
 }
 
 
-.tbl_right th{
+.tblRight th{
     height: 50px;
     justify-content: space-between;
     border-bottom: #bdc5cd 1px solid;
 
 }
 
-.tbl_right td{
+.tblRight td{
     height: 50px;
     justify-content: space-between;
     border-bottom: #bdc5cd 1px solid;

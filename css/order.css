@@ -117,7 +117,7 @@ h2 {
 }
 
 
-.page-body{
+.pageBody{
     position: relative;
     padding-left: 70px;
     padding-top: 50px;
@@ -128,31 +128,31 @@ h2 {
     overflow-y: auto;
 }
 
-.tbl_top{
+.tblTop{
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
 
 }
 
-.tbl_top th{
+.tblTop th{
     text-align: left;
     padding-left: 40px;
 }
 
-.top-title{
+.topTitle{
     font-size: 25px;
 }
 
-.main-hd{
+.mainHd{
     position: relative;
 }
 
-.sect-top{
+.sectTop{
     position: relative;
 
 }
-.sect-top-top{
+.sectTopWrapper{
     position: relative;
     padding: 45px 70px 45px 70px;
     border: 1.5px solid #bdc5cd;
@@ -193,19 +193,19 @@ tr{
 }
 
 
-.arr-align li{
+.arrAlign li{
     float: left;
     padding-right: 10px;
     box-sizing: border-box;
 }
 
-.sect-top th{
+.sectTop th{
     line-height: 36px;
     border-bottom: 1px solid #ebebeb;
     height: 60px;
 }
 
-.sect-top td{
+.sectTop td{
     border-bottom: solid #ebebeb 1px;
 
 }
@@ -217,7 +217,7 @@ label{
     font-size: 13px;
 }
 
-#btn-prd-search{
+#btnSearch{
     display: block;
     margin: auto;
     width: 200px;
@@ -231,7 +231,7 @@ label{
 }
 
 
-button#btn-prd-search:active {
+button#btnSearch:active {
     background-color: #3F464F;
     width: 200px;
     height: 50px;
@@ -241,9 +241,7 @@ button#btn-prd-search:active {
     font-size: 20px;
   }
 
-  .arr-center li{
-    padding-left: 300px;
-}
+
 
 input{
     width: 200px;
@@ -254,18 +252,18 @@ input{
     font-weight: bold;
 }
 
-.pro_search_result{
+.SearchResult{
     background-color: #CFCFCF;
 }
 
-.sect-bottom{
+.sectBottom{
     position: relative;
     padding: 20px 00px 20px;
     border: 1.5px solid #bdc5cd;
     background-color: white;
 }
 
-.tbl_bottom{
+.tblBottom{
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
@@ -273,7 +271,7 @@ input{
 
 }
 
-.sect-bottom th{
+.sectBottom th{
     position: sticky;
     top: 0;
     line-height: 60px;
@@ -281,26 +279,23 @@ input{
     background-color: #CFCFCF;
 }
 
-.sect-bottom td{
+.sectBottom td{
     border-bottom: solid #ebebeb 1px;
 
 }
 
 
-.pro_search_bottom_tr>td{
+.searchBottom_tr>td{
     height: 60px;
     margin: auto;
     text-align: center;
 }
 
 
-#result_checkbox{
+#resultCheckbox{
     width: min-content;
 }
 
-.sect-bottom-total{
-    position: fl;
-}
 
 .bottom{
     padding-left: 20px;
@@ -344,7 +339,7 @@ float: none;
 display: inline-block; 
 }
 
-.tbl_wrapper{
+.tblWrapper{
     height: 360px;
     overflow-y: auto;
 }

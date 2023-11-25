@@ -53,17 +53,17 @@
                 </li>
             </ul>
             <section>
-                <div class="page-body">
-                    <div class="main-hd">
-                        <div class="top-title">
+                <div class="pageBody">
+                    <div class="mainHd">
+                        <div class="topTitle">
                         <h4>상품 조회</h4>
                         <br>
                         </div>
                         <div class="box"></div>
                     </div>
-                    <div class="sect-top-top">
-                        <div class="sect-top">
-                            <table class="tbl_top">
+                    <div class="sectTopWrapper">
+                        <div class="sectTop">
+                            <table class="tblTop">
                                 <colgroup>
                                     <col class="w200">
                                     <col>
@@ -72,9 +72,9 @@
                                     <tr>        
                                         <th>상태</th>    
                                             <td>
-                                                <ul class="arr-align">
+                                                <ul class="arrAlign">
                                                     <li class="w200">
-                                                        <select name="prd_condition" id="prd_condition" >
+                                                        <select name="prdCondition" id="prdCondition" >
                                                             <option value="0" selected>판매상태 전체</option>
                                                             <option value="1">판매중</option>
                                                             <option value="2">판매종료</option>
@@ -86,9 +86,9 @@
                                     <tr>        
                                         <th>키워드</th>    
                                             <td>
-                                                <ul class="arr-align">
+                                                <ul class="arrAlign">
                                                     <li class="w200">
-                                                        <select name="prd_keyword" id="prd_keyword" >
+                                                        <select name="prdKeyword" id="prdKeyword" >
                                                             <option value="0" selected>상품명</option>
                                                             <option value="1">상품번호</option>
                                                         </select>
@@ -97,7 +97,7 @@
                                                         &nbsp;
                                                     </li>                                                    
                                                     <li>
-                                                        <input type="text" name="pro_search" id="pro_search">
+                                                        <input type="text" name="proSearch" id="proSearch">
                                                     </li>
                                                 </ul>    
                                             </td>   
@@ -105,15 +105,15 @@
                                     <tr>        
                                         <th>판매가</th>    
                                             <td>
-                                                <ul class="arr-align">
+                                                <ul class="arrAlign">
                                                     <li class="w200">
-                                                        <input type="text" name="prd_seart_price" id="prd_seart_price">
+                                                        <input type="text" name="prdSerchStartPrice" id="prdSerchStartPrice">
                                                     </li>
                                                     <li class="w25">
                                                         &nbsp;~
                                                     </li>                                                    
                                                     <li class="w200">
-                                                        <input type="text" name="prd_seart_price" id="prd_seart_price">
+                                                        <input type="text" name="prdSerchEndPrice" id="prdSerchEndPrice">
                                                     </li>
                                                 </ul>    
                                             </td>   
@@ -121,9 +121,9 @@
                                     <tr>        
                                         <th>카테고리</th>    
                                             <td>
-                                                <ul class="arr-align">
+                                                <ul class="arrAlign">
                                                     <li class="w200">
-                                                        <select name="prd_condition" id="prd_condition" >
+                                                        <select name="category1" id="category1" >
                                                             <option value="0" selected>상위 분류 선택</option>
                                                             <option value="1">의자</option>
                                                             <option value="2">테이블</option>
@@ -133,7 +133,7 @@
                                                         &nbsp;
                                                     </li>  
                                                     <li class="w200">
-                                                        <select name="prd_condition" id="prd_condition" >
+                                                        <select name="category2" id="category2" >
                                                             <option value="0" selected>하위 분류 선택</option>
                                                             <option value="1">침실</option>
                                                             <option value="2">거실</option>
@@ -145,15 +145,15 @@
                                     <tr>        
                                         <th>등록일</th>    
                                             <td>
-                                                <ul class="arr-align">
+                                                <ul class="arrAlign">
                                                     <li class="w200">
-                                                        <input type="date" name="pro_search_startDay" id="pro_search_startDay">
+                                                        <input type="date" name="proSearchStartDay" id="proSearchStartDay">
                                                     </li>
                                                     <li class="w25">
                                                         &nbsp;
                                                     </li>  
                                                     <li class="w200">
-                                                        <input type="date" name="pro_search_endDay" id="pro_search_endDay">
+                                                        <input type="date" name="proSearchEndDay" id="proSearchEndDay">
                                                     </li>
                                                 </ul>    
                                             </td>   
@@ -161,13 +161,13 @@
                                 </tbody>    
                             </table>
                             <div>
-                                <button id="btn-prd-search"> 검색 </button>
+                                <button id="btnSearch"> 검색 </button>
                             </div>
                             <div><br><br></div>
                         </div>    
                     </div>
                     <div><br><br></div>
-                    <div class="sect-bottom">
+                    <div class="sectBottom">
                         <div class="bottomResult">
                             <div class="bottomResultTitle"><h3>상품 검색 결과</h3></div>
                             <div class="bottomResult1"><span>(총 : </span>
@@ -178,14 +178,14 @@
                                 <span class="colorRed"> 1 </span>
                                 <span> ) </span></div>
                         </div>
-                        <div class="tbl_wrapper">
-                        <table class="tbl_bottom">
+                        <div class="tblWrapper">
+                        <table class="tblBottom">
                             <colgroup>
                                 <col class="w140">
                                 <col>
                             </colgroup>
                             <tbody>
-                                        <tr class="pro_search_result">        
+                                        <tr class="searchResult">        
                                             <th><input type="checkbox" name="" id="" style="width: 140px;"></th>    
                                             <th>상품번호</th>
                                             <th>상품명</th>
@@ -195,10 +195,10 @@
                                             <th>재고</th>
                                             <th>등록일(수정일)</th>                                                    
                                 </tr> 
-                                <tr class="pro_search_bottom_tr">
-                                    <td class="pro_search_bottom_check">
+                                <tr class="proSearchBottomtr">
+                                    <td class="proSearchBottomCheck">
                                         <li>
-                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                            <input type="checkbox" name="resultCheckbox" id="resultCheckbox">
                                         </li>
                                     </td>
                                     <td>
@@ -223,10 +223,10 @@
                                         <li>2023-10-10</li>
                                     </td>
                                 </tr>   
-                                <tr class="pro_search_bottom_tr">
-                                    <td class="pro_search_bottom_check">
+                                <tr class="proSearchBottomtr">
+                                    <td class="proSearchBottomCheck">
                                         <li>
-                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                            <input type="checkbox" name="resultCheckbox" id="resultCheckbox">
                                         </li>
                                     </td>
                                     <td>
@@ -251,10 +251,10 @@
                                         <li>2023-10-10</li>
                                     </td>
                                 </tr>   
-                                <tr class="pro_search_bottom_tr">
-                                    <td class="pro_search_bottom_check">
+                                <tr class="proSearchBottomtr">
+                                    <td class="proSearchBottomCheck">
                                         <li>
-                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                            <input type="checkbox" name="resultCheckbox" id="resultCheckbox">
                                         </li>
                                     </td>
                                     <td>
@@ -279,10 +279,10 @@
                                         <li>2023-10-10</li>
                                     </td>
                                 </tr>   
-                                <tr class="pro_search_bottom_tr">
-                                    <td class="pro_search_bottom_check">
+                                <tr class="proSearchBottomtr">
+                                    <td class="proSearchBottomCheck">
                                         <li>
-                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                            <input type="checkbox" name="resultCheckbox" id="resultCheckbox">
                                         </li>
                                     </td>
                                     <td>
@@ -307,10 +307,10 @@
                                         <li>2023-10-10</li>
                                     </td>
                                 </tr>   
-                                <tr class="pro_search_bottom_tr">
-                                    <td class="pro_search_bottom_check">
+                                <tr class="proSearchBottomtr">
+                                    <td class="proSearchBottomCheck">
                                         <li>
-                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                            <input type="checkbox" name="resultCheckbox" id="resultCheckbox">
                                         </li>
                                     </td>
                                     <td>
@@ -335,10 +335,10 @@
                                         <li>2023-10-10</li>
                                     </td>
                                 </tr>   
-                                <tr class="pro_search_bottom_tr">
-                                    <td class="pro_search_bottom_check">
+                                <tr class="proSearchBottomtr">
+                                    <td class="proSearchBottomCheck">
                                         <li>
-                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                            <input type="checkbox" name="resultCheckbox" id="resultCheckbox">
                                         </li>
                                     </td>
                                     <td>

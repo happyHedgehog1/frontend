@@ -130,14 +130,14 @@ h2 {
 
 }
 
-.tbl_top{
+.tblTop{
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
 
 }
 
-.tbl_top th{
+.tblTop th{
     text-align: left;
     padding-left: 40px;
 }
@@ -150,7 +150,7 @@ h2 {
     position: relative;
 }
 
-.sect-top{
+.sectTop{
     position: relative;
 
 }
@@ -191,7 +191,7 @@ tr{
 }
 
 
-.arr-align li{
+.arrAlign li{
     float: left;
     padding-right: 10px;
     box-sizing: border-box;
@@ -215,7 +215,7 @@ label{
     font-size: 13px;
 }
 
-#btn-prd-search{
+#btnEventSearch{
     display: block;
     margin: auto;
     width: 200px;
@@ -229,7 +229,7 @@ label{
 }
 
 
-button#btn-prd-search:active {
+button#btnEventSearch:active {
     background-color: #3F464F;
     width: 200px;
     height: 50px;
@@ -259,14 +259,14 @@ input{
 
 
 
-.sect-bottom{
+.sectBottom{
     position: relative;
     padding: 20px 00px 20px;
     border: 1.5px solid #bdc5cd;
     background-color: white;
 }
 
-.tbl_bottom{
+.tblBottom{
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
@@ -274,7 +274,7 @@ input{
 
 }
 
-.sect-bottom th{
+.sectBottom th{
     position: sticky;
     top: 0;
     line-height: 60px;
@@ -282,24 +282,24 @@ input{
     background-color: #CFCFCF;
 }
 
-.sect-bottom td{
+.sectBottom td{
     border-bottom: solid #ebebeb 1px;
 
 }
 
 
-.pro_search_bottom_tr>td{
+.eventSearchBottomTr>td{
     height: 60px;
     margin: auto;
     text-align: center;
 }
 
 
-#result_checkbox{
+#resultCheckbox{
     width: min-content;
 }
 
-.sect-bottom-total{
+.sectBottom-total{
     position: fl;
 }
 
@@ -322,7 +322,7 @@ display: inline-block;
     font-size: 13px;
 }
 
-.tbl_wrapper{
+.tblWrapper{
     height: 360px;
     overflow-y: auto;
 }

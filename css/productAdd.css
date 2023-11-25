@@ -117,7 +117,7 @@ h2 {
 }
 
 
-.page-body{
+.pageBody{
     position: relative;
     padding-left: 70px;
     padding-top: 50px;
@@ -136,7 +136,7 @@ table{
 
 }
 
-.top-title{
+.topTitle{
     font-size: 25px;
     display: flex;
     justify-content: space-between;
@@ -148,11 +148,11 @@ table{
     position: absolute;
 }
 
-.main-hd{
+.mainHd{
     font-weight: bold;
 }
 
-.sect-top{
+.sectTop{
     position: relative;
 
 }
@@ -160,7 +160,7 @@ table{
 .top-btn{
     position: relative;
 }
-.sect-top-top{
+.sectTopWrapper{
     position: relative;
     padding: 45px 70px 45px 70px;
     border: 1.5px solid #bdc5cd;
@@ -203,20 +203,20 @@ tr{
 
 
 
-.arr-align li{
+.arrAlign li{
     float: left;
     padding-right: 10px;
     box-sizing: border-box;
 }
 
-.sect-top th{
+.sectTop th{
     line-height: 36px;
     border-bottom: 1px solid #ebebeb;
     height: 60px;
     
 }
 
-.sect-top td{
+.sectTop td{
     border-bottom: solid #ebebeb 1px;
 
 }
@@ -255,7 +255,7 @@ button#btn-prd-add:active {
     
 }
 
-#btn-op{
+#btnSelectDelete{
     width: 100px;
     height: 30px;
     color: white;
@@ -266,7 +266,7 @@ button#btn-prd-add:active {
 }
 
 
-button#btn-op:active {
+button#btnSelectDelete:active {
     background-color: #3F464F;
     width: 100px;
     height: 30px;
@@ -275,11 +275,11 @@ button#btn-op:active {
     font-size: 15px;
   }
 
-  .op-th{
+  .optionth{
     background-color: #CFCFCF;
   }
 
-  #btn-add{
+  #btnAdd{
     display: block;
     margin: auto;
     width: 200px;
@@ -292,7 +292,7 @@ button#btn-op:active {
 }
 
 
-button#btn-add:active {
+button#btnAdd:active {
     background-color: #3F464F;
     width: 200px;
     height: 50px;
@@ -302,7 +302,7 @@ button#btn-add:active {
     font-size: 20px;
   }
 
-  #btn-submit-add{
+  #btnSubmitAdd{
     width: 130px;
     height: 50px;
     color: white;
@@ -313,7 +313,7 @@ button#btn-add:active {
 }
 
 
-button#btn-submit-add:active {
+button#btnSubmitAdd:active {
     background-color: #3F464F;
     width: 130px;
     height: 50px;
@@ -335,7 +335,7 @@ button#btn-submit-add:active {
     align-items: center;
 }
 
-.modal-content {
+.modalContent {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -352,24 +352,24 @@ button#btn-submit-add:active {
     
 }
 
-.modal-table{
+.modalTbl{
     padding-left: 50px;
     padding-top:  50px;
 }
 
-.modal-table>table{
+.modalTbl>table{
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
 }
 
-.moadl-tbl-hd{
+.modalTblhd{
     background-color: #CFCFCF;
     font-size: 35px;
     
 }
 
-.modal-table th{
+.modalTbl th{
     line-height: 36px;
     border-bottom: 1px solid #ebebeb;
     height: 100px;
@@ -378,7 +378,7 @@ button#btn-submit-add:active {
     
 }
 
-.modal-table td{
+.modalTbl td{
     border-bottom: solid #ebebeb 1px;
     font-size: 20px;
 }
@@ -395,7 +395,7 @@ button#btn-submit-add:active {
     font-weight: bold;
 }
 
-.modal-tbl-result{
+.modalResultTbl{
     font-size: 25px;
     display: flex;
     justify-content: space-between;
@@ -406,12 +406,12 @@ button#btn-submit-add:active {
     
 }
 
-.inside-tbl{
+.modalInsideTbl{
     
     padding-left: 10px;
 }
 
-.inside-tbl td{
+.modalInsideTbl td{
     line-height: 36px;
     border-bottom: 1px solid #ebebeb;
     height: 30px;
@@ -421,7 +421,7 @@ button#btn-submit-add:active {
 }
 
 
-.modal-bottom{
+.modalBottom{
     font-size: 15px;
     display: flex;
     justify-content: space-between;
@@ -429,13 +429,13 @@ button#btn-submit-add:active {
     text-align: center;
 }
 
-.moadl-tbl-prd-add{
+.moadlTblTotalResult{
     font-size: 18px;
     font-weight: bold;
 
 }
 
-#btn-modal-prd-add{
+#modalBtnPrdAdd{
     display: block;
     width: 200px;
     height: 50px;
@@ -446,7 +446,7 @@ button#btn-submit-add:active {
     font-size: 20px;
 }
 
-button#btn-modal-prd-add:active {
+button#modalBtnPrdAdd:active {
     display: block;
     width: 200px;
     height: 50px;
