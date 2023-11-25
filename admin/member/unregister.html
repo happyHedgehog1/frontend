@@ -53,17 +53,17 @@
                 </li>
             </ul>
             <section>
-                <div class="page-body">
-                    <div class="main-hd">
-                        <div class="top-title">
+                <div class="pageBody">
+                    <div class="mainHd">
+                        <div class="topTitle">
                         <h4>탈퇴회원조회</h4>
                         <br>
                         </div>
                         <div class="box"></div>
                     </div>
-                    <div class="sect-top-top">
-                        <div class="sect-top">
-                            <table class="tbl_top">
+                    <div class="sectTopWrapper">
+                        <div class="sectTop">
+                            <table class="tblTop">
                                 <colgroup>
                                     <col class="w200">
                                     <col>
@@ -72,9 +72,9 @@
                                     <tr>        
                                         <th>아이디</th>    
                                             <td>
-                                                <ul class="arr-align">
+                                                <ul class="arrAlign">
                                                     <li class="w200">
-                                                        <input type="text" name="prd_seart_price" id="prd_seart_price">
+                                                        <input type="text" name="seartId" id="seartId">
                                                     </li>
                                                 </ul>    
                                             </td>   
@@ -82,9 +82,9 @@
                                     <tr>        
                                         <th>탈퇴유형</th>    
                                             <td>
-                                                <ul class="arr-align">
+                                                <ul class="arrAlign">
                                                     <li class="w200">
-                                                        <select name="prd_condition" id="prd_condition" >
+                                                        <select name="unregisterCondition" id="unregisterCondition" >
                                                             <option value="0" selected>전체</option>
                                                             <option value="1">일반탈퇴</option>
                                                             <option value="2">강제탈퇴</option>
@@ -96,15 +96,15 @@
                                     <tr>        
                                         <th>기간</th>    
                                             <td>
-                                                <ul class="arr-align">
+                                                <ul class="arrAlign">
                                                     <li class="w200">
-                                                        <input type="date" name="pro_search_startDay" id="pro_search_startDay">
+                                                        <input type="date" name="startDay" id="startDay">
                                                     </li>
                                                     <li class="w25">
                                                         &nbsp;
                                                     </li>  
                                                     <li class="w200">
-                                                        <input type="date" name="pro_search_endDay" id="pro_search_endDay">
+                                                        <input type="date" name="endDay" id="endDay">
                                                     </li>
                                                 </ul>    
                                             </td>   
@@ -112,13 +112,13 @@
                                 </tbody>    
                             </table>
                             <div>
-                                <button id="btn-prd-search"> 검색 </button>
+                                <button id="btnSearch"> 검색 </button>
                             </div>
                             <div><br><br></div>
                         </div>    
                     </div>
                     <div><br><br></div>
-                    <div class="sect-bottom">
+                    <div class="sectBottom">
                         <div class="bottomResult">
                             <div class="bottomResultTitle"><h3>검색 결과</h3></div>
                             <div class="bottomResult1"><span>(총 : </span>
@@ -127,8 +127,8 @@
                                 <span class="colorRed"> 1 </span>건 )
                             </div>
                         </div>
-                        <div class="tbl_wrapper">
-                        <table class="tbl_bottom">
+                        <div class="tblWrapper">
+                        <table class="tblBottom">
                             <colgroup>
                                 <col class="w200">
                                 <col class="w200">
@@ -137,17 +137,17 @@
 
                             </colgroup>
                             <tbody>
-                                        <tr class="pro_search_result">        
+                                        <tr class="searchResult">        
                                             <th><input type="checkbox" name="" id="" style="width: 140px;"></th>    
                                             <th>아이디</th>
                                             <th>회원탈퇴일</th>
                                             <th>구분</th>
                                             <th>탈퇴사유</th>                                                 
                                 </tr> 
-                                <tr class="pro_search_bottom_tr">
-                                    <td class="pro_search_bottom_check">
+                                <tr class="searchBottom_tr">
+                                    <td class="searchBottomCheck">
                                         <li>
-                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                            <input type="checkbox" name="resultCheckbox" id="resultCheckbox">
                                         </li>
                                     </td>
                                     <td>
@@ -163,10 +163,10 @@
                                         <li>직접 입력한 사유</li>
                                     </td>
                                 </tr>    
-                                <tr class="pro_search_bottom_tr">
-                                    <td class="pro_search_bottom_check">
+                                <tr class="searchBottom_tr">
+                                    <td class="searchBottomCheck">
                                         <li>
-                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                            <input type="checkbox" name="resultCheckbox" id="resultCheckbox">
                                         </li>
                                     </td>
                                     <td>
@@ -182,10 +182,10 @@
                                         <li>직접 입력한 사유</li>
                                     </td>
                                 </tr> 
-                                <tr class="pro_search_bottom_tr">
-                                    <td class="pro_search_bottom_check">
+                                <tr class="searchBottom_tr">
+                                    <td class="searchBottomCheck">
                                         <li>
-                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                            <input type="checkbox" name="resultCheckbox" id="resultCheckbox">
                                         </li>
                                     </td>
                                     <td>
@@ -201,10 +201,10 @@
                                         <li>직접 입력한 사유</li>
                                     </td>
                                 </tr> 
-                                <tr class="pro_search_bottom_tr">
-                                    <td class="pro_search_bottom_check">
+                                <tr class="searchBottom_tr">
+                                    <td class="searchBottomCheck">
                                         <li>
-                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                            <input type="checkbox" name="resultCheckbox" id="resultCheckbox">
                                         </li>
                                     </td>
                                     <td>
@@ -220,10 +220,10 @@
                                         <li>직접 입력한 사유</li>
                                     </td>
                                 </tr> 
-                                <tr class="pro_search_bottom_tr">
-                                    <td class="pro_search_bottom_check">
+                                <tr class="searchBottom_tr">
+                                    <td class="searchBottomCheck">
                                         <li>
-                                            <input type="checkbox" name="result_checkbox" id="result_checkbox">
+                                            <input type="checkbox" name="resultCheckbox" id="resultCheckbox">
                                         </li>
                                     </td>
                                     <td>

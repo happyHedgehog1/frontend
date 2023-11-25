@@ -1,5 +1,5 @@
 // 모달 메뉴 열기
-document.getElementById("btn-submit-add").addEventListener("click", function() {
+document.getElementById("btnSubmitAdd").addEventListener("click", function() {
     document.getElementById("myModal").style.display = "flex";
 });
 
@@ -31,30 +31,30 @@ $("body").on("click", "li.w140 a", function(event) {
     event.preventDefault(); // 링크의 기본 동작 방지
     if ($(this).find("img").attr("name") === "img-add") {
         // 새로운 op-list 엘리먼트 생성
-        var newOpList = $("<tr class='op-list'>" +
+        var newOpList = $("<tr class='optionList'>" +
                             "<th colspan='2'>" +
-                                "<ul class='arr-align'>" +
-                                    "<li class='w400'><input type='text' name='pre_deli' style='width: 350px;' value='예시 : 색상'></li>" +
-                                    "<li class='w400'><input type='text' name='pre_deli' style='width: 350px;' value='예시 : 갈색'></li>" +
-                                    "<li class='w200'><input type='number' name='pre_deli' style='width: 125px;' value='0'> 원</li>" +
-                                    "<li class='w200'><input type='number' name='pre_deli' style='width: 125px;' value='0'> 개</li>" +
+                                "<ul class='arrAlign'>" +
+                                    "<li class='w400'><input type='text' name='optionName' style='width: 350px;' value='예시 : 색상'></li>" +
+                                    "<li class='w400'><input type='text' name='optionColor' style='width: 350px;' value='예시 : 갈색'></li>" +
+                                    "<li class='w200'><input type='number' name='optionPrice' style='width: 125px;' value='0'> 원</li>" +
+                                    "<li class='w200'><input type='number' name='optionQuantity' style='width: 125px;' value='0'> 개</li>" +
                                     "<li class='w140' style='padding-top: 5px;'><a href='#'><img src='/image/delete.png' height='25px' name='img-delete'></a></li>" +
                                 "</ul>" +
                             "</th>" +
                         "</tr>");
 
-        $(".op-list:last").after(newOpList);
+        $(".optionList:last").after(newOpList);
     } else if ($(this).find("img").attr("name") === "img-delete") {
-        $(this).closest(".op-list").remove();
+        $(this).closest(".optionList").remove();
     }
 });
 
 //상품 등록 재고 무제한 선택시 수량입력 제한
-    $('input[name="prd_stock"]').change(function() {
-    if($('input[name=prd_stock]:checked').val() === 'N'){
-        $("#prd_stock_num").prop("disabled", true);
+    $('input[name="quantityLimit"]').change(function() {
+    if($('input[name=quantityLimit]:checked').val() === 'N'){
+        $("#quantityLimitNumber").prop("disabled", true);
     }else{
-        $("#prd_stock_num").prop("disabled", false);
+        $("#quantityLimitNumber").prop("disabled", false);
 
     }
 });

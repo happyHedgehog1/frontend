@@ -1,11 +1,11 @@
  
 // 카테고리 대분류 추가
-$("body").on("click", "#btn-category-add", function(event) {
+$("body").on("click", "#btnCategoryAdd", function(event) {
     event.preventDefault(); // 링크의 기본 동작 방지
     console.log(`버튼 클릭`)
     // 새로운 엘리먼트 생성
     var newCategory = $(
-        "<table style='width: 100%;' class='category-row'>" +
+        "<table style='width: 550px;' class='category-row'>" +
         "<colgroup>" +
         "<col style='width: 85%;'>" +
         "<col style='width: 5%;'>" +

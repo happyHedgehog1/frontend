@@ -118,8 +118,10 @@ h2 {
 }
 
 
-.main-hd{
+.mainHd{
     font-weight: bold;
+    position: relative;
+
 }
 
 
@@ -145,7 +147,7 @@ h2 {
     width: 20px !important;
 }
 
-.page-body{
+.pageBody{
     position: relative;
     padding-left: 70px;
     padding-top: 50px;
@@ -157,21 +159,18 @@ h2 {
 
 
 }
-.top-title{
+.topTitle{
     font-size: 25px;
 }
 
 
-.main-hd{
-    position: relative;
-}
 
-.sect-top{
+.sectTop{
     position: relative;
     background-color: white;
 
 }
-.sect-top-top{
+.secTopWrapper{
     position: relative;
     padding: 45px 70px 45px 70px;
     border: 1.5px solid #bdc5cd;
@@ -199,13 +198,13 @@ tr{
     box-sizing: border-box;
 }
 
-.tbl_top th{
+.tblTop th{
     line-height: 36px;
     border-bottom: 1px solid #ebebeb;
     height: 60px;
 }
 
-.tbl_top td{
+.tblTop td{
     line-height: 36px;
     border-bottom: 1px solid #ebebeb;
     height: 60px;
@@ -235,7 +234,7 @@ input{
 }
 
 
-.tbl_top{
+.tblTop{
     width: 1365px;
     border-collapse: collapse;
     border: #ebebeb 1px solid;
@@ -254,25 +253,25 @@ input{
     padding-right: 20px;
 }
 
-.sect-bottom{
+.sectBottom{
     padding-top: 40px;
     
 }
 
-.tbl_bottom{
+.tblBottom{
     width: 1365px;
     border: #ebebeb 1px solid;
     border-collapse: collapse;
 }
 
-.tbl_bottom td{
+.tblBottom td{
     height: 40px;
     border-bottom: #ebebeb 1px solid;
     border-right: #ebebeb 1px solid;
 
 }
 
-.tbl_bottom th{
+.tblBottom th{
     line-height: 36px;
     height: 60px;
     border-bottom: #ebebeb 1px solid;
