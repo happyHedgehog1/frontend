@@ -334,22 +334,6 @@ align-items: center;
   
 }
 
-section {
-  display: grid;
-  justify-content: center;
-  padding-top: 110px;
-  height: 100;
-
-}
-
-
-.main_section {
-  width: 1200px;
-  margin: auto;
-  
-}
-
-
 .home_logo {
   display: flex;
 }
