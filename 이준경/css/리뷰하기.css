@@ -7,7 +7,11 @@ section {
     justify-content: flex-start;
     min-height: 80.2vh;
 }
-
+#contents hr{
+    height:1px;
+    border: 0;
+    background-color: #84848480;
+}
 #contents {
     align-self: center;
     /* min-width는 선택 */
@@ -28,11 +32,10 @@ section {
 
 #input_title {
     width: calc(100% - 5px);
-    border: 1px solid gray;
+    border: 1px solid #A6A6A6;
     border-radius: 0.3em;
     height: 1.7em;
 }
-
 #title {
     width: 6em;
     padding-left: 5px;
@@ -44,9 +47,10 @@ section {
     margin-bottom: 0.3em;
 }
 
+
 #review_body_title {
     display: flex;
-    min-width:6em;
+    min-width: 6em;
 }
 
 #review_body_title:first-child {
@@ -58,9 +62,11 @@ section {
     grid-template-columns: 1fr 1.5fr;
     justify-items: center;
     padding-top: 0.5em;
-    padding-bottom: 7em;
+    padding-bottom: 0.5em;
 }
-
+#photo_and_ratings + hr{
+    margin-bottom:6em;
+}
 #productName_and_ratings {
     display: flex;
     flex-direction: column;
@@ -115,10 +121,18 @@ section {
     background-color: #A7727D;
     color: white;
 }
-#contents_table{
-    padding-top:7em;
+
+#contents_table {
+    padding-top: 7em;
 }
+
 #photo,
-#review_body_title{
-    padding-left:3.2px
+#review_body_title {
+    padding-left: 3.2px
+}
+#title,
+#review_body_title,
+#photo_title{
+    font-size: 1.2em;
+    font-weight: bold;
 }
