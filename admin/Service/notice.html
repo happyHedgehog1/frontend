@@ -57,14 +57,14 @@
                     <div class="mainHd">
                         <div class="topTitle">
                             <h4>게시판관리</h4>
-                                <div><button id="btnSubmitAdd">공지사항등록</button></div>
                         </div>
-                        <div>
-                            <button>상품 문의 관리</button>
-                            <button>상품 문의 관리</button>
-                            <button>상품 문의 관리</button>
-                            <button>상품 문의 관리</button>
-                        </div>
+                        <div class="topbtnWrapper">
+                                <div class="pageButton"><a href="#">상품 문의 관리</a></div>
+                                <div class="pageButton"><a href="#">상품 후기 관리</a></div>
+                                <div class="pageButton"><a href="#">FAQ 관리</a></div>
+                                <div class="pageButton1"><a href="/admin/Service/notice.html">공지사항 관리</a></div>
+                            </div>
+                        <button id="btnNoticeAdd">공지사항등록</button>
                     </div>
                     <div class="sectTopWrapper">
                         <div class="sectTop">
@@ -82,11 +82,12 @@
                                                         <input type="date" name="proSearchStartDay" id="proSearchStartDay">
                                                     </li>
                                                     <li class="w25">
-                                                        &nbsp;
+                                                        &nbsp;~
                                                     </li>  
                                                     <li class="w200">
                                                         <input type="date" name="proSearchEndDay" id="proSearchEndDay">
                                                     </li>
+                                                    
                                                 </ul>    
                                             </td>   
                                     </tr> 
@@ -136,7 +137,9 @@
                         <div class="bottomResult">
                             <div class="bottomResultTitle"><h3>검색 결과</h3></div>
                             <div class="bottomResult1"><span>(총 : </span>
-                                <span class="colorRed"> 3 </span>
+                                <span class="colorRed"> 5 </span> 건 / 공개 :
+                                <span class="colorRed"> 5 </span> 건 / 비공개 :
+                                <span class="colorRed"> 0 </span>
                                 <span> 건 ) </span></div>
                         </div>
                         <div class="tblWrapper">
@@ -255,7 +258,14 @@
                             </tbody>
                         </table>
                         </div>
-                        <button>선택삭제</button>
+                        <select name="" id="">
+                            <option value="0">일괄 처리 항목</option>
+                            <option value="1">공개</option>
+                            <option value="2">비공개</option>
+                            <option value="3">삭제</option>
+                        </select>
+                        <button id="btnDelete">적용</button>
+                        <button id="btnDelete">상단고정/해지</button>
                     </div>
             </section>
         </nav>
