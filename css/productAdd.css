@@ -490,6 +490,7 @@ button#modalBtnPrdAdd:active {
     background-color: #A7727D;
     cursor: pointer;
     height: 40px;
+    margin: 10px;
 }
 
 .img-file input[type="file"] {
@@ -506,3 +507,10 @@ button#modalBtnPrdAdd:active {
     padding-left: 40px;
 
 }
+
+.imgWrapper{
+    display: flex;
+    padding: 10px;
+    width: 100vh;
+}
+

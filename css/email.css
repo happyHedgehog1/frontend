@@ -255,7 +255,10 @@ input{
     font-weight: bold;
 }
 
-
+.colorBlue{
+    color: #26A9F3;
+    font-weight: bold;
+}
 
 .sectBottom{
     position: relative;
@@ -328,7 +331,7 @@ display: inline-block;
 
 #btnNoticeAdd, #btnNoticeAdd>a{
     display: flex;
-    width: 130px;
+    width: 150px;
     height: 50px;
     color: white;
     background-color: #A7727D;

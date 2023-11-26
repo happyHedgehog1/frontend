@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>상품등록</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
     <link rel="stylesheet" href="/css/productAdd.css">
 </head>
 <body>
@@ -43,7 +40,7 @@
                 <li class="prodList service" > <a href="#게시판관리">지원서비스</a>
                     <ul class="sub_ProdList">
                         <li><a href="#">게시판관리</a></li>
-                        <li><a href="#">메일관리</a></li>
+                        <li><a href="/admin/Service/email.html">메일관리</a></li>
                     </ul>
                 </li>
                 <li class="prodList"><a href="/admin/adimin-management/adimin-management.html">관리자관리</a></li>
@@ -93,8 +90,8 @@
                             </tr>
                             <tr>
                                 <th class="tblTitle">판매기간</th>
-                                    <td>
-                                        <ul class="arrAlign">
+                                <td>
+                                    <ul class="arrAlign">
                                             <li class="w250">
                                                 <input type="date" name="saleStart" id="saleStart" style="width: 200px;">
                                             </li>
@@ -109,8 +106,8 @@
                             </tr>
                             <tr>        
                                 <th class="tblTitle">상품명</th>    
-                                    <td>
-                                        <ul class="arrAlign">
+                                <td>
+                                    <ul class="arrAlign">
                                             <li class="w250">
                                                 <input type="text" name="name" id="name" style="width: 200px;">
                                             </li>
@@ -119,8 +116,8 @@
                             </tr>           
                             <tr>        
                                 <th class="tblTitle">가격</th>    
-                                    <td>
-                                        <ul class="arrAlign">
+                                <td>
+                                    <ul class="arrAlign">
                                             <li class="w250">
                                                 <input type="number" name="price" id="price" style="width: 200px;">
                                             </li>
@@ -129,8 +126,8 @@
                             </tr>   
                             <tr>        
                                 <th class="tblTitle">카테고리</th>    
-                                    <td>
-                                        <ul class="arrAlign">
+                                <td>
+                                    <ul class="arrAlign">
                                             <li class="w250">
                                                 <select name="prdCategory1" id="prdCategory1" >
                                                     <option value="0" selected>상위 카테고리</option>
@@ -155,8 +152,8 @@
                             </tr>    
                             <tr>        
                                 <th class="tblTitle">배송비</th>    
-                                    <td>
-                                        <ul class="arrAlign">
+                                <td>
+                                    <ul class="arrAlign">
                                             <li>
                                                 <label for="deliveryCharge1">기본 배송비</label>
                                                     <input type="number" name="deliveryCharge1" id="deliveryCharge1" style="width: 125px;" value="0">
@@ -175,8 +172,8 @@
                             </tr>   
                             <tr>        
                                 <th class="tblTitle">옵션</th>     
-                                    <td>
-                                        <ul class="arrAlign">
+                                <td>
+                                    <ul class="arrAlign">
                                             <li class="w200">
                                                 <label for="optionY">
                                                     <input type="radio" name="option" id="optionY" value="Y" checked><span> 사용함</span>
@@ -256,11 +253,22 @@
                                     </td>   
                             </tr>   
                             <tr>        
-                                <th class="tblTitle">상세페이지 작성</th>     
+                                <th class="tblTitle" colspan="2">상세페이지 작성</th>     
                             </tr>
                             <tr>
-                                <td colspan="2">
-                                            <div id="summernote"></div>
+                                <td class="imgWrapper" style="border-bottom: 0px;">
+                                    <div class="img-file">                             
+                                    <label for="file">대표이미지 지정</label> 
+                                    <input type="file" id="thumbnail" accept="image/*">
+                                    </div>   
+                                    <div class="img-file">                             
+                                    <label for="file">대표이미지 지정2</label> 
+                                    <input type="file" id="thumbnail" accept="image/*">
+                                </div>   
+                                    <div class="img-file">                             
+                                    <label for="file">제품 상세이미지</label> 
+                                    <input type="file" id="pro_img">
+                                </div>   
                                 </td>
                             </tr>
                         </tbody>    
@@ -334,7 +342,7 @@
                                             </th>    
                                         </tr>  
                                         </table>
-                                    <div class="modalBottom">
+                                        <div class="modalBottom">
                                             <div><button id="btnSelectDelete">삭제</button></div>
                                             <div class="moadlTblTotalResult">최종 등록 상품 수 : 0개</div></td>
                                     </div>

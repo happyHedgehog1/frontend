@@ -131,6 +131,8 @@ h2 {
 
 }
 
+
+
 .tblTop{
     table-layout: fixed;
     width: 100%;
@@ -149,6 +151,7 @@ h2 {
     font-size: 25px;
     display: flex;
     padding-bottom: 20px;
+    height: 70px;
 }
 
 
@@ -246,99 +249,10 @@ button#btnSearch:active {
     padding-left: 300px;
 }
 
-input{
-    width: 200px;
+#title{
+    width: 500px;
 }
 
-.colorRed{
-    color: #CD4747;
-    font-weight: bold;
-}
-
-
-
-.sectBottom{
-    position: relative;
-    padding: 20px 00px 20px;
-    border: 1.5px solid #bdc5cd;
-    background-color: white;
-}
-
-.tblBottom{
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    
-
-}
-
-.sectBottom th{
-    position: sticky;
-    top: 0;
-    line-height: 60px;
-    border-bottom: 1px solid #ebebeb;
-    background-color: #CFCFCF;
-}
-
-.sectBottom td{
-    border-bottom: solid #ebebeb 1px;
-
-}
-
-
-.proSearchBottomtr>td{
-    height: 60px;
-    margin: auto;
-    text-align: center;
-    border-right: #ebebeb 1px solid;
-}
-
-
-
-
-#resultCheckbox{
-    width: min-content;
-}
-
-.sectBottom-total{
-    position: fl;
-}
-
-.bottomResult{
-    width: 100%;
-}
-.bottomResult1, .bottomResultTitle{
-float: left;
-box-sizing: border-box;
-padding-left: 20px;
-padding-bottom: 10px;
-float: none; 
-display: inline-block; 
-}
-
-.tblWrapper{
-    height: 360px;
-    overflow-y: auto;
-}
-
-.textAlignLeft{
-    text-align: left;
-    padding-left: 20px;
-}
-
-#btnNoticeAdd, #btnNoticeAdd>a{
-    display: flex;
-    width: 130px;
-    height: 50px;
-    color: white;
-    background-color: #A7727D;
-    border: 0;
-    font-size: 17px;
-    margin-left: auto;
-    align-items: center;
-    justify-content: center;
-
-}
 
 
 
@@ -370,26 +284,3 @@ display: inline-block;
     margin-left: 20px;
   }
 
-
-#btnDelete{
-    background-color: #A7727D;
-    color: white;
-    width: 100px;
-    height: 30px;
-    margin-top: 10px;
-    border: 0;
-    font-size: 14px;
-    margin-left: auto;
-}
-
-
-button#btnDelete:active {
-    background-color: #3F464F;
-    color: white;
-    width: 100px;
-    height: 30px;
-    margin-top: 10px;
-    border: 0;
-    font-size: 14px;
-    margin-left: auto;
-  }
