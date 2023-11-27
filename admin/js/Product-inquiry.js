@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
 
             // 팝업창 열기
-            openPopup('/admin/Service/Product-inquiry-details.html', 1000, 800);
+            openPopup('/temp/admin/Service/Product-inquiry-details.html', 1000, 800);
         });
     });
 
