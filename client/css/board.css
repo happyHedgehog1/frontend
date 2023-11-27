@@ -83,6 +83,37 @@
   width: 730px;
  }
 
+ .comment_space{
+  height: 40px;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+
+ .comment_hr{
+  border: 1px solid #000;
+  
+
+ }
+
+ .main_comment{
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+ }
+
+ .main_comment3{
+ font-size: 13px;
+ color: gray;
+ 
+ }
+
+ .main_comment5{
+  font-size: 13px;
+  color: gray;
+  }
+
  .password_input{
   display: flex;
  }

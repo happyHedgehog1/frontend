@@ -205,4 +205,23 @@ display: flex;
 justify-content: flex-end;
 }
 
+#quantity-display {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.quantity-button {
+  cursor: pointer;
+  font-size: 18px;
+  width: 20px;
+  height: 25px;
+
+}
+
+.cart_numbrt_btn{
+  
+  align-items: center;
+  
+  
+}
 
