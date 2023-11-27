@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
 
             // 팝업창 열기
-            openPopup('/temp/admin/Service/autoMail/modify/newMemberModify.html', 1000, 800);
+            openPopup('/admin/Service/autoMail/modify/newMemberModify.html', 1000, 800);
         });
     });
 
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
 
             // 팝업창 열기
-            openPopup('/temp/admin/Service/autoMail/viewport/newMemberViewport.html', 1000, 800);
+            openPopup('/admin/Service/autoMail/viewport/newMemberViewport.html', 1000, 800);
         });
     });
 
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.preventDefault();
     
                 // 팝업창 열기
-                openPopup('/temp/admin/Service/autoMail/modify/unregisterModify.html', 1000, 800);
+                openPopup('/admin/Service/autoMail/modify/unregisterModify.html', 1000, 800);
             });
         });
     
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.preventDefault();
     
                 // 팝업창 열기
-                openPopup('/temp/admin/Service/autoMail/viewport/unregisterViewport.html', 1000, 800);
+                openPopup('/admin/Service/autoMail/viewport/unregisterViewport.html', 1000, 800);
             });
         });
 
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.preventDefault();
     
                 // 팝업창 열기
-                openPopup('/temp/admin/Service/autoMail/modify/passwordModify.html', 1000, 800);
+                openPopup('/admin/Service/autoMail/modify/passwordModify.html', 1000, 800);
             });
         });
     
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.preventDefault();
     
                 // 팝업창 열기
-                openPopup('/temp/admin/Service/autoMail/viewport/passwordViewport.html', 1000, 800);
+                openPopup('/admin/Service/autoMail/viewport/passwordViewport.html', 1000, 800);
             });
         });
 
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     event.preventDefault();
         
                     // 팝업창 열기
-                    openPopup('/temp/admin/Service/autoMail/modify/orderListModify.html', 1000, 800);
+                    openPopup('/admin/Service/autoMail/modify/orderListModify.html', 1000, 800);
                 });
             });
         
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     event.preventDefault();
         
                     // 팝업창 열기
-                    openPopup('/temp/admin/Service/autoMail/viewport/orderListViewport.html', 1000, 800);
+                    openPopup('/admin/Service/autoMail/viewport/orderListViewport.html', 1000, 800);
                 });
             });
 
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         event.preventDefault();
             
                         // 팝업창 열기
-                        openPopup('/temp/admin/Service/autoMail/modify/dormantMemberModify.html', 1000, 800);
+                        openPopup('/admin/Service/autoMail/modify/dormantMemberModify.html', 1000, 800);
                     });
                 });
             
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         event.preventDefault();
             
                         // 팝업창 열기
-                        openPopup('/temp/admin/Service/autoMail/viewport/dormantMemberViewport.html', 1000, 800);
+                        openPopup('/admin/Service/autoMail/viewport/dormantMemberViewport.html', 1000, 800);
                     });
                 });
 
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         event.preventDefault();
             
                         // 팝업창 열기
-                        openPopup('/temp/admin/Service/autoMail/modify/pointModify.html', 1000, 800);
+                        openPopup('/admin/Service/autoMail/modify/pointModify.html', 1000, 800);
                     });
                 });
             
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         event.preventDefault();
             
                         // 팝업창 열기
-                        openPopup('/temp/admin/Service/autoMail/viewport/pointViewport.html', 1000, 800);
+                        openPopup('/admin/Service/autoMail/viewport/pointViewport.html', 1000, 800);
                     });
                 });
 
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             event.preventDefault();
                 
                             // 팝업창 열기
-                            openPopup('/temp/admin/Service/autoMail/modify/mailModify.html', 1000, 800);
+                            openPopup('/admin/Service/autoMail/modify/mailModify.html', 1000, 800);
                         });
                     });
                 
@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             event.preventDefault();
                 
                             // 팝업창 열기
-                            openPopup('/temp/admin/Service/autoMail/viewport/mailViewport.html', 1000, 800);
+                            openPopup('/admin/Service/autoMail/viewport/mailViewport.html', 1000, 800);
                         });
                     });
 
@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 event.preventDefault();
                     
                                 // 팝업창 열기
-                                openPopup('/temp/admin/Service/autoMail/modify/answerModify.html', 1000, 800);
+                                openPopup('/admin/Service/autoMail/modify/answerModify.html', 1000, 800);
                             });
                         });
                     
@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 event.preventDefault();
                     
                                 // 팝업창 열기
-                                openPopup('/temp/admin/Service/autoMail/viewport/answerViewport.html', 1000, 800);
+                                openPopup('/admin/Service/autoMail/viewport/answerViewport.html', 1000, 800);
                             });
                         });
 

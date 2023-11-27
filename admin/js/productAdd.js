@@ -36,11 +36,7 @@ $("body").on("click", "li.w140 a", function(event) {
                                     "<li class='w400'><input type='text' name='optionColor' style='width: 350px;' value='예시 : 갈색'></li>" +
                                     "<li class='w200'><input type='number' name='optionPrice' style='width: 125px;' value='0'> 원</li>" +
                                     "<li class='w200'><input type='number' name='optionQuantity' style='width: 125px;' value='0'> 개</li>" +
-<<<<<<< HEAD:admin/js/productAdd.js
                                     "<li class='w140' style='padding-top: 5px;'><a href='#'><img src='../../image/delete.png' height='25px' name='img-delete'></a></li>" +
-=======
-                                    "<li class='w140' style='padding-top: 5px;'><a href='#'><img src='/temp/image/delete.png' height='25px' name='img-delete'></a></li>" +
->>>>>>> 409df9f7bf3ecd56ce3a92b46041213b1f1ae02b:temp/js/productAdd.js
                                 "</ul>" +
                             "</th>" +
                         "</tr>");
