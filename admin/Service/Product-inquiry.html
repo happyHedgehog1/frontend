@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항</title>
-    <link rel="stylesheet" href="/css/notice.css">
+    <title>상품문의</title>
+    <link rel="stylesheet" href="/css/Product-inquiry.css">
 </head>
 <body>
     <div id="wrap">
@@ -31,7 +31,7 @@
                 </li>
                 <li class="prodList"><a href="#">회원관리</a>
                     <ul class="sub_ProdList">
-                        <li><a href="/admin/member/member.html">전체회원관리</a></li>
+                        <li><a href="/Member/Member-member/member.html">전체회원관리</a></li>
                         <li><a href="/admin/member/unregister.html">탈퇴회원조회</a></li>
                     </ul>
                 </li>
@@ -59,12 +59,12 @@
                             <h4>게시판관리</h4>
                         </div>
                         <div class="topbtnWrapper">
-                                <div class="pageButton"><a href="/admin/Service/Product-inquiry.html">상품 문의 관리</a></div>
-                                <div class="pageButton"><a href="/admin/Service/Product-review.html">상품 후기 관리</a></div>
-                                <div class="pageButton"><a href="/admin/Service/FAQ.html">FAQ 관리</a></div>
-                                <div class="pageButton1"><a href="/admin/Service/notice.html">공지사항 관리</a></div>
+                            <div class="pageButton1"><a href="/admin/Service/Product-inquiry.html">상품 문의 관리</a></div>
+                            <div class="pageButton"><a href="/admin/Service/Product-review.html">상품 후기 관리</a></div>
+                            <div class="pageButton"><a href="/admin/Service/FAQ.html">FAQ 관리</a></div>
+                            <div class="pageButton"><a href="/admin/Service/notice.html">공지사항 관리</a></div>
                             </div>
-                        <div id="btnNoticeAdd"><a href="/admin/Service/noticeWrite.html">공지사항등록</a></div>
+                        
                     </div>
                     <div class="sectTopWrapper">
                         <div class="sectTop">
@@ -75,7 +75,7 @@
                                 </colgroup>
                                 <tbody>
                                     <tr>        
-                                        <th>작성일</th>    
+                                        <th>문의일</th>    
                                             <td>
                                                 <ul class="arrAlign">
                                                     <li class="w200">
@@ -92,14 +92,25 @@
                                             </td>   
                                     </tr> 
                                     <tr>        
-                                        <th>공개여부</th>    
+                                        <th>구분</th>    
                                             <td>
                                                 <ul class="arrAlign">
                                                     <li class="w200">
                                                         <select name="prdCondition" id="prdCondition" >
-                                                            <option value="0" selected>전체</option>
-                                                            <option value="1">공개</option>
-                                                            <option value="2">비공개</option>
+                                                            <option value="0" selected>--문의유형 전체--</option>
+                                                            <option value="1">상품</option>
+                                                            <option value="2">배송</option>
+                                                            <option value="3">교환</option>
+                                                            <option value="4">반품</option>
+                                                            <option value="5">환불</option>
+                                                            <option value="6">기타</option>
+                                                        </select>
+                                                    </li>
+                                                    <li class="w00">
+                                                        <select name="prdCondition" id="prdCondition" >
+                                                            <option value="0" selected>--답변여부 전체--</option>
+                                                            <option value="1">답변완료</option>
+                                                            <option value="2">미답변</option>
                                                         </select>
                                                     </li>
                                                 </ul>    
@@ -111,9 +122,9 @@
                                                 <ul class="arrAlign">
                                                     <li class="w200">
                                                         <select name="prdKeyword" id="prdKeyword" >
-                                                            <option value="0" selected>전체</option>
-                                                            <option value="1">제목</option>
-                                                            <option value="2">내용</option>
+                                                            <option value="0" selected>--검색 키워드--</option>
+                                                            <option value="1">상품명</option>
+                                                            <option value="2">작성자</option>
                                                         </select>
                                                     </li>
                                                     <li class="w25">
@@ -137,47 +148,61 @@
                         <div class="bottomResult">
                             <div class="bottomResultTitle"><h3>검색 결과</h3></div>
                             <div class="bottomResult1"><span>(총 : </span>
-                                <span class="colorRed"> 5 </span> 건 / 공개 :
-                                <span class="colorRed"> 5 </span> 건 / 비공개 :
-                                <span class="colorRed"> 0 </span>
+                                <span class="colorRed"> 5 </span> 건 / 미답변 :
+                                <span class="colorRed"> 2 </span>
                                 <span> 건 ) </span></div>
                         </div>
                         <div class="tblWrapper">
                         <table class="tblBottom">
                             <colgroup>
+                                <col class="w50">
                                 <col class="w140">
-                                <col class="w140">
-                                <col style="width: 100%;">
                                 <col class="w140">
                                 <col class="w140">
                                 <col>
+                                <col style="width: 100%;">
+                                <col class="w140">
+                                <col class="w140">
                             </colgroup>
                             <tbody>
                                         <tr>        
                                             <th><input type="checkbox" name="" id="" style="width: 140px;"></th>    
-                                            <th>공개여부</th>
+                                            <th>답변여부</th>
+                                            <th>이미지</th>
+                                            <th>유형</th>
+                                            <th>상품명</th>                                        
                                             <th>제목</th>
-                                            <th>조회수</th>
-                                            <th>등록일</th>                                             
+                                            <th>작성자</th>                                        
+                                            <th>등록일</th>                                        
                                 </tr> 
-                                <tr class="proSearchBottomtr">
+                                <tr class="proSearchBottomtr" >
                                     <td class="proSearchBottomCheck">
                                         <li>
                                             <input type="checkbox" name="resultCheckbox" id="resultCheckbox">
                                         </li>
                                     </td>
                                     <td>
-                                        <li>공개</li>
+                                        <li>미답변</li>
                                     </td>
                                     <td>
-                                        <li class="textAlignLeft">공지사항 제목</li>
+                                        상품이미지</li>
                                     </td>
                                     <td>
-                                        <li>200회</li>
+                                        <li>배송</li>
+                                    </td>
+                                    <td>
+                                        <li>딱딱돌침대</li>
+                                    </td>
+                                    <td>
+                                        <li>문의 제목</li>
+                                    </td>
+                                    <td>
+                                        <li>코난</li>
                                     </td>
                                     <td>
                                         <li>2023-10-10</li>
                                     </td>
+                                    
                                 </tr>   
                                 <tr class="proSearchBottomtr">
                                     <td class="proSearchBottomCheck">
@@ -186,17 +211,27 @@
                                         </li>
                                     </td>
                                     <td>
-                                        <li>공개</li>
+                                        <li>미답변</li>
                                     </td>
                                     <td>
-                                        <li class="textAlignLeft">공지사항 제목</li>
+                                        상품이미지</li>
                                     </td>
                                     <td>
-                                        <li>200회</li>
+                                        <li>배송</li>
+                                    </td>
+                                    <td>
+                                        <li>딱딱돌침대</li>
+                                    </td>
+                                    <td>
+                                        <li>문의 제목</li>
+                                    </td>
+                                    <td>
+                                        <li>코난</li>
                                     </td>
                                     <td>
                                         <li>2023-10-10</li>
                                     </td>
+                                    
                                 </tr>  
                                 <tr class="proSearchBottomtr">
                                     <td class="proSearchBottomCheck">
@@ -205,17 +240,27 @@
                                         </li>
                                     </td>
                                     <td>
-                                        <li>공개</li>
+                                        <li>미답변</li>
                                     </td>
                                     <td>
-                                        <li class="textAlignLeft">공지사항 제목</li>
+                                        상품이미지</li>
                                     </td>
                                     <td>
-                                        <li>200회</li>
+                                        <li>배송</li>
+                                    </td>
+                                    <td>
+                                        <li>딱딱돌침대</li>
+                                    </td>
+                                    <td>
+                                        <li>문의 제목</li>
+                                    </td>
+                                    <td>
+                                        <li>코난</li>
                                     </td>
                                     <td>
                                         <li>2023-10-10</li>
                                     </td>
+                                    
                                 </tr>  
                                 <tr class="proSearchBottomtr">
                                     <td class="proSearchBottomCheck">
@@ -224,17 +269,27 @@
                                         </li>
                                     </td>
                                     <td>
-                                        <li>공개</li>
+                                        <li>미답변</li>
                                     </td>
                                     <td>
-                                        <li class="textAlignLeft">공지사항 제목</li>
+                                        상품이미지</li>
                                     </td>
                                     <td>
-                                        <li>200회</li>
+                                        <li>배송</li>
+                                    </td>
+                                    <td>
+                                        <li>딱딱돌침대</li>
+                                    </td>
+                                    <td>
+                                        <li>문의 제목</li>
+                                    </td>
+                                    <td>
+                                        <li>코난</li>
                                     </td>
                                     <td>
                                         <li>2023-10-10</li>
                                     </td>
+                                    
                                 </tr>  
                                 <tr class="proSearchBottomtr">
                                     <td class="proSearchBottomCheck">
@@ -243,32 +298,42 @@
                                         </li>
                                     </td>
                                     <td>
-                                        <li>공개</li>
+                                        <li>미답변</li>
                                     </td>
                                     <td>
-                                        <li class="textAlignLeft">공지사항 제목</li>
+                                        상품이미지</li>
                                     </td>
                                     <td>
-                                        <li>200회</li>
+                                        <li>배송</li>
+                                    </td>
+                                    <td>
+                                        <li>딱딱돌침대</li>
+                                    </td>
+                                    <td>
+                                        <li>문의 제목</li>
+                                    </td>
+                                    <td>
+                                        <li>코난</li>
                                     </td>
                                     <td>
                                         <li>2023-10-10</li>
                                     </td>
+                                    
                                 </tr>  
+                               
                             </tbody>
                         </table>
                         </div>
                         <select name="" id="">
-                            <option value="0">일괄 처리 항목</option>
-                            <option value="1">공개</option>
-                            <option value="2">비공개</option>
-                            <option value="3">삭제</option>
-                        </select>
-                        <button id="btnDelete">적용</button>
-                        <button id="btnDelete">상단고정/해지</button>
+                            <option value="0">--공개 상태 전환--</option>
+                            <option value="1">공개 전환</option>
+                            <option value="2">비공개 전환</option>
+                            
+                        
                     </div>
             </section>
         </nav>
+        <script src="/js/Product-inquiry.js"></script>
 
 </body>
 </html>

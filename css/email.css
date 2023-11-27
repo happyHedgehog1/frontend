@@ -396,3 +396,7 @@ button#btnDelete:active {
     font-size: 14px;
     margin-left: auto;
   }
+
+  .note-modal-backdrop{
+    display: none !important;
+}

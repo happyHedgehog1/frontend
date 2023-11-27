@@ -1,7 +1,10 @@
 $('#summernote').summernote({
-    placeholder: '',
+    placeholder: 
+''
+    ,
     tabsize: 2,
-    height: 300,
+    height: 1000,
+    width : 800,
     toolbar: [
       ['style', ['style']],
       ['font', ['bold', 'underline', 'clear']],

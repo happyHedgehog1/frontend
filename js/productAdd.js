@@ -10,18 +10,16 @@ document.getElementById("closeModal").addEventListener("click", function() {
 
 // 옵션 누르면 메뉴 생겼다 없어졌다가는 기능
 $(document).ready(function () {
-    $('input[name="prd_op"]').change(function () {
+    $('input[name="option"]').change(function () {
         toggleOptionList();
     });
 
     // 옵션 목록 토글 함수
     function toggleOptionList() {
-        if ($('input[name="prd_op"]:checked').val() === 'Y') {
-            $('.op-list').show();
-            $('.op-list_btn').show();
+        if ($('input[name="option"]:checked').val() === 'Y') {
+            $('.optionList').show();
         } else {
-            $('.op-list').hide();
-            $('.op-list_btn').hide();
+            $('.optionList').hide();
         }
     }
 });

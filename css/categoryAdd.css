@@ -177,9 +177,13 @@ h2 {
     border: #bdc5cd 3px solid;
     background-color: white;
     padding: 20px;
-    height: 600px;
+    height: 700px;
     display: flex;
     flex-direction: column; /* 세로 방향으로 정렬 */
+}
+
+.sectRight{
+    height: 700px;
 }
 
 .leftBody{
