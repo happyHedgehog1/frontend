@@ -18,7 +18,7 @@ a:link, a:visited {
     position: fixed;
     width: 100%;
     height: 100%;
-    overflow-y: auto;
+    overflow-y:hidden;
 
 }
 
@@ -33,6 +33,7 @@ header {
     padding: 20px;
     text-align: center;
     align-items: center;
+    height: 170px;
 }
 
 .logoimg img{
@@ -124,7 +125,7 @@ h2 {
     padding-right: 70px;
     padding-bottom: 50px;
     background-color: #F5F5F5;
-    height: 877px;
+    height: calc(100vh - 170px);
     overflow-y: auto;
 }
 
@@ -489,6 +490,7 @@ button#modalBtnPrdAdd:active {
     background-color: #A7727D;
     cursor: pointer;
     height: 40px;
+    margin: 10px;
 }
 
 .img-file input[type="file"] {
@@ -505,3 +507,10 @@ button#modalBtnPrdAdd:active {
     padding-left: 40px;
 
 }
+
+.imgWrapper{
+    display: flex;
+    padding: 10px;
+    width: 100vh;
+}
+
