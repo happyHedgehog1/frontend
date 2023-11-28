@@ -1,0 +1,105 @@
+section {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 이준경 수정사항. 맨 위 부터 정렬되도록. */
+    justify-content: flex-start;
+    min-height: 80.2vh;
+    /* background-color: red; */
+}
+
+#contents {
+    align-self: center;
+    min-width: 30em;
+}
+
+#contents {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 100px;
+    max-width: 70em;
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+#top {
+    border: 3px solid #A7727D;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    height: 17em
+}
+
+#top>div {
+    padding: 30px;
+}
+
+#member_welcome {
+    border-right: 3px solid #A7727D;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#member_welcome>h1 {
+    font-size: 2.5em;
+}
+
+#member_welcome>:nth-child(n) {
+    padding-left: 30px;
+}
+
+#point>div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    align-items: center;
+    /* padding-left:20px; */
+}
+
+#point img {
+    width: 3em;
+}
+
+#point>p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#point>div>p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+#bottom>li {
+    border: 2px solid #A7727D;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#bottom{
+    font-size:1.3em;
+    font-weight: bold;
+}
+#bottom img{
+    width:3em;
+}
+#bottom>li:hover{
+    background-color: #a7727d;
+    color:white;
+    transition: 0.3s ease;
+}
+#bottom>li:hover img{
+    transition: 0.3s ease;
+    mix-blend-mode:screen
+}
