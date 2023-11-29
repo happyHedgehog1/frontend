@@ -1,7 +1,9 @@
 const goHome = () => {
+    /* 위치는 맨 위로 올라가야됨 */
     location.href = "../html/index1.html";
 };
 const goMyPage = () => {
+    /* 위치는 맨 위로 올라가야됨 */
     // 비회원은 주문번호를 통해서 바로 detail 화면으로 들어가서
     // 여기 접속 가능한 고객은
     // 회원뿐이다.
@@ -84,6 +86,7 @@ const submitButtonWrap = document.getElementById("submit_button");
 submitButtonWrap.addEventListener("click", () => {
     document.getElementById("real_submit_button").click();
 });
+
 submitButtonWrap.addEventListener("mousedown", () => {
     const [img, input] = submitButtonWrap.children;
     img.src = "../image/searchButton/magnifier_mousedown.png";

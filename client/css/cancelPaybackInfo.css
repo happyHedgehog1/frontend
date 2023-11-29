@@ -110,14 +110,16 @@ section {
 #notice {
     margin-top: 1em;
 }
+
 #notice li {
     list-style-type: disc;
     list-style-position: inside;
     color: #5D5C5C;
     font-size: 0.9em;
 }
+
 #notice li:last-child {
-    color:white;
+    color: white;
 }
 
 #submit_button>input {
@@ -251,6 +253,20 @@ tbody tr:hover img {
 #bottom_buttons {
     display: flex;
     justify-content: center;
-    gap: 30px;
     margin-bottom: 30px;
+}
+
+#bottom_buttons input:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#bottom_buttons input {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    padding: 0px 3px 0px 3px;
+    background-color: white;
+    border: 0;
 }

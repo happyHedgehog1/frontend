@@ -8,6 +8,9 @@ section {
     min-height: 80.2vh;
     /* background-color: red; */
 }
+#route_home{
+    cursor: pointer
+}
 
 #contents {
     align-self: center;
@@ -19,8 +22,8 @@ section {
     grid-template-rows: 1fr 1fr;
     gap: 100px;
     max-width: 70em;
-    margin-top: 3em;
     margin-bottom: 5em;
+    padding-top: 7em;
 }
 
 #top {
@@ -29,7 +32,7 @@ section {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    height: 17em
+    height: 17em;
 }
 
 #top>div {
@@ -44,8 +47,11 @@ section {
 
 #member_welcome>h1 {
     font-size: 2.5em;
+    cursor: pointer;
 }
-
+#member_welcome>h1:hover{
+    text-decoration: 
+}
 #member_welcome>:nth-child(n) {
     padding-left: 30px;
 }

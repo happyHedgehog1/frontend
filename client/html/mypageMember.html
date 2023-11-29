@@ -14,7 +14,6 @@
 
   <script src="../js/memberMypageMain.js" defer></script>
   <link rel="stylesheet" href="../css/mypageMember.css">
-  <link rel="stylesheet" href="../css/route.css">
 </head>
 
 <body>
@@ -97,14 +96,14 @@
     <!-- 여기에 작성 -->
     <div id="main_category_route">
       <ul class="route_list">
-        <li><img src="../image/icon/home.png" alt=""></li>
+        <li id="route_home" onclick="goHome()"><img src="../image/icon/home.png" alt=""></li>
         <li>&gt;</li>
         <li>MY페이지</li>
       </ul>
       <div id="contents">
         <div id="top">
           <div id="member_welcome">
-            <h1>OOO님 ></h1>
+            <h1 onclick="location.href='./'">OOO님 ></h1>
             <br>
             <p>항상 1 in 가구를 방문해 주셔서 감사합니다.</p>
           </div>
