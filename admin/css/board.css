@@ -494,12 +494,12 @@ align-items: center;
   width: 100px;
  }
 
- .back_btn:hover {
+ /* .back_btn:hover {
   background-color: rgb(186, 183, 178);
  }
 .delete_btn:hover {
   background-color: rgb(186, 183, 178);
-}
+} */
 
 #password {
   width: 200px;
