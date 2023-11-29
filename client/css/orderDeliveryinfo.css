@@ -35,7 +35,7 @@ section {
     padding: 8px 30px 8px 30px;
     border: 1px solid #bebebe;
     border-bottom: 0;
-    box-sizing: border;
+    box-sizing: border-box;
 }
 
 #contents_menu>div:last-child:hover,

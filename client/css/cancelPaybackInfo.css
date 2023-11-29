@@ -35,7 +35,7 @@ section {
     padding: 8px 30px 8px 30px;
     border: 1px solid #bebebe;
     border-bottom: 0;
-    box-sizing: border;
+    box-sizing: border-box;
 }
 
 #contents_menu>div:first-child:hover,
@@ -110,6 +110,15 @@ section {
 #notice {
     margin-top: 1em;
 }
+#notice li {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #5D5C5C;
+    font-size: 0.9em;
+}
+#notice li:last-child {
+    color:white;
+}
 
 #submit_button>input {
     background-color: #00000000;
@@ -139,12 +148,6 @@ section {
     box-sizing: border-box;
 }
 
-#contents>#notice>li {
-    list-style-type: disc;
-    list-style-position: inside;
-    color: #5D5C5C;
-    font-size: 0.9em;
-}
 
 
 #product_table {
@@ -200,6 +203,7 @@ tbody td:nth-child(2) {
 tbody td:nth-child(2)>img {
     transition: 400ms ease;
 }
+
 tbody tr {
     transition: 300ms;
 }
@@ -208,7 +212,7 @@ tbody tr:hover {
     text-decoration: underline;
     color: black;
     font-weight: bold;
-    cursor:pointer;
+    cursor: pointer;
     background-color: #A7727D20;
 }
 
