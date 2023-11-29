@@ -8,16 +8,22 @@ section {
     min-height: 80.2vh;
 }
 
-#contents {
-    align-self: center;
-    /* min-width는 선택 */
-    /* max-width는 선택 */
+#route_home,
+#route_mypage,
+#contents_menu {
+    cursor: pointer
 }
 
 #contents {
+    align-self: center;
     display: flex;
     flex-direction: column;
-    padding-top:7em;
+    padding-top: 7em;
+}
+
+#contents_menu>div,
+#quick_date_buttons>label {
+    transition: 200ms;
 }
 
 #contents_menu {
@@ -32,7 +38,14 @@ section {
     box-sizing: border;
 }
 
-#contents_menu>div:nth-child(2) {
+#contents_menu>div:first-child:hover,
+#quick_date_buttons>label:hover {
+    background-color: #a7727db0;
+    /* 투명도 설정 */
+    color: white;
+}
+
+#contents_menu>div:last-child {
     border: 0;
     background-color: #A7727D;
     color: white;
@@ -65,23 +78,37 @@ section {
     gap: 5px;
 }
 
+#date_setting>label,
+#form_wrap>label {
+    display: none;
+}
+
 #date_start,
 #date_end {
     border: 1px solid gray;
     border-radius: 0.3em;
     height: 1.7em;
+    padding-left: 0.3em;
 
 }
 
 #submit_button {
     display: flex;
-    border-radius: 0.6em;
-    padding: 0.3em 0.5em 0.3em 0.5em;
-    border: 0;
+    box-sizing: border-box;
+    border: 2px solid #a7727d;
+    border-radius: 0.5em;
+    padding: 0.3em 0.2em 0.3em 0.2em;
     background-color: #A7727D;
     color: white;
     align-items: center;
+    justify-items: center;
+    gap: 0.2em;
     height: 2em;
+    transition: 200ms;
+}
+
+#notice {
+    margin-top: 1em;
 }
 
 #submit_button>input {
@@ -112,11 +139,7 @@ section {
     box-sizing: border-box;
 }
 
-#notice {
-    margin-top: 5px;
-}
-
-div#contents>#notice>li {
+#contents>#notice>li {
     list-style-type: disc;
     list-style-position: inside;
     color: #5D5C5C;
@@ -127,19 +150,6 @@ div#contents>#notice>li {
 #product_table {
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-/* 여기서부터. */
-
-
-#bottom_buttons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 30px;
-}
-
-#product_table {
     width: 100%;
     border-collapse: collapse;
     border-top: 1px solid #848484;
@@ -176,32 +186,67 @@ tr>td:nth-child(3) {
     background-color: rgba(237, 218, 196, 0.3);
 }
 
-tbody img{
-    width:4em;
+tbody img {
+    width: 4em;
 }
-tbody td:nth-child(2){
-    display:flex;
-    padding-top:0.3em;
-    padding-bottom:0.3em;
+
+tbody td:nth-child(2) {
+    display: flex;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    justify-content: center;
 }
+
+tbody td:nth-child(2)>img {
+    transition: 400ms ease;
+}
+tbody tr {
+    transition: 300ms;
+}
+
+tbody tr:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    cursor:pointer;
+    background-color: #A7727D20;
+}
+
+tbody tr:hover img {
+    width: 7em;
+}
+
 #product_table th:nth-child(1) {
     min-width: 6em;
 }
+
 #product_table th:nth-child(2) {
     min-width: 4em;
 }
+
 #product_table th:nth-child(3) {
     min-width: 14em;
 }
-#product_table th:nth-child(4){
-    min-width:7em;
+
+#product_table th:nth-child(4) {
+    min-width: 7em;
 }
-#product_table th:nth-child(5){
-    min-width:4em;
+
+#product_table th:nth-child(5) {
+    min-width: 4em;
 }
-#product_table th:nth-child(6){
-    min-width:6em;
+
+#product_table th:nth-child(6) {
+    min-width: 6em;
 }
-#product_table th:nth-child(7){
-    min-width:6em;
+
+#product_table th:nth-child(7) {
+    min-width: 6em;
+}
+
+#bottom_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
 }
