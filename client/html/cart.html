@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <script src="../js/header.js" defer></script>
+  <script src="../js/jquery-3.6.3.min.js"></script>
   <script src="../js/cart.js"></script>
 
 </head>
@@ -114,7 +115,7 @@
       
       <table class="cart_table">
         <tr>
-          <th><input id="cartcheckbox" type="checkbox" name="cartcheckbox"></th>
+          <th><input class="cartcheckbox" type="checkbox" name="cartcheckbox"></th>
           <th>이미지</th>
           <th>상품명</th>
           <th>판매가</th>
@@ -124,48 +125,49 @@
           <th>합계</th>
         </tr>
         <tr>
-          <td><input id="cartcheckbox" type="checkbox" name="cartcheckbox"></td>
+          <td><input class="cartcheckbox" type="checkbox" name="cartcheckbox"></td>
           <td><img src="../image/chair.png", width="70px" , height="70px"></td>
           <td>[P000BWXH] 1인가구 COOKY 패브릭 소파 1인</td>
           <td>200000원</td>
           <td>2000원</td>
           <td class="cart_numbrt_btn">
-            <div id="quantity-container">
-              <button class="quantity-button" onclick="decreaseQuantity()">-</button>
-              <span id="quantity-display">1</span>
-              <button class="quantity-button" onclick="increaseQuantity()">+</button>
+            <div class="quantity-container" data-product-id="1">
+              <button class="quantity-button decrease-button" onclick="updateQuantity('1', -1)">-</button>
+              <span class="quantity-display" id="quantity-display-1">1</span>
+              <button class="quantity-button increase-button" onclick="updateQuantity('1', 1)">+</button>
+            </div>
+          
+          </td>
+          <td>무료</td>
+          <td>200000원</td>
+        </tr>
+        <tr>
+          <td><input class="cartcheckbox" type="checkbox" name="cartcheckbox"></td>
+          <td><img src="../image/chair.png", width="70px" , height="70px"></td>
+          <td>[P000BWXH] 1인가구 COOKY 패브릭 소파 1인</td>
+          <td>200000원</td>
+          <td>2000원</td>
+          <td class="cart_numbrt_btn">
+            <div class="quantity-container" data-product-id="2">
+              <button class="quantity-button decrease-button" onclick="updateQuantity('2', -1)">-</button>
+              <span class="quantity-display" id="quantity-display-2">1</span>
+              <button class="quantity-button increase-button" onclick="updateQuantity('2', 1)">+</button>
             </div>
           </td>
           <td>무료</td>
           <td>200000원</td>
         </tr>
         <tr>
-          <td><input id="cartcheckbox" type="checkbox" name="cartcheckbox"></td>
+          <td><input class="cartcheckbox" type="checkbox" name="cartcheckbox"></td>
           <td><img src="../image/chair.png", width="70px" , height="70px"></td>
           <td>[P000BWXH] 1인가구 COOKY 패브릭 소파 1인</td>
           <td>200000원</td>
           <td>2000원</td>
           <td class="cart_numbrt_btn">
-            <div id="quantity-container">
-              <button class="quantity-button" onclick="decreaseQuantity()">-</button>
-              <span id="quantity-display">1</span>
-              <button class="quantity-button" onclick="increaseQuantity()">+</button>
-            </div>
-          </td>
-          <td>무료</td>
-          <td>200000원</td>
-        </tr>
-        <tr>
-          <td><input id="cartcheckbox" type="checkbox" name="cartcheckbox"></td>
-          <td><img src="../image/chair.png", width="70px" , height="70px"></td>
-          <td>[P000BWXH] 1인가구 COOKY 패브릭 소파 1인</td>
-          <td>200000원</td>
-          <td>2000원</td>
-          <td class="cart_numbrt_btn">
-            <div id="quantity-container">
-              <button class="quantity-button" onclick="decreaseQuantity()">-</button>
-              <span id="quantity-display">1</span>
-              <button class="quantity-button" onclick="increaseQuantity()">+</button>
+            <div class="quantity-container" data-product-id="3">
+              <button class="quantity-button decrease-button" onclick="updateQuantity('3', -1)">-</button>
+              <span class="quantity-display" id="quantity-display-3">1</span>
+              <button class="quantity-button increase-button" onclick="updateQuantity('3', 1)">+</button>
             </div>
           </td>
           <td>무료</td>
@@ -229,11 +231,23 @@
       <br>
       <br>
       <div class="select_all_btn2">
-        <a href="./cartOrder.html"> <button class="select_all_btn" >전체상품주문하기</button></a>
+        <a href="./cartOrder.html">
+          <button class="select_all_btn"  onclick="selectAllItems()">전체상품주문하기</button>
+        </a>
       </div>
       <br>
       <br>
       <br>
+  
+      <div class="quickmenu">
+        <ul>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">문의게시판</a></li>
+          <li><a href="#">게시판</a></li>
+          <li><a href="#">마이페이지</a></li>
+        </ul>
+      </div>
+     
 
 
       
@@ -270,7 +284,8 @@
     </div>
   </footer>
    
-        
+  
+  
        
         
   </body>
