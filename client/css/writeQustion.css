@@ -8,18 +8,13 @@ section {
     min-height: 80.2vh;
 }
 
-#bottom_buttons {
-    display: flex;
-    justify-content: flex-end
-}
-
 
 #contents {
     align-self: center;
     /* min-width는 선택 */
     /* max-width는 선택 */
     padding-bottom: 30px;
-    padding-top:6em;
+    padding-top: 6em;
 }
 
 #bottom_buttons {
@@ -106,8 +101,14 @@ input[type=radio] {
     background-color: #A7727D;
     color: white;
 }
-#contents_table caption{
+
+#contents_table caption {
     font-size: 1.7em;
     padding: 30px;
     color: black;
+}
+
+#bottom_buttons {
+    display: flex;
+    justify-content: flex-end
 }

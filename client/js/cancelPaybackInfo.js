@@ -84,7 +84,7 @@ dateSettingsArray.forEach((e) =>
 
 const submitButtonWrap = document.getElementById("submit_button");
 submitButtonWrap.addEventListener("click", () => {
-    document.getElementById("real_submit_button").click();
+    document.querySelector("#real_submit_button").click();
 });
 
 submitButtonWrap.addEventListener("mousedown", () => {
