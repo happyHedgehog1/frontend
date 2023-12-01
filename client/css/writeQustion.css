@@ -8,19 +8,17 @@ section {
     min-height: 80.2vh;
 }
 
-
 #contents {
     align-self: center;
     /* min-width는 선택 */
     /* max-width는 선택 */
     padding-bottom: 30px;
-    padding-top: 6em;
 }
 
 #bottom_buttons {
     display: flex;
     justify-content: flex-end;
-    gap: 2em;
+    gap: 1em;
 }
 
 #contents td {
@@ -36,17 +34,6 @@ section {
     height: 1.7em;
 }
 
-#input_password,
-#input_option {
-    border: 1px solid gray;
-    border-radius: 0.3em;
-    height: 1.7em;
-}
-
-input[type=radio] {
-    margin-right: 5px;
-}
-
 #title {
     width: 6em;
     padding-left: 5px;
@@ -56,14 +43,40 @@ input[type=radio] {
 #input_title {
     margin-top: 0.3em;
     margin-bottom: 0.3em;
+    height: 30px;
 }
 
-#write_body_title {
+#review_body_title {
     display: flex;
 }
 
-#write_body_title:first-child {
+#review_body_title:first-child {
     padding-top: 0.3em;
+}
+
+#photo_and_ratings {
+    display: grid;
+    grid-template-columns:0.8fr 1fr;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    
+}
+
+#productName_and_ratings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+
+#empty_star,
+#full_star {
+    display: none;
+}
+
+.star {
+    width: 3em;
 }
 
 #contents {
@@ -75,6 +88,10 @@ input[type=radio] {
     margin-right: 5px;
 }
 
+#product_img {
+    height: 100px;
+    padding-left: 200px;
+}
 
 #bottom_buttons {
     padding: 5px;
@@ -90,6 +107,7 @@ input[type=radio] {
     width: 6em;
     background-color: white;
     color: black;
+    font-size: 15px;
 }
 
 #bottom_buttons>button:last-child {
@@ -100,15 +118,36 @@ input[type=radio] {
     border: 0;
     background-color: #A7727D;
     color: white;
+    font-size: 15px;
+
+}
+#contents_table{
+    padding-top:3em;
+    width: 1200px;
 }
 
-#contents_table caption {
-    font-size: 1.7em;
-    padding: 30px;
-    color: black;
+#top_title{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 1em;
 }
 
-#bottom_buttons {
-    display: flex;
-    justify-content: flex-end
+#info{
+    font-size: 15px;
+    color: #707070;
 }
+
+#main_category_route{
+    width: 1200px;
+}
+
+tr{
+    height: 40px;
+}
+
+#input_option{
+    margin-top: 15px;
+    height: 30px;
+    width: 300px;
+}
+
