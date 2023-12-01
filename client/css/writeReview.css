@@ -18,7 +18,7 @@ section {
 #bottom_buttons {
     display: flex;
     justify-content: flex-end;
-    gap: 2em;
+    gap: 1em;
 }
 
 #contents td {
@@ -55,10 +55,10 @@ section {
 
 #photo_and_ratings {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    justify-items: center;
+    grid-template-columns:0.8fr 1fr;
     padding-top: 0.5em;
-    padding-bottom: 7em;
+    padding-bottom: 1em;
+    
 }
 
 #productName_and_ratings {
@@ -67,6 +67,7 @@ section {
     gap: 20px;
     justify-content: space-evenly;
 }
+
 
 #empty_star,
 #full_star {
@@ -87,7 +88,8 @@ section {
 }
 
 #product_img {
-    width: 200px;
+    height: 100px;
+    padding-left: 300px;
 }
 
 #bottom_buttons {
@@ -104,6 +106,7 @@ section {
     width: 6em;
     background-color: white;
     color: black;
+    font-size: 15px;
 }
 
 #bottom_buttons>button:last-child {
@@ -114,7 +117,23 @@ section {
     border: 0;
     background-color: #A7727D;
     color: white;
+        font-size: 15px;
+
 }
 #contents_table{
-    padding-top:7em;
+    padding-top:3em;
+    width: 1200px;
+
+}
+
+#top_title{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+
+#info{
+    font-size: 15px;
+    color: #707070;
 }

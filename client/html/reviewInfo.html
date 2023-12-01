@@ -11,9 +11,8 @@
   <script src="../js/header.js" defer></script>
 
 
-  <script src="../js/regist.js" defer></script>
-  <link rel="stylesheet" href="../css/regist.css">
-  <link rel="stylesheet" href="../css/route.css">
+  <script src="../js/questionInfo.js" defer></script>
+  <link rel="stylesheet" href="../css/questionInfo.css">
 </head>
 
 <body>
@@ -96,104 +95,108 @@
     <!-- 여기에 작성 -->
     <div id="main_category_route">
       <ul class="route_list">
-        <li><img src="../image/icon/home.png" alt=""></li>
+        <li id="route_home" onclick="goHome()"><img src="../image/icon/home.png" alt=""></li>
         <li>&gt;</li>
-        <li>회원가입</li>
+        <li id="route_mypage" onclick="goMyPage()">MY페이지</li>
+        <li>&gt;</li>
+        <li>문의 내역</li>
       </ul>
       <div id="contents">
-        <form action="">
-          <h1 id="regist_header">회원가입</h1>
-          <div colspan="2" id="agree_list">
-            <div>쇼핑몰 이용약관 동의</div>
-            <div>보기</div>
-            <div><img src="../image/regist/check_false.png" alt="체크표시"></div>
-            <hr>
-            <div>개인정보 수집/이용에 관한 사항</div>
-            <div>보기</div>
-            <div><img src="../image/regist/check_false.png" alt="체크표시"></div>
+        <table id="contents_table">
+          <caption>문의내역</caption>
+          <thead>
+            <tr>
+              <td colspan="4" id="type_select_row"><label for="">분류선택</label>
+                <select name="typeSelect" id="type_select">
+                  <option value="default">분류선택</option>
+                  <option value="delivery">배송문의</option>
+                  <option value="product">제품문의</option>
+                  <option value="cancel">취소문의</option>
+                  <option value="exchange">환불문의</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>번호</th>
+              <th>분류</th>
+              <th>제목</th>
+              <th>작성일</th>
+              <th>작성자</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>00054</td>
+              <td>[반품문의]</td>
+              <td class="title_group">
+                <div>제목제목제목제목제목제목제목제목제목</div><img src="../image/question/comment.png" alt="">
+              </td>
+              <td>1111-11-11</td>
+              <td>w******2</td>
+            </tr>
+            <tr>
+              <td>00054</td>
+              <td>[반품문의]</td>
+              <td class="title_group">
+                <div>제목제목제목제목제목제목제목제목제목</div><img src="../image/question/comment.png" alt=""><img src="../image/lock.png" alt="비밀글">
+              </td>
+              <td>1111-11-11</td>
+              <td>w******2</td>
+            </tr>
+            <tr>
+              <td>00054</td>
+              <td>[반품문의]</td>
+              <td class="title_group">
+                <div>제목제목제</div><img src="../image/question/comment.png" alt="">
+              </td>
+              <td>2222-22-22</td>
+              <td>d******3</td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="write_buttons_wrap">
+          <div id="search_buttons_wrap">
+            <select name="searchSelect" id="search_select">
+              <option value="id">아이디</option>
+              <option value="title">제목</option>
+              <option value="contents">내용</option>
+              <option value="titleAndContents">제목+내용</option>
+            </select>
+            <input type="text" name="search" id="search_input">
+            <input type="submit" id="search_button" value="찾기">
           </div>
-          <table id="contents_table">
-            <tr>
-              <th>성명</th>
-              <td colspan="2"><input type="text"></td>
-            </tr>
-            <tr>
-              <th>생일</th>
-              <td colspan="2"><input type="date"></td>
-            </tr>
-            <tr>
-              <th>성별</th>
-              <td colspan="2"><input type="radio"><label for="">남</label>
-                <input type="radio"><label for="">여</label>
-              </td>
-            </tr>
-            <tr>
-              <th>아이디</th>
-              <td><input type="text"></td>
-              <td>공백없는 5~12자리의 영문/숫자 조합</td>
-            </tr>
-            <tr>
-              <th>비밀번호</th>
-              <td><input type="text"></td>
-              <td>공백없는 5~12자리의 영문/숫자<br>
-                <span id="warning">특수문자 사용가능, 단 \, ', " 제외</span>
-              </td>
-            </tr>
-            <tr>
-              <th>비밀번호확인</th>
-              <td colspan="2"><input type="text"></td>
-            </tr>
-            <tr id="email_row">
-              <th>이메일</th>
-              <td colspan="2">
-                <div><input type="text"><button id="email_button">인증하기</button></div>
-                <div id="email_authentication">
-                  <div>인증번호</div><input type="text">&nbsp;<span id="reload_timer">05:00</span>&nbsp;<img
-                    src="../image/reloadButton/reload.png" alt="시간연장" id="reload">
-                </div>
-                <div>
-                  email 서비스를 받으시겠습니까?&nbsp;
-                  <input type="radio" name="email_service"><label for="email_service">&nbsp;예</label>
-                  <input type="radio" name="email_service"><label for="email_service">&nbsp아니오</label>
-                </div>
-                <div>
-                  주문 및 배송 관련 정보는 수신 동의와 상관없이 자동 발송됩니다.
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th>전화번호</th>
-              <td colspan="2"><input type="text"></td>
-            </tr>
-            <tr>
-              <th>휴대전화</th>
-              <td colspan="2"><input type="text"></td>
-            </tr>
-            <tr id="address_row">
-              <th>주소</th>
-              <td colspan="2"><input type="text" id="address_col_1"><button id="address_button">우편번호</button><br>
-                <input type="text" id="address_col_2"><br>
-                <input type="text" id="address_col_3">
-              </td>
-            </tr>
-          </table>
-          <div id="bottom_buttons">
-            <button id="regist_button">회원가입</button>
+          <button id="write_button" type="submit">글쓰기</button>
+        </div>
+        <div id="bottom_buttons">
+          <div>
+            <input type="button" onclick="" value="&lt;&lt;">
+            <input type="button" onclick="" value="&lt;"">
+            <input type="button" onclick="" value="1">
+            <input type="button" onclick="" value="2">
+            <input type="button" onclick="" value="3">
+            <input type="button" onclick="" value="4">
+            <input type="button" onclick="" value="5">
+            <input type="button" onclick="" value="6">
+            <input type="button" onclick="" value="7">
+            <input type="button" onclick="" value="8">
+            <input type="button" onclick="" value="&gt;">
+            <input type="button" onclick="" value="&gt;&gt;">
           </div>
-        </form>
+        </div>
       </div>
     </div>
-
-  </section><!-- 여기까지 -->
+  </section> <!-- 여기까지 -->
   <footer>
     <div id="footer_wrap">
       <ul class="footer_text1">
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">개인정보처리방침</a></li>
-        <li><a href="#">공지사항</a></li>
+        <li>이용약관</li>
+        <li>위치정보이용약관</li>
+        <li>개인정보처리방침</li>
+        <li>이메일무단수집거부</li>
+        <li>사이버검사실</li>
       </ul>
       <div class="footer_text2">
-        <ul >
+        <ul>
           <li>고객센터 이용안내</li>
           <li>평일 오전 9:00 ~ 18:00</li>
           <li>(일요일,공휴일 휴무)</li>
