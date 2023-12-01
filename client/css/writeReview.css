@@ -55,10 +55,10 @@ section {
 
 #photo_and_ratings {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    justify-items: center;
+    grid-template-columns:0.8fr 1fr;
     padding-top: 0.5em;
-    padding-bottom: 7em;
+    padding-bottom: 1em;
+    
 }
 
 #productName_and_ratings {
@@ -87,7 +87,8 @@ section {
 }
 
 #product_img {
-    width: 200px;
+    height: 100px;
+    padding-left: 200px;
 }
 
 #bottom_buttons {
@@ -116,5 +117,11 @@ section {
     color: white;
 }
 #contents_table{
-    padding-top:7em;
+    padding-top:3em;
+}
+
+#top_title{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 1em;
 }
