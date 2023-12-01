@@ -109,6 +109,7 @@
           <table id="contents_table">
             <tr>
               <td colspan="2">
+                <div id="top_title"><h2>리뷰작성</h2></div>
                 <hr>
                 <div id="photo_and_ratings">
                   <img id="product_img" src="../image/bead_room/bed/10.jpg" alt="제품이미지">
@@ -145,7 +146,7 @@
                 <div id="summernote"></div>
                 <script>
                   $('#summernote').summernote({
-                    placeholder: 'Hello stand alone ui',
+                    placeholder: '일반후기 작성 시, 1000원 적립 <br>포토후기 작성 시, 5000원 적립',
                     tabsize: 2,
                     height: 300,
                     toolbar: [
@@ -166,8 +167,16 @@
               <td>사진</td>
               <td><input type="file"></td>
             </tr>
+            <tr>
+              <td></td>
+              <td id="info">
+                - 상품과 관련없는 내용 또는 이미지, 욕설/비방, 개인정보유출, 광고/홍보글 등 
+                적절하지 않은 게시물은 별도의 고지없이 비공개 처리 될 수 있습니다.
+                <br>
+                - 작성된 게시물은 운영 및 마케팅에 활용될 수 있습니다.
+              </td>
+            </tr>
           </table>
-          <hr>
           <div id="bottom_buttons">
             <button>뒤로가기</button>
             <button>작성하기</button>
