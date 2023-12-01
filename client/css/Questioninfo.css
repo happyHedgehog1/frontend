@@ -10,8 +10,15 @@ section {
 
 #contents {
     align-self: center;
-    /* min-width는 선택 */
-    /* max-width는 선택 */
+    padding-top: 7em;
+    margin-bottom: 5em;
+    align-self: center;
+    min-width: 55em;
+}
+
+#route_home,
+#route_mypage {
+    cursor: pointer;
 }
 
 #contents_table {
@@ -19,13 +26,15 @@ section {
     border-collapse: collapse;
     color: #5D5C5C;
 }
-#contents_table #type_select_row{
+
+#contents_table #type_select_row {
     text-align: left;
 }
 
 #contents_table>caption {
-    font-size: 1.7em;
-    padding: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1em;
     color: black;
 }
 
@@ -46,8 +55,20 @@ tr>td {
     font-size: 0.95em;
 }
 
+tr>td:nth-child(1) {
+    max-width: 1em;
+}
+
+tr>td:nth-child(2) {
+    max-width: 5em;
+}
+
 tr>td:nth-child(3) {
     text-align: left;
+}
+
+tr>td:nth-child(4) {
+    max-width: 8em;
 }
 
 #write_buttons_wrap {
@@ -60,12 +81,19 @@ tr>td:nth-child(3) {
 #write_button,
 #search_button {
     border-radius: 0.6em;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    padding: 0.3em 0.5em 0.3em 0.5em;
-    border: 0;
+    box-sizing: border-box;
+    padding: 0.1em 0.3em 0.1em 0.3em;
+    border: 2px solid #a7727d;
     background-color: #A7727D;
     color: white;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+#write_button:hover,
+#search_button:hover {
+    color: black;
+    background-color: white;
 }
 
 #bottom_buttons {
@@ -94,10 +122,25 @@ tr>td:nth-child(3) {
     height: 1.7em;
 }
 
-#contents_table tr:first-child>td {
-    padding-bottom: 1em;
+#contents_table thead tr:nth-child(2) {
+    background-color: rgba(237, 218, 196, 0.3);
 }
 
-#contents_table tr:nth-child(2) {
-    background-color: rgba(237, 218, 196, 0.3);
+tbody td:nth-child(3) {
+    cursor: pointer;
+    transition: 300ms;
+}
+
+tbody td:nth-child(3):hover {
+    font-weight: bold;
+    font-size: 1.01em;
+}
+
+.title_group {
+    display: flex;
+    align-items: center;
+    gap:0.3em;
+}
+.title_group>img{
+    height:1.4em;
 }
