@@ -47,15 +47,7 @@ $("body").on("click", "li.w140 a", function(event) {
     }
 });
 
-//상품 등록 재고 무제한 선택시 수량입력 제한
-    $('input[name="quantityLimit"]').change(function() {
-    if($('input[name=quantityLimit]:checked').val() === 'N'){
-        $("#quantityLimitNumber").prop("disabled", true);
-    }else{
-        $("#quantityLimitNumber").prop("disabled", false);
 
-    }
-});
 
 $("#file").on("change", function(e){
 	
@@ -72,17 +64,92 @@ $("#file").on("change", function(e){
     }
 });
 
-$('#summernote').summernote({
-    placeholder: '내용을 입력해주세요',
-    tabsize: 2,
-    height: 120,
-    toolbar: [
-      ['style', ['style']],
-      ['font', ['bold', 'underline', 'clear']],
-      ['color', ['color']],
-      ['para', ['ul', 'ol', 'paragraph']],
-      ['table', ['table']],
-      ['insert', ['link', 'picture', 'video']],
-      ['view', ['fullscreen', 'codeview', 'help']]
-    ]
-  });
+$(function(){
+    $("#thumbnail").change(function(event){
+        const file = event.target.files;
+
+        var image = new Image();
+        var ImageTempUrl = window.URL.createObjectURL(file[0]);
+
+        image.src = ImageTempUrl;
+
+        image.style.width = '200px';
+
+        // 이전 이미지를 제거하고 새로운 이미지를 추가
+        $("#thumbnailPreview").empty().append(image);
+    });
+});
+
+$(function () {
+    $("#sub_thumbnail").change(function (event) {
+        const files = event.target.files;
+
+                // 최대 5개까지만 허용
+                if (files.length > 5) {
+                    alert("최대 5개의 이미지만 선택할 수 있습니다.");
+                    // 선택된 파일 초기화
+                    $("#sub_thumbnail").val('');
+                    return;
+                }
+
+        // 미리보기를 담을 컨테이너 엘리먼트 가져오기
+        var thumbnailContainer = $("#subThumbnailPreview");
+
+        // 이미지가 5개 이상일 때, 맨 앞 이미지를 제거
+        if (thumbnailContainer.children('img').length + files.length > 5) {
+            var excessCount = thumbnailContainer.children('img').length + files.length - 5;
+            thumbnailContainer.children('img:lt(' + excessCount + ')').remove();
+        }
+
+        // 새로 추가한 이미지를 배열에 추가
+        for (var i = 0; i < files.length; i++) {
+            var image = new Image();
+            var ImageTempUrl = window.URL.createObjectURL(files[i]);
+
+            image.src = ImageTempUrl;
+
+            image.style.width = '40px';
+
+            // 새로운 이미지를 뒤로 추가
+            thumbnailContainer.append(image);
+        }
+    });
+});
+
+$(function(){
+    $("#pro_img").change(function(event){
+        const file = event.target.files;
+
+        var image = new Image();
+        var ImageTempUrl = window.URL.createObjectURL(file[0]);
+
+        image.src = ImageTempUrl;
+
+        image.style.width = '200px';
+
+        // 이전 이미지를 제거하고 새로운 이미지를 추가
+        $("#proPreview").empty().append(image);
+    });
+});
+
+
+
+// 옵션 수량이 변경될 때 전체 재고 업데이트
+$("body").on("input", "input[name='optionQuantity']", function () {
+    updateTotalStock();
+});
+
+// 전체 재고를 업데이트하는 함수
+function updateTotalStock() {
+    var totalQuantity = 0;
+    $("input[name='optionQuantity']").each(function () {
+        var quantity = parseInt($(this).val()) || 0;
+        totalQuantity += quantity;
+    });
+
+    // 전체 재고를 표시할 요소의 ID가 'totalStock'라고 가정합니다. 만약 다르다면 해당 요소의 ID로 바꿔주세요.
+    $("#totalStock").text(totalQuantity);
+}
+
+// 페이지 로딩 시 초기 전체 재고를 설정하기 위해 updateTotalStock 함수를 호출합니다.
+updateTotalStock();

@@ -53,6 +53,8 @@ margin-left: auto;
 
 
 
+
+
 h2 {
     margin-left: 100px;
     font-size: 40px;
@@ -479,7 +481,7 @@ button#modalBtnPrdAdd:active {
     border: 0;
 }
 
-.img-file label {
+.imgWrapper label{
     display: inline-block;
     padding: 7px ;
     padding-left: 35px;
@@ -488,12 +490,11 @@ button#modalBtnPrdAdd:active {
     font-size: 18px;
     vertical-align: middle;
     background-color: #A7727D;
-    cursor: pointer;
     height: 40px;
     margin: 10px;
 }
 
-.img-file input[type="file"] {
+input[type="file"] {
     position: absolute;
     width: 0;
     height: 0;
@@ -514,3 +515,25 @@ button#modalBtnPrdAdd:active {
     width: 100vh;
 }
 
+#thumbnailPreview{
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+#previewImage {
+    width: 200px; /* 원하는 너비로 조절 */
+    height: auto;
+}
+
+#subThumbnailPreview{
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+#proPreview{
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+}

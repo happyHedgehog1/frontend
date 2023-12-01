@@ -32,7 +32,7 @@
                 <li class="prodList"><a href="#">회원관리</a>
                     <ul class="sub_ProdList">
                         <li><a href="../member/member.html">전체회원관리</a></li>
-                        <li><a href="../member/unregister.html">탈퇴회원조회</a></li>
+                        <li><a href="../member/unregister.html">탈퇴회원관리</a></li>
                     </ul>
                 </li>
                 <li class="prodList"><a href="../point/pointA.html">적립금관리</a></li>
@@ -160,35 +160,10 @@
                                                     원
                                             </li>
                                             <li>
-                                                <label for="deliveryCharge2">&nbsp;&nbsp;&nbsp;지역 배송비</label>
-                                                    <input type="number" name="deliveryCharge2" id="deliveryCharge2" style="width: 125px;" value="0">
-                                                    원
-                                            </li>
-                                            <li>
                                                 *0원이면 무료배송
                                             </li>
                                         </ul>
                                     </td>   
-                            </tr>   
-                            <tr>        
-                                <th class="tblTitle">옵션</th>     
-                                <td>
-                                    <ul class="arrAlign">
-                                            <li class="w200">
-                                                <label for="optionY">
-                                                    <input type="radio" name="option" id="optionY" value="Y" checked><span> 사용함</span>
-                                                </label>
-                                            </li>
-                                            <li class="w50">
-                                                &nbsp;
-                                            </li>
-                                            <li>
-                                                <label for="optionN">
-                                                    <input type="radio" name="option" id="optionN" value="N"><span> 사용안함</span>
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </td>  
                             </tr>   
                             <tr class="optionList">        
                                 <th colspan="2" class="optionth">
@@ -229,45 +204,46 @@
                                             개
                                         </li>
                                         <li class="w140" style="padding-top: 5px;">
-                                            <a href="#"><img src="/image/add.png" height="25px" name="img-add"></a>
+                                            <a href="#"><img src="../../image/add.png" height="25px" name="img-add"></a>
                                         </li>
                                     </ul>    
                                 </th>    
-                            </tr>   
+                            </tr> 
                             <tr>        
-                                <th class="tblTitle">상품재고</th>    
-                                    <td>
-                                        <ul class="arrAlign">
-                                            <li>
-                                                <label for="quantityLimit">
-                                                    <input type="radio" name="quantityLimit" id="quantityLimit" value="Y" checked><span> 수량 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                                </label>
-                                                    <input type="number" name="quantityLimitNumber" id="quantityLimitNumber" style="width: 125px;">
-                                            </li>
-                                            <li>
-                                                <label for="quantityLimit">
-                                                    &nbsp;&nbsp;&nbsp;<input type="radio" name="quantityLimit" id="quantityUnlimit" value="N"><span> 무제한</span>
-                                                </label>
+                                <th class="tblTitle">총재고량</th>     
+                                <td>
+                                    <ul class="arrAlign">
+                                            <li class="w200">
+                                                <div id="totalStock"></div>
                                             </li>
                                         </ul>
-                                    </td>   
-                            </tr>   
+                                    </td>  
+                            </tr>       
                             <tr>        
                                 <th class="tblTitle" colspan="2">상세페이지 작성</th>     
                             </tr>
                             <tr>
                                 <td class="imgWrapper" style="border-bottom: 0px;">
-                                    <div class="img-file">                             
-                                    <label for="file">대표이미지 지정</label> 
+                                    <div class="img-file1">                             
+                                    <label for="thumbnail">대표이미지 지정</label> 
                                     <input type="file" id="thumbnail" accept="image/*">
+                                    <div id="thumbnailPreview">
+                                        <img id="previewImage" alt="">
+                                    </div>
                                     </div>   
-                                    <div class="img-file">                             
-                                    <label for="file">대표이미지 지정2</label> 
-                                    <input type="file" id="thumbnail" accept="image/*">
+                                    <div class="img-file2">                             
+                                    <label for="sub_thumbnail">대표이미지 지정2</label> 
+                                    <input type="file" id="sub_thumbnail" accept="image/*" multiple>
+                                    <div id="subThumbnailPreview">
+                                        <img id="subpreviewImage" alt="">
+                                    </div>
                                 </div>   
-                                    <div class="img-file">                             
-                                    <label for="file">제품 상세이미지</label> 
-                                    <input type="file" id="pro_img">
+                                    <div class="img-file3">                             
+                                    <label for="pro_img">제품 상세이미지</label> 
+                                    <input type="file" id="pro_img"  accept="image/*">
+                                    <div id="proPreview">
+                                        <img id="previewImage" alt="">
+                                    </div>
                                 </div>   
                                 </td>
                             </tr>
@@ -291,7 +267,7 @@
                                     <tr>
                                         <th>양식 다운로드</th>
                                         <td>
-                                            <img src="/image/download.png" alt="download" height="20px"><span><a href="/uploadSampleFile/1infurniture_products_upload_sample.xlsx"> 양식 파일 다운로드</a></span>
+                                            <img src="../../image/download.png" alt="download" height="20px"><span><a href="../../uploadSampleFile/1infurniture_products_upload_sample.xlsx"> 양식 파일 다운로드</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -352,6 +328,6 @@
                 </div>
             </section>
         </nav>
-        <script src="/js/productAdd.js"></script>
+        <script src="../../js/productAdd.js"></script>
 </body>
 </html>
