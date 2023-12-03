@@ -399,17 +399,6 @@ span{
 
 }
 
-.review-next-icon img{
-  height: 100px;
-  padding: 10px;
-}
-
-
-#modal-tbl-photo{
-  height: 100%;
-  text-align: left;
-  padding-left:20px;
-}
 
 .modal_average_review {
   display: flex;

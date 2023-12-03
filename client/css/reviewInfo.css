@@ -183,7 +183,9 @@ tbody td:nth-child(3):hover {
     justify-content: center;
 }
 
-
+#review_img{
+    height: 100px;
+}
 
 #img_and_btn button{
     width: 50px;
@@ -195,6 +197,12 @@ tbody td:nth-child(3):hover {
 
 }
 
-#review_img{
-    height: 100px;
+#img_and_btn button:active {
+    width: 50px;
+    border: 1px solid #A7727D;
+    border-radius: 0.5em;
+    background-color: #A7727D;
+    color: white;
+    cursor: pointer;
+
 }
