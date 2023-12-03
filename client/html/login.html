@@ -11,8 +11,8 @@
   <script src="../js/header.js" defer></script>
 
 
-  <script src="../js/memberInfoChange.js" defer></script>
-  <link rel="stylesheet" href="../css/memberInfoChange.css">
+  <script src="../js/login.js" defer></script>
+  <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
@@ -29,13 +29,13 @@
         <ul class="side_nenu_List">
           <li><a href="#">베스트 상품</a></li>
           <li><a href="mainCategoryBed.html">침실</a></li>
-          <li><a href="#">거실</a></li>
-          <li><a href="#">서재</a></li>
-          <li><a href="#">주방</a></li>
+          <li><a href="mainCategorySopa.html">거실</a></li>
+          <li><a href="mainCategoryDesk.html">서재</a></li>
+          <li><a href="mainCategoryTable.html">주방</a></li>
           <li><a href="#">게시판</a></li>
         </ul>
       </div>
-      <h1 class="logo"><a href="main.html"><img src="../image/logo.png" alt="logo"></a></h1>
+      <h1 class="logo"><a href="./index1.html"><img src="../image/logo.png" alt="logo"></a></h1>
       <ul class="login_list">
         <li><a href="#"><img src="../image/icon/login.png">로그인</a></li>
         <li><a href="#"><img src="../image/icon/join.png">회원가입</a></li>
@@ -50,38 +50,36 @@
         <div class="line"></div>
         <ul class="gnb_list" onmouseover="applyHoverEffect(true)" onmouseout="applyHoverEffect(false)">
           <li><a href="mainCategoryBed.html">침실</a></a></li>
-          <li><a href="#">거실</a></li>
-          <li><a href="#">서재</a></li>
-          <li><a href="#">주방</a></li>
+          <li><a href="mainCategorySopa.html">거실</a></li>
+          <li><a href="mainCategoryDesk.html">서재</a></li>
+          <li><a href="mainCategoryTable.html">주방</a></li>
         </ul>
         <div class="line"></div>
         <div class="gnb_sub_box" onmouseover="applyHoverEffect(true)" onmouseout="applyHoverEffect(false)">
           <div class="gnb_sub_list">
             <ul class="detail_list">
-              <li><a href="mainCategoryBed">침대</a></li>
+              <li><a href="mainCategoryBed.html">침대</a></li>
               <span></span>
               <li><a href="#">옷장</a></li>
               <span></span>
               <li><a href="#">화장대</a></li>
             </ul>
             <ul class="detail_list">
-              <li><a href="#">소파</a></li>
+              <li><a href="mainCategorySopa.html">소파</a></li>
               <span></span>
               <li><a href="#">테이블</a></li>
               <span></span>
               <li><a href="#">수납장</a></li>
             </ul>
             <ul class="detail_list">
-              <li><a href="#">책상</a></li>
+              <li><a href="mainCategoryDesk.html">책상</a></li>
               <span></span>
               <li><a href="#">책장</a></li>
               <span></span>
               <li><a href="#">의자</a></li>
             </ul>
             <ul class="detail_list">
-              <li><a href="#">식탁</a></li>
-              <span></span>
-              <li><a href="#">의자</a></li>
+              <li><a href="mainCategoryTable.html">식탁</a></li>
               <span></span>
               <li><a href="#">수납장</a></li>
             </ul>
@@ -95,79 +93,86 @@
     <!-- 여기에 작성 -->
     <div id="main_category_route">
       <ul class="route_list">
-        <li onclick="location.href='./index1.html'"><img src="../image/icon/home.png" alt="홈으로가기"></li>
+        <li id="route_home" onclick="goHome()"><img src="../image/icon/home.png" alt=""></li>
         <li>&gt;</li>
-        <li onclick="">회원가입</li>
-        <li>&gt;</li>
-        <li>회원정보</li>
+        <li>로그인</li>
       </ul>
       <div id="contents">
-        <form action="regist" id="regist">
-          <h1 id="regist_header">회원가입</h1>
-          <table id="contents_table">
+        <form action="" method="post" id="login_form">
+          <table class="contents-table">
+            <caption>로그인</caption>
             <tr>
-              <th>성명</th>
-              <td colspan="2"><input type="text" name="name" id="name" readonly></td>
+              <td colspan="5" id="id">아이디</td>
             </tr>
             <tr>
-              <th>생일</th>
-              <td colspan="2"><input type="date" name="date" id="date" readonly></td>
+              <td colspan="5"><input type="text" id="input_id" name="id"></td>
             </tr>
             <tr>
-              <th>성별</th>
-              <td colspan="2">
-                <label for="male">남</label>
-                <input type="radio" name="gender" id="male" readonly>
-                <label for="female">여</label>
-                <input type="radio" name="gender" id="female" readonly>
+              <td colspan="5" id="password">비밀번호</td>
+            </tr>
+            <tr>
+              <td colspan="5">
+                <input type="text" id="input_password" name="password">
               </td>
             </tr>
             <tr>
-              <th>아이디</th>
-              <td>
-                <input type="text" name="id" id="id" readonly>
-              </td>
-            </tr>
-            <tr>
-              <th>비밀번호</th>
-              <td><input type="text" input="password" id="password" readonly></td>
-            </tr>
-            <tr id="email_row">
-              <th>이메일</th>
-              <td colspan="2">
-                <div>
-                  <input type="text" name="email" id="email" readonly>
-                </div>
-                <div>
-                  email 서비스를 받으시겠습니까?&nbsp;
-                  <input type="radio" name="email_service" id="email_yes"><label for="email_service">&nbsp;예</label>
-                  <input type="radio" name="email_service" id="email_no"><label for="email_service">&nbsp아니오</label>
-                </div>
-                <div>
-                  주문 및 배송 관련 정보는 수신 동의와 상관없이 자동 발송됩니다.
+              <td colspan="5">
+                <div id="login_additional_wrap">
+                  <div id="save_id_wrap">
+                    <input type="checkbox" name="save_id" id="save_id">
+                    <label for="save_id">아이디저장</label>
+                  </div>
+                  <div id="login_additional_buttons">
+                    <input type="button" name="regist_button" id="regist_button" value="회원가입">
+                    <input type="button" name="id_search" id="id_search" value="아이디 찾기">
+                    <input type="button" name="password_search" id="password_search" value="비밀번호 찾기">
+                  </div>
                 </div>
               </td>
             </tr>
             <tr>
-              <th>휴대전화</th>
-              <td colspan="2"><input type="text" id="phone" name="phone" placeholder="01011112222(- 생략)" readonly></td>
-            </tr>
-            <tr id="address_row">
-              <th>주소</th>
-              <td colspan="2">
-                <input type="text" id="address_col_1" readonly><input type="button" id="address_button" value=우편번호><br>
-                <input type="text" id="address_col_2" readonly><br>
-                <input type="text" id="address_col_3">
+              <td colspan="5">
+                <input type="submit" id="login_button" value="로그인">
               </td>
             </tr>
           </table>
-          <div id="bottom_buttons">
-            <input type="button" name="regist_button" id="regist_button" value="뒤로가기">
-          </div>
+        </form>
+        <form action="" method="post" id="search_form">
+          <table class="contents-table">
+            <caption>비회원 주문/배송 조회</caption>
+            <tr>
+              <td colspan="5" id="order_number">주문번호</td>
+            </tr>
+            <tr>
+              <td colspan="5"><input type="text" id="input_order" name="order" placeholder="주문 시 발급받은 이메일 주소 입력"></td>
+            </tr>
+            <tr>
+              <td colspan="5" id="email">이메일주소</td>
+            </tr>
+            <tr>
+              <td colspan="3"><input type="text" id="input_email" name="email" placeholder="주문 시 입력한 이메일 주소 입력"></td>
+              <td colspan="2"><input type="button" value="이메일인증" id="email_button"></td>
+            </tr>
+            <tr id="authentication_row">
+              <td>인증번호</td>
+              <td colspan="2"><input type="text" id="input_authentication" name="authentication"></td>
+              <td><input type="button" id="authentication_button" value="인증하기"></td>
+              <td id="timer">
+                <div><span>05:00</span><img src="../image/reloadButton/reload.png" alt="시간연장" id="reload"></div>
+              </td>
+            </tr>
+            <tr id="authentication_complete_row">
+              <td colspan="5"></td>
+            </tr>
+            <tr>
+              <td colspan="5"><input type="submit" id="search_button" value="조회"></td>
+            </tr>
+          </table>
+        </form>
       </div>
     </div>
-
-  </section><!-- 여기까지 -->
+    <!-- 여기까지 -->
+  </section>
   <footer>
     <div id="footer_wrap">
       <ul class="footer_text1">
