@@ -10,7 +10,7 @@ section {
 
 #contents {
     align-self: center;
-    padding-top: 7em;
+    padding-top: 3em;
     margin-bottom: 5em;
     align-self: center;
     min-width: 55em;
@@ -136,11 +136,73 @@ tbody td:nth-child(3):hover {
     font-size: 1.01em;
 }
 
-.title_group {
-    display: flex;
-    align-items: center;
-    gap:0.3em;
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 30px;
 }
-.title_group>img{
-    height:1.4em;
+
+.review_wrapper{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+}
+
+.review_wrapper img{
+    height: 80px;
+    margin-right: 10px;
+}
+
+.reviewInfo{
+    display: flex;
+    padding: 10px;
+
+}
+
+#review_content{
+    padding-left: 10px;
+}
+
+#review_content_wrapper{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    height: 150px;
+    
+}
+
+#content {
+    flex: 1; 
+}
+
+#img_and_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#review_img{
+    height: 100px;
+}
+
+#img_and_btn button{
+    width: 50px;
+    border: 1px solid #A7727D;
+    border-radius: 0.5em;
+    background-color: white;
+    
+    cursor: pointer;
+
+}
+
+#img_and_btn button:active {
+    width: 50px;
+    border: 1px solid #A7727D;
+    border-radius: 0.5em;
+    background-color: #A7727D;
+    color: white;
+    cursor: pointer;
+
 }

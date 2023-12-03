@@ -23,12 +23,23 @@ $(document).ready(function(){
 
 
 
+
 function openModal() {
   document.getElementById('myModal').style.display = 'block';
   document.getElementById('overlay').style.display = 'flex';
 }
 
-function closeModal() {
-  document.getElementById('myModal').style.display = 'none';
+
+document.getElementById("closeModal").addEventListener("click", function() {
+  document.getElementById("myModal").style.display = "none";
   document.getElementById('overlay').style.display = 'none';
-}
+
+});
+
+
+// 모달 이미지 클릭 시 처리
+$("#review-img li img").click(function() {
+  let chairImageSrc = $(this).attr("src");
+  $("#myModal .left-column img").attr("src", chairImageSrc);
+  openModal();
+});
