@@ -12,7 +12,7 @@
 
 
   <script src="../js/questionInfo.js" defer></script>
-  <link rel="stylesheet" href="../css/questionInfo.css">
+  <link rel="stylesheet" href="../css/reviewInfo.css">
 </head>
 
 <body>
@@ -99,78 +99,100 @@
         <li>&gt;</li>
         <li id="route_mypage" onclick="goMyPage()">MY페이지</li>
         <li>&gt;</li>
-        <li>문의 내역</li>
+        <li>리뷰 내역</li>
       </ul>
       <div id="contents">
-        <table id="contents_table">
-          <caption>문의내역</caption>
-          <thead>
-            <tr>
-              <td colspan="4" id="type_select_row"><label for="">분류선택</label>
-                <select name="typeSelect" id="type_select">
-                  <option value="default">분류선택</option>
-                  <option value="delivery">배송문의</option>
-                  <option value="product">제품문의</option>
-                  <option value="cancel">취소문의</option>
-                  <option value="exchange">환불문의</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <th>번호</th>
-              <th>분류</th>
-              <th>제목</th>
-              <th>작성일</th>
-              <th>작성자</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>00054</td>
-              <td>[반품문의]</td>
-              <td class="title_group">
-                <div>제목제목제목제목제목제목제목제목제목</div><img src="../image/question/comment.png" alt="">
-              </td>
-              <td>1111-11-11</td>
-              <td>w******2</td>
-            </tr>
-            <tr>
-              <td>00054</td>
-              <td>[반품문의]</td>
-              <td class="title_group">
-                <div>제목제목제목제목제목제목제목제목제목</div><img src="../image/question/comment.png" alt=""><img src="../image/lock.png" alt="비밀글">
-              </td>
-              <td>1111-11-11</td>
-              <td>w******2</td>
-            </tr>
-            <tr>
-              <td>00054</td>
-              <td>[반품문의]</td>
-              <td class="title_group">
-                <div>제목제목제</div><img src="../image/question/comment.png" alt="">
-              </td>
-              <td>2222-22-22</td>
-              <td>d******3</td>
-            </tr>
-          </tbody>
-        </table>
-        <div id="write_buttons_wrap">
-          <div id="search_buttons_wrap">
-            <select name="searchSelect" id="search_select">
-              <option value="id">아이디</option>
-              <option value="title">제목</option>
-              <option value="contents">내용</option>
-              <option value="titleAndContents">제목+내용</option>
-            </select>
-            <input type="text" name="search" id="search_input">
-            <input type="submit" id="search_button" value="찾기">
+        <div class="title">내가 작성한 리뷰</div>
+        <hr>
+          <div class="review_wrapper">
+            <div class="reviewInfo">
+              <!-- 제품 썸네일 -->
+              <div><img src="../image/bedroom.jpg" alt=""></div>
+                <div>
+                  <div><a href="../html/product.html">평상형 수납침대</a></div>
+                  <div>옵션 : 흰색</div>
+                  <div>★★★★☆ <span><b>4</b></span> </div>
+                  <div>2023.12.03</div>
+                </div>
+              </div>
+            <hr style="border: 0.1px solid rgb(218, 217, 217);">
+              <div id="review_content_wrapper">
+                <div id="content">
+                냄새안나고 너무 예뻐요~!!! <br>
+                가격도 저렴하고 무료배송이라 늘 애용합니다 ~
+                </div>
+                <div id="img_and_btn">
+                  <!-- 사용자가 올린 후기 사진 -->
+                  <div id="review_img"><img src="../image/chair.png" alt=""></div>
+                  <div>
+                    <button>수정</button>
+                    <button>삭제</button>
+                  </div>
+                </div>
+              </div>
+            <hr>
           </div>
-          <button id="write_button" type="submit">글쓰기</button>
-        </div>
+          <div class="review_wrapper">
+            <div class="reviewInfo">
+              <!-- 제품 썸네일 -->
+              <div><img src="../image/bedroom.jpg" alt=""></div>
+                <div>
+                  <div><a href="../html/product.html">평상형 수납침대</a></div>
+                  <div>옵션 : 흰색</div>
+                  <div>★★★★☆ <span><b>4</b></span> </div>
+                  <div>2023.11.03</div>
+                </div>
+              </div>
+            <hr style="border: 0.1px solid rgb(218, 217, 217);">
+              <div id="review_content_wrapper">
+                <div id="content">
+                냄새안나고 너무 예뻐요~!!! <br>
+                가격도 저렴하고 무료배송이라 늘 애용합니다 ~
+                </div>
+                <div id="img_and_btn">
+                  <!-- 사용자가 올린 후기 사진 -->
+                  <div id="review_img"></div>
+                  <div>
+                    <button>수정</button>
+                    <button>삭제</button>
+                  </div>
+                </div>
+              </div>
+            <hr>
+          </div>
+          <div class="review_wrapper">
+            <div class="reviewInfo">
+              <!-- 제품 썸네일 -->
+              <div><img src="../image/bedroom.jpg" alt=""></div>
+                <div>
+                  <div><a href="../html/product.html">평상형 수납침대</a></div>
+                  <div>옵션 : 흰색</div>
+                  <div>★★★★☆ <span><b>4</b></span> </div>
+                  <div>2023.10.03</div>
+                </div>
+              </div>
+            <hr style="border: 0.1px solid rgb(218, 217, 217);">
+              <div id="review_content_wrapper">
+                <div id="content">
+                냄새안나고 너무 예뻐요~!!! <br>
+                가격도 저렴하고 무료배송이라 늘 애용합니다 ~
+                </div>
+                <div id="img_and_btn">
+                  <!-- 사용자가 올린 후기 사진 -->
+                  <div id="review_img"><img src="../image/chair.png" alt=""></div>
+                  <div>
+                    <button>수정</button>
+                    <button>삭제</button>
+                  </div>
+                </div>
+              </div>
+            <hr>
+          </div>
+      </div>
         <div id="bottom_buttons">
           <div>
             <input type="button" onclick="" value="&lt;&lt;">
-            <input type="button" onclick="" value="&lt;"">
+            <input type="button" onclick="" value="&lt;">
             <input type="button" onclick="" value="1">
             <input type="button" onclick="" value="2">
             <input type="button" onclick="" value="3">
