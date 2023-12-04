@@ -194,6 +194,10 @@ header{
 .side_nenu.active {
   transform: translateX(0);
 }
+.side_nenu li{
+  background-color: #F8F4F4;
+  
+}
 
 .side_nenu li a{
   display: inline-block;
@@ -202,6 +206,7 @@ header{
   line-height: 80px;
   margin-bottom: 16px;
   transition: transform 300ms;
+
 }
 
 .side_nenu li a:hover {
@@ -209,6 +214,43 @@ header{
   font-weight: bold;
   transform: scale(1.1);
 }
+
+.side_nenu > ul > li > a{
+  z-index: 99;
+}
+
+
+/* 게시판 카데고리 */
+
+
+.side_nenu .post {
+  position: relative;
+
+}
+
+.side_nenu .post_list{
+  display: inline-block;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  font-size: 16px;
+  transform: translateY(-230px);
+  transition: all 400ms;
+  z-index: -99;
+}
+
+.side_nenu .post_list li a{
+  height: 60px;
+  line-height: 60px;
+}
+
+
+.side_nenu .post:hover .post_list{
+  transform: translateY(20px);
+
+}
+
 
 /* ========== 메인카테고리 */
 
